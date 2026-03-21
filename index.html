@@ -1,0 +1,4433 @@
+<!doctype html>
+<html lang="en">
+  <!--
+=======================================================================
+  FIFA WORLD CUP 2026 — MATCH RECORDS
+=======================================================================
+  HOW TO UPDATE DATA:
+  1. Open this file in any text editor (VS Code, Notepad, etc.)
+  2. Find the <script id="match-data"> block below
+  3. Edit the JSON for any match
+  4. Save the file
+  5. Refresh the browser tab — done.
+
+  No server needed. Works by double-clicking the file.
+=======================================================================
+
+  JSON FIELD REFERENCE
+  --------------------
+  score:        {"home": 2, "away": 1}   ← use null for unplayed
+  referee:      "Szymon Marciniak"
+  attendance:   85000
+  home_formation / away_formation:  "4-3-3"
+  home_lineup / away_lineup:  ["1. GK - Ochoa", "2. RB - Sanchez", ...]
+  home_subs / away_subs:      ["12. GK - Aguirre", ...]
+  goals:        [{"minute": 23, "team": "Mexico", "player": "Jimenez",
+                  "assist": "Lozano", "type": "Open Play"}]
+  yellow_cards: [{"minute": 45, "team": "Mexico", "player": "Name",
+                  "reason": "Foul"}]
+  red_cards:    [{"minute": 67, "team": "Mexico", "player": "Name",
+                  "reason": "Violent conduct"}]
+  substitutions:[{"minute": 60, "team": "Mexico",
+                  "player_on": "Pineda", "player_off": "Guardado"}]
+  stats:        {"possession_home": 58, "possession_away": 42,
+                 "shots_home": 12, "shots_away": 6,
+                 "shots_on_target_home": 5, "shots_on_target_away": 2,
+                 "corners_home": 7, "corners_away": 3,
+                 "fouls_home": 11, "fouls_away": 14,
+                 "offsides_home": 2, "offsides_away": 1,
+                 "saves_home": 2, "saves_away": 4,
+                 "passes_home": 520, "passes_away": 310}
+  notes:        "Match report here..."
+
+  goal types: "Open Play" | "Penalty" | "Free Kick" | "Header" | "Own Goal"
+=======================================================================
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup 2026 · Match Records</title>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+     MATCH DATA — edit anything inside this script tag, then save + refresh
+     ═══════════════════════════════════════════════════════════════════ -->
+    <script id="match-data" type="application/json">
+      {
+        "A1": {
+          "score": {
+            "home": 3,
+            "away": 0
+          },
+          "referee": "Szymon Marciniak",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": ["1. GK - Ochoa", "2. RB - Sanchez"],
+          "away_lineup": ["1. GK - Ronwen Williams", "2. RB - Sanchez", "3. FW - Lyle Forster"],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [
+            {
+              "minute": 23,
+              "team": "Mexico",
+              "player": "Jimenez",
+              "assist": "Lozano",
+              "type": "Open Play"
+            }
+          ],
+          "yellow_cards": [{"minute": 45, "team": "Mexico", "player": "Name",
+                  "reason": "Foul"}],
+          "red_cards": [],
+          "substitutions": [{"minute": 60, "team": "Mexico",
+                  "player_on": "Pineda", "player_off": "Guardado"}],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "A2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "A3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "A4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "A5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "A6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "B6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "C6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "D6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "E6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "F6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "G6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "H6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "I6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "J6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "K6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L1": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L2": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L3": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L4": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L5": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        },
+        "L6": {
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "referee": "",
+          "attendance": null,
+          "home_formation": "",
+          "away_formation": "",
+          "home_lineup": [],
+          "away_lineup": [],
+          "home_subs": [],
+          "away_subs": [],
+          "goals": [],
+          "yellow_cards": [],
+          "red_cards": [],
+          "substitutions": [],
+          "stats": {
+            "possession_home": null,
+            "possession_away": null,
+            "shots_home": null,
+            "shots_away": null,
+            "shots_on_target_home": null,
+            "shots_on_target_away": null,
+            "corners_home": null,
+            "corners_away": null,
+            "fouls_home": null,
+            "fouls_away": null,
+            "offsides_home": null,
+            "offsides_away": null,
+            "saves_home": null,
+            "saves_away": null,
+            "passes_home": null,
+            "passes_away": null
+          },
+          "notes": ""
+        }
+      }
+    </script>
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --bg: #0a0a0a;
+        --bg2: #111;
+        --bg3: #171717;
+        --bg4: #1d1d1d;
+        --fg: #e0e0e0;
+        --fg2: #595959;
+        --fg3: #2a2a2a;
+        --fg4: #161616;
+        --bd: #1e1e1e;
+        --bd2: #2c2c2c;
+        --gold: #d4a017;
+        --goldf: #0a0a0a;
+        --g: #16a34a;
+        --y: #ca8a04;
+        --r: #dc2626;
+        --blue: #3b82f6;
+      }
+      [data-light] {
+        --bg: #f4f0e8;
+        --bg2: #ece8df;
+        --bg3: #e4e0d7;
+        --bg4: #dcd7cd;
+        --fg: #1a1a1a;
+        --fg2: #777;
+        --fg3: #c8c3b8;
+        --fg4: #e8e3d8;
+        --bd: #ddd8ce;
+        --bd2: #cac4b9;
+        --gold: #9a6f00;
+        --goldf: #fff;
+        --g: #15803d;
+        --y: #92400e;
+        --r: #9f1239;
+        --blue: #1d4ed8;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        min-height: 100vh;
+      }
+      button {
+        cursor: pointer;
+        font-family: "Courier New", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        transition: all 0.12s;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      .bg {
+        background: transparent;
+        color: var(--fg2);
+        border: 1px solid var(--bd2);
+        padding: 4px 9px;
+      }
+      .bg:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+        opacity: 1;
+      }
+      .bg.on {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 282px 1fr;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .acc-panel {
+        display: none;
+      }
+      .acc-ov-row {
+        display: none;
+      }
+      @media (max-width: 660px) {
+        .layout {
+          grid-template-columns: 1fr;
+          height: auto;
+          overflow: auto;
+        }
+        .mn {
+          display: none;
+        }
+        .acc-panel {
+          display: block;
+          background: var(--bg);
+          border-bottom: 2px solid var(--gold);
+          animation: accSlide 0.16s ease;
+        }
+        @keyframes accSlide {
+          from { opacity: 0; transform: translateY(-5px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .acc-ov-row {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 9px 12px;
+          border-bottom: 1px solid var(--bd);
+          cursor: pointer;
+          background: var(--bg2);
+          font-size: 11px;
+          font-weight: 700;
+          color: var(--gold);
+          position: sticky;
+          top: 0;
+          z-index: 2;
+        }
+        .acc-ov-row:hover { background: var(--bg3); }
+        .acc-ov-row .acc-chevron { margin-left: auto; font-style: normal; }
+      }
+      .sb {
+        border-right: 1px solid var(--bd);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: var(--bg2);
+      }
+      .mn {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .sh {
+        padding: 15px 15px 11px;
+        border-bottom: 1px solid var(--bd);
+        flex-shrink: 0;
+      }
+      .st {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        color: var(--gold);
+        margin-bottom: 3px;
+      }
+      .sn {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .ss {
+        font-size: 10px;
+        color: var(--fg2);
+      }
+      .gf {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        padding: 7px 9px;
+        border-bottom: 1px solid var(--bd);
+        flex-shrink: 0;
+      }
+      .ml {
+        overflow-y: auto;
+        flex: 1;
+      }
+      .dh {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--fg3);
+        padding: 8px 12px 3px;
+        text-transform: uppercase;
+        position: sticky;
+        top: 0;
+        background: var(--bg2);
+        z-index: 1;
+      }
+      .mc {
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--bd);
+        cursor: pointer;
+        transition: background 0.1s;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .mc:hover {
+        background: var(--bg3);
+      }
+      .mc.on {
+        background: var(--bg4);
+        border-left: 3px solid var(--gold);
+      }
+      .mb {
+        font-size: 9px;
+        font-weight: 700;
+        color: var(--gold);
+        background: rgba(212, 160, 23, 0.1);
+        border: 1px solid rgba(212, 160, 23, 0.18);
+        padding: 1px 5px;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .mt {
+        flex: 1;
+        min-width: 0;
+      }
+      .mn2 {
+        font-size: 11px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .mm {
+        font-size: 9px;
+        color: var(--fg2);
+        margin-top: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .ms {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+        min-width: 36px;
+        flex-shrink: 0;
+        color: var(--gold);
+      }
+      .ms.ns {
+        color: var(--fg3);
+        font-size: 10px;
+        font-weight: 400;
+      }
+      .pd {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .dd {
+        background: var(--g);
+      }
+      .dp {
+        background: var(--y);
+      }
+      .dn {
+        background: var(--fg4);
+      }
+      .tb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 16px;
+        border-bottom: 1px solid var(--bd);
+        flex-shrink: 0;
+        background: var(--bg2);
+      }
+      .tt {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: var(--fg2);
+      }
+      .tr {
+        margin-left: auto;
+        display: flex;
+        gap: 6px;
+      }
+      .de {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--fg3);
+        padding: 40px;
+        text-align: center;
+      }
+      .dw {
+        padding: 22px 26px;
+        max-width: 820px;
+      }
+      .dg {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--gold);
+        margin-bottom: 5px;
+      }
+      .dm {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+      .dme {
+        font-size: 11px;
+        color: var(--fg2);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .sco {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        background: var(--bg3);
+        border: 1px solid var(--bd2);
+        border-radius: 7px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .sc-t {
+        padding: 16px 18px;
+        text-align: center;
+      }
+      .sc-n {
+        font-size: 10px;
+        color: var(--fg2);
+        margin-bottom: 7px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .sc-v {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--gold);
+      }
+      .sc-v.w {
+        color: var(--fg);
+      }
+      .sc-v.l {
+        color: var(--fg2);
+      }
+      .sc-r {
+        font-size: 9px;
+        color: var(--fg2);
+        margin-top: 5px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .sc-d {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--fg3);
+        padding: 0 4px;
+        display: flex;
+        align-items: center;
+      }
+      .sc-ns {
+        text-align: center;
+        background: var(--bg3);
+        border: 1px solid var(--bd2);
+        border-radius: 7px;
+        padding: 22px;
+        color: var(--fg2);
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .sec {
+        margin-bottom: 22px;
+      }
+      .sl {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--fg2);
+        margin-bottom: 9px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-transform: uppercase;
+      }
+      .sl::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--bd);
+      }
+      .el {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .ei {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 7px 11px;
+        background: var(--bg3);
+        border: 1px solid var(--bd);
+        border-radius: 3px;
+        font-size: 12px;
+      }
+      .em {
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--fg2);
+        width: 30px;
+        text-align: right;
+        flex-shrink: 0;
+      }
+      .ei-i {
+        flex-shrink: 0;
+        width: 18px;
+        text-align: center;
+      }
+      .ep {
+        font-weight: 700;
+      }
+      .ed {
+        font-size: 10px;
+        color: var(--fg2);
+      }
+      .ete {
+        font-size: 9px;
+        font-weight: 700;
+        padding: 2px 6px;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .eh {
+        background: rgba(212, 160, 23, 0.1);
+        color: var(--gold);
+      }
+      .ea {
+        background: rgba(59, 130, 246, 0.1);
+        color: var(--blue);
+      }
+      .sg {
+        display: grid;
+        gap: 5px;
+      }
+      .sr2 {
+        display: grid;
+        grid-template-columns: 1fr 70px 1fr;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+      }
+      .sv {
+        font-weight: 700;
+        font-size: 12px;
+      }
+      .sv.h {
+        text-align: right;
+      }
+      .sv.a {
+        text-align: left;
+      }
+      .sl2 {
+        text-align: center;
+        font-size: 9px;
+        color: var(--fg2);
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+      .sb2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+      }
+      .bw {
+        position: relative;
+        height: 3px;
+        background: var(--bd2);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .bf {
+        height: 100%;
+        border-radius: 2px;
+        background: var(--gold);
+      }
+      .lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .lc {
+        background: var(--bg3);
+        border: 1px solid var(--bd);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .lh {
+        padding: 8px 11px;
+        background: var(--bg4);
+        border-bottom: 1px solid var(--bd);
+        font-size: 10px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+      }
+      .lf {
+        font-size: 9px;
+        color: var(--gold);
+        font-weight: 700;
+      }
+      .lp {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 5px 11px;
+        border-bottom: 1px solid var(--bd);
+        font-size: 11px;
+      }
+      .lp:last-child {
+        border-bottom: none;
+      }
+      .ln {
+        width: 16px;
+        font-size: 10px;
+        color: var(--fg2);
+        text-align: right;
+        flex-shrink: 0;
+      }
+      .lo {
+        font-size: 9px;
+        font-weight: 700;
+        color: var(--gold);
+        width: 22px;
+        flex-shrink: 0;
+      }
+      .lx {
+        flex: 1;
+      }
+      .ls {
+        padding: 7px 11px;
+        border-top: 1px solid var(--bd);
+        background: var(--bg4);
+      }
+      .lst {
+        font-size: 9px;
+        color: var(--fg2);
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+      .lsi {
+        font-size: 10px;
+        color: var(--fg2);
+        padding: 1px 0;
+      }
+      .nb {
+        background: var(--bg3);
+        border: 1px solid var(--bd);
+        border-radius: 4px;
+        padding: 13px 15px;
+        font-size: 12px;
+        line-height: 1.8;
+        white-space: pre-wrap;
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--bd2);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <div class="sb">
+        <div class="sh">
+          <div class="st">⚽ FIFA WORLD CUP 2026</div>
+          <div class="sn">Match Records</div>
+          <div class="ss" id="prog">Loading…</div>
+        </div>
+        <div class="gf" id="gf"></div>
+        <div class="ml" id="ml"></div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="mn">
+        <div class="tb">
+          <span class="tt"
+            >READ-ONLY · EDIT THE &lt;script id="match-data"&gt; BLOCK TO
+            UPDATE</span
+          >
+          <div class="tr">
+            <button class="bg" id="btn-theme">☀️</button>
+          </div>
+        </div>
+        <div id="detail"></div>
+      </div>
+    </div>
+
+    <script>
+      // ── fixed schedule (display metadata only — scores come from JSON block) ──
+      const FX = [
+        {
+          id: "A1",
+          g: "A",
+          ld: "Thu 11 Jun",
+          home: "Mexico",
+          away: "South Africa",
+          venue: "Estadio Azteca",
+          city: "Mexico City, Mexico",
+        },
+        {
+          id: "A2",
+          g: "A",
+          ld: "Thu 11 Jun",
+          home: "South Korea",
+          away: "UEFA PO-D",
+          venue: "Estadio Akron",
+          city: "Guadalajara, Mexico",
+        },
+        {
+          id: "A3",
+          g: "A",
+          ld: "Thu 18 Jun",
+          home: "Mexico",
+          away: "South Korea",
+          venue: "Estadio BBVA",
+          city: "Monterrey, Mexico",
+        },
+        {
+          id: "A4",
+          g: "A",
+          ld: "Thu 18 Jun",
+          home: "UEFA PO-D",
+          away: "South Africa",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "A5",
+          g: "A",
+          ld: "Thu 25 Jun",
+          home: "South Korea",
+          away: "South Africa",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "A6",
+          g: "A",
+          ld: "Thu 25 Jun",
+          home: "Mexico",
+          away: "UEFA PO-D",
+          venue: "Estadio Akron",
+          city: "Guadalajara, Mexico",
+        },
+        {
+          id: "B1",
+          g: "B",
+          ld: "Fri 12 Jun",
+          home: "Canada",
+          away: "UEFA PO-A",
+          venue: "BMO Field",
+          city: "Toronto, Canada",
+        },
+        {
+          id: "B2",
+          g: "B",
+          ld: "Fri 12 Jun",
+          home: "Switzerland",
+          away: "Qatar",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "B3",
+          g: "B",
+          ld: "Thu 18 Jun",
+          home: "Canada",
+          away: "Qatar",
+          venue: "BC Place",
+          city: "Vancouver, Canada",
+        },
+        {
+          id: "B4",
+          g: "B",
+          ld: "Thu 18 Jun",
+          home: "Switzerland",
+          away: "UEFA PO-A",
+          venue: "SoFi Stadium",
+          city: "Inglewood, USA",
+        },
+        {
+          id: "B5",
+          g: "B",
+          ld: "Wed 24 Jun",
+          home: "Switzerland",
+          away: "Canada",
+          venue: "BC Place",
+          city: "Vancouver, Canada",
+        },
+        {
+          id: "B6",
+          g: "B",
+          ld: "Wed 24 Jun",
+          home: "UEFA PO-A",
+          away: "Qatar",
+          venue: "Lumen Field",
+          city: "Seattle, USA",
+        },
+        {
+          id: "C1",
+          g: "C",
+          ld: "Sat 13 Jun",
+          home: "Brazil",
+          away: "Morocco",
+          venue: "MetLife Stadium",
+          city: "East Rutherford, USA",
+        },
+        {
+          id: "C2",
+          g: "C",
+          ld: "Sat 13 Jun",
+          home: "Haiti",
+          away: "Scotland",
+          venue: "Gillette Stadium",
+          city: "Foxborough, USA",
+        },
+        {
+          id: "C3",
+          g: "C",
+          ld: "Sat 20 Jun",
+          home: "Brazil",
+          away: "Haiti",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "C4",
+          g: "C",
+          ld: "Sat 20 Jun",
+          home: "Morocco",
+          away: "Scotland",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "C5",
+          g: "C",
+          ld: "Wed 24 Jun",
+          home: "Scotland",
+          away: "Brazil",
+          venue: "Hard Rock Stadium",
+          city: "Miami Gardens, USA",
+        },
+        {
+          id: "C6",
+          g: "C",
+          ld: "Wed 24 Jun",
+          home: "Morocco",
+          away: "Haiti",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "D1",
+          g: "D",
+          ld: "Fri 12 Jun",
+          home: "USA",
+          away: "Paraguay",
+          venue: "SoFi Stadium",
+          city: "Inglewood, USA",
+        },
+        {
+          id: "D2",
+          g: "D",
+          ld: "Fri 12 Jun",
+          home: "Australia",
+          away: "UEFA PO-C",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "D3",
+          g: "D",
+          ld: "Fri 19 Jun",
+          home: "USA",
+          away: "Australia",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "D4",
+          g: "D",
+          ld: "Fri 19 Jun",
+          home: "Paraguay",
+          away: "UEFA PO-C",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "D5",
+          g: "D",
+          ld: "Thu 25 Jun",
+          home: "USA",
+          away: "UEFA PO-C",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "D6",
+          g: "D",
+          ld: "Thu 25 Jun",
+          home: "Paraguay",
+          away: "Australia",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "E1",
+          g: "E",
+          ld: "Sun 14 Jun",
+          home: "Germany",
+          away: "Curaçao",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "E2",
+          g: "E",
+          ld: "Sun 14 Jun",
+          home: "Ivory Coast",
+          away: "Ecuador",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "E3",
+          g: "E",
+          ld: "Sun 21 Jun",
+          home: "Germany",
+          away: "Ivory Coast",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "E4",
+          g: "E",
+          ld: "Sun 21 Jun",
+          home: "Curaçao",
+          away: "Ecuador",
+          venue: "GEHA Field at Arrowhead",
+          city: "Kansas City, USA",
+        },
+        {
+          id: "E5",
+          g: "E",
+          ld: "Thu 25 Jun",
+          home: "Ecuador",
+          away: "Germany",
+          venue: "MetLife Stadium",
+          city: "East Rutherford, USA",
+        },
+        {
+          id: "E6",
+          g: "E",
+          ld: "Thu 25 Jun",
+          home: "Curaçao",
+          away: "Ivory Coast",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F1",
+          g: "F",
+          ld: "Sun 14 Jun",
+          home: "Netherlands",
+          away: "Japan",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F2",
+          g: "F",
+          ld: "Sun 14 Jun",
+          home: "UEFA PO-B",
+          away: "Tunisia",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F3",
+          g: "F",
+          ld: "Sat 20 Jun",
+          home: "Netherlands",
+          away: "UEFA PO-B",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F4",
+          g: "F",
+          ld: "Sat 20 Jun",
+          home: "Tunisia",
+          away: "Japan",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F5",
+          g: "F",
+          ld: "Thu 25 Jun",
+          home: "Netherlands",
+          away: "Tunisia",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "F6",
+          g: "F",
+          ld: "Thu 25 Jun",
+          home: "Japan",
+          away: "UEFA PO-B",
+          venue: "",
+          city: "",
+        },
+        {
+          id: "G1",
+          g: "G",
+          ld: "Mon 15 Jun",
+          home: "Belgium",
+          away: "Egypt",
+          venue: "Lumen Field",
+          city: "Seattle, USA",
+        },
+        {
+          id: "G2",
+          g: "G",
+          ld: "Mon 15 Jun",
+          home: "Iran",
+          away: "New Zealand",
+          venue: "SoFi Stadium",
+          city: "Inglewood, USA",
+        },
+        {
+          id: "G3",
+          g: "G",
+          ld: "Sun 21 Jun",
+          home: "Belgium",
+          away: "Iran",
+          venue: "SoFi Stadium",
+          city: "Inglewood, USA",
+        },
+        {
+          id: "G4",
+          g: "G",
+          ld: "Sun 21 Jun",
+          home: "Egypt",
+          away: "New Zealand",
+          venue: "BC Place",
+          city: "Vancouver, Canada",
+        },
+        {
+          id: "G5",
+          g: "G",
+          ld: "Fri 26 Jun",
+          home: "Belgium",
+          away: "New Zealand",
+          venue: "BC Place",
+          city: "Vancouver, Canada",
+        },
+        {
+          id: "G6",
+          g: "G",
+          ld: "Fri 26 Jun",
+          home: "Egypt",
+          away: "Iran",
+          venue: "Lumen Field",
+          city: "Seattle, USA",
+        },
+        {
+          id: "H1",
+          g: "H",
+          ld: "Mon 15 Jun",
+          home: "Spain",
+          away: "Cape Verde",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "H2",
+          g: "H",
+          ld: "Mon 15 Jun",
+          home: "Saudi Arabia",
+          away: "Uruguay",
+          venue: "Hard Rock Stadium",
+          city: "Miami Gardens, USA",
+        },
+        {
+          id: "H3",
+          g: "H",
+          ld: "Sun 21 Jun",
+          home: "Spain",
+          away: "Saudi Arabia",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "H4",
+          g: "H",
+          ld: "Sun 21 Jun",
+          home: "Uruguay",
+          away: "Cape Verde",
+          venue: "Hard Rock Stadium",
+          city: "Miami Gardens, USA",
+        },
+        {
+          id: "H5",
+          g: "H",
+          ld: "Fri 26 Jun",
+          home: "Cape Verde",
+          away: "Saudi Arabia",
+          venue: "NRG Stadium",
+          city: "Houston, USA",
+        },
+        {
+          id: "H6",
+          g: "H",
+          ld: "Fri 26 Jun",
+          home: "Uruguay",
+          away: "Spain",
+          venue: "Estadio Akron",
+          city: "Guadalajara, Mexico",
+        },
+        {
+          id: "I1",
+          g: "I",
+          ld: "Tue 16 Jun",
+          home: "France",
+          away: "Senegal",
+          venue: "MetLife Stadium",
+          city: "East Rutherford, USA",
+        },
+        {
+          id: "I2",
+          g: "I",
+          ld: "Tue 16 Jun",
+          home: "FIFA PO-2",
+          away: "Norway",
+          venue: "Gillette Stadium",
+          city: "Foxborough, USA",
+        },
+        {
+          id: "I3",
+          g: "I",
+          ld: "Mon 22 Jun",
+          home: "France",
+          away: "FIFA PO-2",
+          venue: "Lincoln Financial Field",
+          city: "Philadelphia, USA",
+        },
+        {
+          id: "I4",
+          g: "I",
+          ld: "Mon 22 Jun",
+          home: "Norway",
+          away: "Senegal",
+          venue: "MetLife Stadium",
+          city: "East Rutherford, USA",
+        },
+        {
+          id: "I5",
+          g: "I",
+          ld: "Fri 26 Jun",
+          home: "France",
+          away: "Norway",
+          venue: "Gillette Stadium",
+          city: "Foxborough, USA",
+        },
+        {
+          id: "I6",
+          g: "I",
+          ld: "Fri 26 Jun",
+          home: "Senegal",
+          away: "FIFA PO-2",
+          venue: "BMO Field",
+          city: "Toronto, Canada",
+        },
+        {
+          id: "J1",
+          g: "J",
+          ld: "Tue 16 Jun",
+          home: "Argentina",
+          away: "Algeria",
+          venue: "GEHA Field at Arrowhead",
+          city: "Kansas City, USA",
+        },
+        {
+          id: "J2",
+          g: "J",
+          ld: "Tue 16 Jun",
+          home: "Austria",
+          away: "Jordan",
+          venue: "Levi's Stadium",
+          city: "Santa Clara, USA",
+        },
+        {
+          id: "J3",
+          g: "J",
+          ld: "Mon 22 Jun",
+          home: "Argentina",
+          away: "Austria",
+          venue: "AT&T Stadium",
+          city: "Arlington, USA",
+        },
+        {
+          id: "J4",
+          g: "J",
+          ld: "Mon 22 Jun",
+          home: "Jordan",
+          away: "Algeria",
+          venue: "Levi's Stadium",
+          city: "Santa Clara, USA",
+        },
+        {
+          id: "J5",
+          g: "J",
+          ld: "Sat 27 Jun",
+          home: "Argentina",
+          away: "Jordan",
+          venue: "AT&T Stadium",
+          city: "Arlington, USA",
+        },
+        {
+          id: "J6",
+          g: "J",
+          ld: "Sat 27 Jun",
+          home: "Algeria",
+          away: "Austria",
+          venue: "GEHA Field at Arrowhead",
+          city: "Kansas City, USA",
+        },
+        {
+          id: "K1",
+          g: "K",
+          ld: "Wed 17 Jun",
+          home: "Portugal",
+          away: "IC PO-1",
+          venue: "NRG Stadium",
+          city: "Houston, USA",
+        },
+        {
+          id: "K2",
+          g: "K",
+          ld: "Wed 17 Jun",
+          home: "Uzbekistan",
+          away: "Colombia",
+          venue: "Estadio Azteca",
+          city: "Mexico City, Mexico",
+        },
+        {
+          id: "K3",
+          g: "K",
+          ld: "Tue 23 Jun",
+          home: "Portugal",
+          away: "Uzbekistan",
+          venue: "NRG Stadium",
+          city: "Houston, USA",
+        },
+        {
+          id: "K4",
+          g: "K",
+          ld: "Tue 23 Jun",
+          home: "IC PO-1",
+          away: "Colombia",
+          venue: "Estadio Akron",
+          city: "Guadalajara, Mexico",
+        },
+        {
+          id: "K5",
+          g: "K",
+          ld: "Sat 27 Jun",
+          home: "Colombia",
+          away: "Portugal",
+          venue: "Hard Rock Stadium",
+          city: "Miami Gardens, USA",
+        },
+        {
+          id: "K6",
+          g: "K",
+          ld: "Sat 27 Jun",
+          home: "IC PO-1",
+          away: "Uzbekistan",
+          venue: "Mercedes-Benz Stadium",
+          city: "Atlanta, USA",
+        },
+        {
+          id: "L1",
+          g: "L",
+          ld: "Wed 17 Jun",
+          home: "England",
+          away: "Croatia",
+          venue: "AT&T Stadium",
+          city: "Arlington, USA",
+        },
+        {
+          id: "L2",
+          g: "L",
+          ld: "Wed 17 Jun",
+          home: "Ghana",
+          away: "Panama",
+          venue: "BMO Field",
+          city: "Toronto, Canada",
+        },
+        {
+          id: "L3",
+          g: "L",
+          ld: "Tue 23 Jun",
+          home: "England",
+          away: "Ghana",
+          venue: "Gillette Stadium",
+          city: "Foxborough, USA",
+        },
+        {
+          id: "L4",
+          g: "L",
+          ld: "Tue 23 Jun",
+          home: "Croatia",
+          away: "Panama",
+          venue: "BMO Field",
+          city: "Toronto, Canada",
+        },
+        {
+          id: "L5",
+          g: "L",
+          ld: "Sat 27 Jun",
+          home: "Panama",
+          away: "England",
+          venue: "MetLife Stadium",
+          city: "East Rutherford, USA",
+        },
+        {
+          id: "L6",
+          g: "L",
+          ld: "Sat 27 Jun",
+          home: "Croatia",
+          away: "Ghana",
+          venue: "Lincoln Financial Field",
+          city: "Philadelphia, USA",
+        },
+      ];
+
+      const FL = {
+        Mexico: "🇲🇽",
+        "South Korea": "🇰🇷",
+        "South Africa": "🇿🇦",
+        Canada: "🇨🇦",
+        Switzerland: "🇨🇭",
+        Qatar: "🇶🇦",
+        Brazil: "🇧🇷",
+        Morocco: "🇲🇦",
+        Scotland: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        Haiti: "🇭🇹",
+        USA: "🇺🇸",
+        Paraguay: "🇵🇾",
+        Australia: "🇦🇺",
+        Germany: "🇩🇪",
+        Curaçao: "🇨🇼",
+        "Ivory Coast": "🇨🇮",
+        Ecuador: "🇪🇨",
+        Netherlands: "🇳🇱",
+        Japan: "🇯🇵",
+        Tunisia: "🇹🇳",
+        Belgium: "🇧🇪",
+        Egypt: "🇪🇬",
+        Iran: "🇮🇷",
+        "New Zealand": "🇳🇿",
+        Spain: "🇪🇸",
+        "Cape Verde": "🇨🇻",
+        "Saudi Arabia": "🇸🇦",
+        Uruguay: "🇺🇾",
+        France: "🇫🇷",
+        Senegal: "🇸🇳",
+        Norway: "🇳🇴",
+        Argentina: "🇦🇷",
+        Algeria: "🇩🇿",
+        Austria: "🇦🇹",
+        Jordan: "🇯🇴",
+        Portugal: "🇵🇹",
+        Colombia: "🇨🇴",
+        Uzbekistan: "🇺🇿",
+        England: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        Croatia: "🇭🇷",
+        Ghana: "🇬🇭",
+        Panama: "🇵🇦",
+        "UEFA PO-A": "🏳️",
+        "UEFA PO-B": "🏳️",
+        "UEFA PO-C": "🏳️",
+        "UEFA PO-D": "🏳️",
+        "FIFA PO-2": "🏳️",
+        "IC PO-1": "🏳️",
+      };
+      const ff = (t) => FL[t] || "🏳️";
+
+      // ── load JSON from embedded script tag ───────────────────────────────────
+      let DB = {};
+      try {
+        DB = JSON.parse(document.getElementById("match-data").textContent);
+      } catch (e) {
+        alert("JSON parse error: " + e.message);
+      }
+      const getM = (id) => DB[id] || { score: { home: null, away: null } };
+      const isDone = (id) => {
+        const m = getM(id);
+        return m.score && m.score.home !== null && m.score.away !== null;
+      };
+      const isPart = (id) => {
+        if (isDone(id)) return false;
+        const m = getM(id);
+        return !!(
+          m.referee ||
+          (m.goals && m.goals.length) ||
+          (m.home_lineup && m.home_lineup.length) ||
+          (m.notes && m.notes.trim())
+        );
+      };
+
+      let filter = "ALL",
+        active = null,
+        light = false,
+        ovCollapsed = false;
+
+      // ── sidebar ──────────────────────────────────────────────────────────────
+      function renderSidebar() {
+        const groups = [
+          "ALL",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+        ];
+        document.getElementById("gf").innerHTML = groups
+          .map(
+            (g) =>
+              `<button class="bg${filter === g ? " on" : ""}" data-g="${g}">${g}</button>`,
+          )
+          .join("");
+        const fx = filter === "ALL" ? FX : FX.filter((f) => f.g === filter);
+        const byDate = {};
+        fx.forEach((f) => {
+          (byDate[f.ld] = byDate[f.ld] || []).push(f);
+        });
+        const doneCount = FX.filter((f) => isDone(f.id)).length;
+        document.getElementById("prog").textContent =
+          `${doneCount} / 72 matches recorded`;
+        const isMobile = window.innerWidth <= 660;
+        const ovOpen = isMobile && active === null && !ovCollapsed;
+        const overviewRow = isMobile
+          ? `<div class="acc-ov-row" id="acc-ov-trigger">⚽ Tournament Overview<span class="acc-chevron">${ovOpen ? "▲" : "▼"}</span></div>
+             ${ovOpen ? `<div class="acc-panel" data-for="overview">${buildDashboardHTML()}</div>` : ""}`
+          : "";
+
+        document.getElementById("ml").innerHTML = overviewRow + Object.keys(byDate)
+          .map(
+            (d) => `
+    <div class="dh">${d}</div>
+    ${byDate[d]
+      .map((f) => {
+        const m = getM(f.id),
+          done = isDone(f.id),
+          part = isPart(f.id);
+        const v = m.venue || f.venue || "",
+          c = m.city || f.city || "";
+        return `<div class="mc${active === f.id ? " on" : ""}" data-id="${f.id}">
+        <div class="pd ${done ? "dd" : part ? "dp" : "dn"}"></div>
+        <span class="mb">${f.id}</span>
+        <div class="mt">
+          <div class="mn2">${ff(f.home)} ${f.home} <span style="color:var(--fg3)">vs</span> ${f.away} ${ff(f.away)}</div>
+          <div class="mm">${v ? v + (c ? ", " + c : "") : c || "Venue TBD"}</div>
+        </div>
+        <div class="ms${done ? "" : " ns"}">${done ? m.score.home + "–" + m.score.away : "–"}</div>
+      </div>
+      ${isMobile && active === f.id ? `<div class="acc-panel" data-for="${f.id}">${buildDetailHTML(f.id)}</div>` : ""}`;
+      })
+      .join("")}`,
+          )
+          .join("");
+      }
+
+      // ── dashboard ─────────────────────────────────────────────────────────────
+      function buildDashboardHTML() {
+        const allGoals = [], allYellows = [], allReds = [];
+        const scorers = {};
+        let playedCount = 0;
+
+        FX.forEach((fix, idx) => {
+          const m = getM(fix.id);
+          const done = isDone(fix.id);
+          if (done) playedCount++;
+          if (!done && !isPart(fix.id)) return;
+          (m.goals || []).forEach((g) => {
+            allGoals.push({ ...g, _idx: idx, _id: fix.id, _home: fix.home, _away: fix.away, _ld: fix.ld });
+            if (g.type !== "Own Goal" && g.player) {
+              const k = g.player + "|" + g.team;
+              if (!scorers[k]) scorers[k] = { player: g.player, team: g.team, goals: 0 };
+              scorers[k].goals++;
+            }
+          });
+          (m.yellow_cards || []).forEach((y) => {
+            allYellows.push({ ...y, _idx: idx, _id: fix.id, _home: fix.home, _away: fix.away, _ld: fix.ld });
+          });
+          (m.red_cards || []).forEach((r) => {
+            allReds.push({ ...r, _idx: idx, _id: fix.id, _home: fix.home, _away: fix.away, _ld: fix.ld });
+          });
+        });
+
+        const byTime = (a, b) => a._idx !== b._idx ? a._idx - b._idx : (a.minute || 0) - (b.minute || 0);
+        allGoals.sort(byTime); allYellows.sort(byTime); allReds.sort(byTime);
+
+        if (!playedCount && !allGoals.length) {
+          return `<div class="de"><div style="font-size:34px">⚽</div><div style="font-weight:700;color:var(--fg2)">FIFA World Cup 2026</div><div style="font-size:11px;color:var(--fg3);line-height:1.9">Tournament begins <span style="color:var(--gold)">11 June 2026</span><br>Select a match from the sidebar to view details.</div></div>`;
+        }
+
+        const topScorers = Object.values(scorers).sort((a, b) => b.goals - a.goals).slice(0, 10);
+
+        const statBox = (label, val, col) =>
+          `<div style="background:var(--bg3);border:1px solid var(--bd2);border-radius:5px;padding:12px 8px;text-align:center">
+            <div style="font-size:26px;font-weight:700;color:${col}">${val}</div>
+            <div style="font-size:9px;letter-spacing:1px;color:var(--fg2);font-weight:700;margin-top:3px">${label}</div>
+          </div>`;
+
+        const matchDesc = (ev) => {
+          const f = FX.find((x) => x.id === ev._id);
+          return f ? `${f.home} vs ${f.away} · ${ev._ld}` : ev._id;
+        };
+
+        const firstCard = (icon, label, ev) => {
+          if (!ev) return "";
+          return `<div class="sec"><div class="sl">${icon} ${label}</div>
+            <div class="ei">
+              <span class="em">${ev.minute}'</span>
+              <span class="ei-i">${icon}</span>
+              <div style="flex:1">
+                <span class="ep">${ev.player || "?"}</span>
+                ${ev.type && ev.type !== "Open Play" ? ` <span style="color:var(--fg2)">(${ev.type})</span>` : ""}
+                ${ev.assist ? ` <span style="font-size:10px;color:var(--fg2)">ast. ${ev.assist}</span>` : ""}
+                ${ev.reason ? ` <span style="font-size:10px;color:var(--fg2)">— ${ev.reason}</span>` : ""}
+                <div style="font-size:10px;color:var(--fg3);margin-top:2px">${matchDesc(ev)}</div>
+              </div>
+              <span style="font-size:10px;color:var(--fg2);font-weight:700">${ev.team}</span>
+            </div>
+          </div>`;
+        };
+
+        const scorersSection = topScorers.length
+          ? `<div class="sec"><div class="sl">⚽ Top Scorers</div><div class="el">
+              ${topScorers.map((s, i) =>
+                `<div class="ei">
+                  <span style="font-size:11px;font-weight:700;color:var(--fg2);min-width:18px;text-align:right">${i + 1}</span>
+                  <div style="flex:1"><span class="ep">${s.player}</span> <span style="font-size:10px;color:var(--fg2)">${ff(s.team)} ${s.team}</span></div>
+                  <span style="font-weight:700;color:var(--gold);font-size:18px">${s.goals}</span>
+                </div>`).join("")}
+            </div></div>`
+          : "";
+
+        return `<div class="dw">
+          <div class="dg">FIFA WORLD CUP 2026 · TOURNAMENT OVERVIEW</div>
+          <div class="dm" style="margin-bottom:16px">Tournament Dashboard</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:22px">
+            ${statBox("MATCHES PLAYED", playedCount, "var(--fg)")}
+            ${statBox("GOALS", allGoals.length, "var(--g)")}
+            ${statBox("YELLOW CARDS", allYellows.length, "var(--y)")}
+            ${statBox("RED CARDS", allReds.length, "var(--r)")}
+          </div>
+          ${scorersSection}
+          ${firstCard("⚽", "First Goal of the Tournament", allGoals[0])}
+          ${firstCard("🟨", "First Yellow Card", allYellows[0])}
+          ${firstCard("🟥", "First Red Card", allReds[0])}
+        </div>`;
+      }
+      function renderDashboard() {
+        document.getElementById("detail").innerHTML = buildDashboardHTML();
+      }
+
+      // ── detail ────────────────────────────────────────────────────────────────
+      function buildDetailHTML(id) {
+        const fix = FX.find((f) => f.id === id);
+        if (!fix) return "";
+        const m = getM(fix.id), done = isDone(fix.id);
+        const h = m.score?.home, a = m.score?.away;
+        const v = m.venue || fix.venue || "", c = m.city || fix.city || "";
+        return `<div class="dw">
+    <div class="dg">GROUP ${fix.g} · ${fix.ld.toUpperCase()} 2026</div>
+    <div class="dm">${ff(fix.home)} ${fix.home} <span style="color:var(--fg3);font-weight:400">vs</span> ${fix.away} ${ff(fix.away)}</div>
+    <div class="dme">
+      ${v || c ? `<span>🏟 ${v}${c ? ", " + c : ""}</span>` : ""}
+      ${m.referee ? `<span>🟨 ${m.referee}</span>` : ""}
+      ${m.attendance !== null && m.attendance !== undefined && m.attendance !== "" ? `<span>👥 ${Number(m.attendance).toLocaleString()}</span>` : ""}
+    </div>
+    ${
+      done
+        ? `<div class="sco">
+      <div class="sc-t"><div class="sc-n">${ff(fix.home)} ${fix.home}</div><div class="sc-v${h > a ? " w" : h < a ? " l" : ""}">${h}</div><div class="sc-r">${h > a ? "WIN" : h < a ? "LOSS" : "DRAW"}</div></div>
+      <div class="sc-d">–</div>
+      <div class="sc-t"><div class="sc-n">${ff(fix.away)} ${fix.away}</div><div class="sc-v${a > h ? " w" : a < h ? " l" : ""}">${a}</div><div class="sc-r">${a > h ? "WIN" : a < h ? "LOSS" : "DRAW"}</div></div>
+    </div>`
+        : `<div class="sc-ns">NOT YET PLAYED</div>`
+    }
+    ${rGoals(fix, m)}${rDisc(fix, m)}${rSubs(fix, m)}${rStats(fix, m)}${rLineups(fix, m)}${rNotes(m)}
+  </div>`;
+      }
+      function renderDetail() {
+        const el = document.getElementById("detail");
+        if (!active) { el.innerHTML = buildDashboardHTML(); return; }
+        el.innerHTML = buildDetailHTML(active);
+      }
+
+      function rGoals(fix, m) {
+        const g = (m.goals || []).sort(
+          (a, b) => (a.minute || 0) - (b.minute || 0),
+        );
+        if (!g.length) return "";
+        return `<div class="sec"><div class="sl">⚽ Goals</div><div class="el">${g
+          .map((x) => {
+            const ih = x.team === fix.home;
+            const tp =
+              x.type && x.type !== "Open Play"
+                ? ` <span style="color:var(--fg2)">(${x.type})</span>`
+                : "";
+            const ast = x.assist
+              ? ` <span style="font-size:10px;color:var(--fg2)">ast. ${x.assist}</span>`
+              : "";
+            return `<div class="ei"><span class="em">${x.minute}'</span><span class="ei-i">⚽</span><div style="flex:1"><span class="ep">${x.player || "?"}</span>${tp}${ast}</div><span class="ete ${ih ? "eh" : "ea"}">${x.team}</span></div>`;
+          })
+          .join("")}</div></div>`;
+      }
+      function rDisc(fix, m) {
+        const y = (m.yellow_cards || []).map((c) => ({ ...c, t: "y" }));
+        const r = (m.red_cards || []).map((c) => ({ ...c, t: "r" }));
+        const all = [...y, ...r].sort(
+          (a, b) => (a.minute || 0) - (b.minute || 0),
+        );
+        if (!all.length) return "";
+        return `<div class="sec"><div class="sl">🟨 Discipline</div><div class="el">${all
+          .map((c) => {
+            const ih = c.team === fix.home;
+            return `<div class="ei"><span class="em">${c.minute}'</span><span class="ei-i">${c.t === "y" ? "🟨" : "🟥"}</span><div style="flex:1"><span class="ep">${c.player || "?"}</span>${c.reason ? ` <span class="ed">— ${c.reason}</span>` : ""}</div><span class="ete ${ih ? "eh" : "ea"}">${c.team}</span></div>`;
+          })
+          .join("")}</div></div>`;
+      }
+      function rSubs(fix, m) {
+        const s = (m.substitutions || []).sort(
+          (a, b) => (a.minute || 0) - (b.minute || 0),
+        );
+        if (!s.length) return "";
+        return `<div class="sec"><div class="sl">↕ Substitutions</div><div class="el">${s
+          .map((x) => {
+            const ih = x.team === fix.home;
+            return `<div class="ei"><span class="em">${x.minute}'</span><span class="ei-i">↕</span><div style="flex:1"><span style="color:var(--g)">↑ ${x.player_on || "?"}</span> <span class="ed">/ <span style="color:var(--r)">↓ ${x.player_off || "?"}</span></span></div><span class="ete ${ih ? "eh" : "ea"}">${x.team}</span></div>`;
+          })
+          .join("")}</div></div>`;
+      }
+      function rStats(fix, m) {
+        const st = m.stats || {};
+        const rows = [
+          ["Possession", "possession_home", "possession_away"],
+          ["Shots", "shots_home", "shots_away"],
+          ["Shots on Target", "shots_on_target_home", "shots_on_target_away"],
+          ["Corners", "corners_home", "corners_away"],
+          ["Fouls", "fouls_home", "fouls_away"],
+          ["Offsides", "offsides_home", "offsides_away"],
+          ["Saves", "saves_home", "saves_away"],
+          ["Passes", "passes_home", "passes_away"],
+        ];
+        const has = rows.some(([, h]) => st[h] !== null && st[h] !== undefined);
+        if (!has) return "";
+        return `<div class="sec"><div class="sl">📊 Statistics</div>
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--fg2);margin-bottom:6px;padding:0 2px">
+      <span style="text-align:right">${ff(fix.home)} ${fix.home}</span><span></span><span>${fix.away} ${ff(fix.away)}</span>
+    </div>
+    <div class="sg">${rows
+      .map(([lbl, h, a]) => {
+        const hv = st[h],
+          av = st[a];
+        if (hv === null || hv === undefined) return "";
+        const tot = (+hv || 0) + (+av || 0),
+          hp = tot > 0 ? Math.round((+hv / tot) * 100) : 50;
+        return `<div><div class="sr2"><span class="sv h">${hv}</span><span class="sl2">${lbl}</span><span class="sv a">${av !== null && av !== undefined ? av : "–"}</span></div>
+        <div class="sb2"><div class="bw"><div class="bf" style="width:${hp}%;float:right"></div></div><div class="bw"><div class="bf" style="width:${100 - hp}%"></div></div></div></div>`;
+      })
+      .join("")}</div></div>`;
+      }
+      function rLineups(fix, m) {
+        const hl = m.home_lineup || [],
+          al = m.away_lineup || [];
+        if (!hl.length && !al.length) return "";
+        const pp = (s) => {
+          const m1 = s.match(/^(\d+)\.\s*([A-Z]{1,3})\s*[-–]\s*(.+)$/);
+          if (m1) return { n: m1[1], p: m1[2], nm: m1[3] };
+          const m2 = s.match(/^(\d+)\.\s*(.+)$/);
+          if (m2) return { n: m2[1], p: "", nm: m2[2] };
+          return { n: "", p: "", nm: s };
+        };
+        const col = (team, flag, form, players, subs) => `<div class="lc">
+    <div class="lh"><span>${flag} ${team}</span>${form ? `<span class="lf">${form}</span>` : ""}</div>
+    ${players
+      .map((p) => {
+        const { n, p: pos, nm } = pp(p);
+        return `<div class="lp"><span class="ln">${n}</span>${pos ? `<span class="lo">${pos}</span>` : ""}<span class="lx">${nm}</span></div>`;
+      })
+      .join("")}
+    ${
+      subs && subs.length
+        ? `<div class="ls"><div class="lst">Substitutes</div>${subs
+            .map((s) => {
+              const { n, p: pos, nm } = pp(s);
+              return `<div class="lsi">${n ? n + ". " : ""} ${pos ? pos + " — " : ""} ${nm}</div>`;
+            })
+            .join("")}</div>`
+        : ""
+    }</div>`;
+        return `<div class="sec"><div class="sl">👥 Lineups</div><div class="lg">
+    ${hl.length ? col(fix.home, ff(fix.home), m.home_formation || "", hl, m.home_subs || []) : ""}
+    ${al.length ? col(fix.away, ff(fix.away), m.away_formation || "", al, m.away_subs || []) : ""}
+  </div></div>`;
+      }
+      function rNotes(m) {
+        if (!m.notes || !m.notes.trim()) return "";
+        return `<div class="sec"><div class="sl">📝 Notes</div><div class="nb">${m.notes.trim().replace(/</g, "&lt;")}</div></div>`;
+      }
+
+      // ── events ────────────────────────────────────────────────────────────────
+      document.addEventListener("click", (e) => {
+        const gb = e.target.closest("[data-g]");
+        if (gb && gb.closest("#gf")) {
+          filter = gb.dataset.g;
+          active = null;
+          ovCollapsed = false;
+          renderSidebar();
+          renderDetail();
+          return;
+        }
+
+        // Mobile: Overview row toggle
+        if (e.target.closest("#acc-ov-trigger")) {
+          if (active !== null) {
+            // switch from match view to overview
+            active = null;
+            ovCollapsed = false;
+          } else {
+            // toggle overview open/collapsed
+            ovCollapsed = !ovCollapsed;
+          }
+          renderSidebar();
+          return;
+        }
+
+        const mc = e.target.closest(".mc");
+        if (mc) {
+          const id = mc.dataset.id;
+          if (window.innerWidth <= 660) {
+            // Mobile accordion: toggle inline panel
+            active = active === id ? null : id;
+            ovCollapsed = active !== null; // collapse overview when match opens
+            renderSidebar();
+          } else {
+            active = id;
+            renderSidebar();
+            renderDetail();
+          }
+          return;
+        }
+        if (e.target.id === "btn-theme") {
+          light = !light;
+          document.body.toggleAttribute("data-light", light);
+          e.target.textContent = light ? "🌙" : "☀️";
+        }
+      });
+
+      renderSidebar();
+      renderDetail();
+    </script>
+  </body>
+</html>
