@@ -3308,6 +3308,54 @@
         background: var(--bd2);
         border-radius: 2px;
       }
+      /* ── View tabs ── */
+      .view-tabs { display:flex; gap:3px; margin-top:8px; }
+      .vt { flex:1; padding:5px 0; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; background:var(--bg3); color:var(--fg2); border:1px solid var(--bd); border-radius:3px; transition:all .15s; }
+      .vt:hover { border-color:var(--gold); color:var(--gold); opacity:1; }
+      .vt.on { background:rgba(212,160,23,.12); border-color:var(--gold); color:var(--gold); }
+      /* ── Squad grid ── */
+      .sq-grid { display:grid; grid-template-columns:1fr; gap:0; }
+      .sq-group-label { font-size:9px; font-weight:700; letter-spacing:2px; color:var(--fg3); padding:8px 12px 3px; text-transform:uppercase; position:sticky; top:0; background:var(--bg2); z-index:1; }
+      .sq-team { padding:9px 12px; border-bottom:1px solid var(--bd); cursor:pointer; display:flex; align-items:center; gap:8px; transition:background .1s; }
+      .sq-team:hover { background:var(--bg3); }
+      .sq-team.on { background:var(--bg4); border-left:3px solid var(--gold); }
+      .sq-team-flag { font-size:18px; flex-shrink:0; }
+      .sq-team-name { font-size:12px; font-weight:700; }
+      .sq-team-group { font-size:9px; color:var(--fg2); font-weight:700; margin-left:auto; letter-spacing:1px; }
+      /* ── Squad detail ── */
+      .squad-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+      .squad-flag { font-size:48px; }
+      .squad-info h2 { font-size:22px; font-weight:700; line-height:1.2; }
+      .squad-info .squad-meta { font-size:10px; color:var(--fg2); margin-top:3px; letter-spacing:.5px; }
+      .pos-section { margin-bottom:18px; }
+      .pos-label { font-size:9px; font-weight:700; letter-spacing:2px; color:var(--fg2); margin-bottom:8px; display:flex; align-items:center; gap:8px; text-transform:uppercase; }
+      .pos-label::after { content:""; flex:1; height:1px; background:var(--bd); }
+      .pos-icon { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px; }
+      .pos-icon.gk { background:#e6a817; }
+      .pos-icon.df { background:#3b82f6; }
+      .pos-icon.mf { background:#22c55e; }
+      .pos-icon.fw { background:#ef4444; }
+      .player-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:6px; }
+      .player-card { display:flex; align-items:center; gap:10px; padding:9px 12px; background:var(--bg3); border:1px solid var(--bd); border-radius:4px; transition:all .15s; }
+      .player-card:hover { border-color:var(--bd2); background:var(--bg4); }
+      .player-num { font-size:16px; font-weight:700; color:var(--gold); min-width:24px; text-align:center; }
+      .player-details { flex:1; min-width:0; }
+      .player-name { font-size:12px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+      .player-club { font-size:10px; color:var(--fg2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+      .player-pos-badge { font-size:9px; font-weight:700; padding:2px 6px; border-radius:2px; flex-shrink:0; letter-spacing:.5px; }
+      .player-pos-badge.gk { background:rgba(230,168,23,.1); color:#e6a817; }
+      .player-pos-badge.df { background:rgba(59,130,246,.1); color:#3b82f6; }
+      .player-pos-badge.mf { background:rgba(34,197,94,.1); color:#22c55e; }
+      .player-pos-badge.fw { background:rgba(239,68,68,.1); color:#ef4444; }
+      .squad-stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:22px; }
+      .squad-stat-box { background:var(--bg3); border:1px solid var(--bd2); border-radius:5px; padding:12px 8px; text-align:center; }
+      .squad-stat-box .val { font-size:22px; font-weight:700; }
+      .squad-stat-box .lbl { font-size:9px; letter-spacing:1px; color:var(--fg2); font-weight:700; margin-top:3px; }
+      .captain-badge { font-size:9px; background:rgba(212,160,23,.15); color:var(--gold); padding:1px 5px; border-radius:2px; font-weight:700; margin-left:4px; }
+      @media (max-width:660px) {
+        .player-grid { grid-template-columns:1fr; }
+        .squad-stats-bar { grid-template-columns:repeat(2,1fr); }
+      }
     </style>
   </head>
   <body>
@@ -3316,8 +3364,12 @@
       <div class="sb">
         <div class="sh">
           <div class="st">⚽ FIFA WORLD CUP 2026</div>
-          <div class="sn">Match Records</div>
+          <div class="sn" id="view-title">Match Records</div>
           <div class="ss" id="prog">Loading…</div>
+          <div class="view-tabs">
+            <button class="vt on" id="vt-matches" data-view="matches">Matches</button>
+            <button class="vt" id="vt-squads" data-view="squads">Squads</button>
+          </div>
         </div>
         <div class="gf" id="gf"></div>
         <div class="ml" id="ml"></div>
@@ -3338,6 +3390,7 @@
       </div>
     </div>
 
+    <script src="squads.js"></script>
     <script>
       // ── fixed schedule (display metadata only — scores come from JSON block) ──
       const FX = [
@@ -4066,13 +4119,18 @@
         );
       };
 
-      let filter = "ALL",
+      let currentView = "matches",
+        filter = "ALL",
         active = null,
         light = false,
         ovCollapsed = false;
 
       // ── sidebar ──────────────────────────────────────────────────────────────
       function renderSidebar() {
+        document.getElementById("vt-matches").className = "vt" + (currentView === "matches" ? " on" : "");
+        document.getElementById("vt-squads").className = "vt" + (currentView === "squads" ? " on" : "");
+        document.getElementById("view-title").textContent = currentView === "matches" ? "Match Records" : "Squad Rosters";
+        
         const groups = [
           "ALL",
           "A",
@@ -4094,7 +4152,9 @@
               `<button class="bg${filter === g ? " on" : ""}" data-g="${g}">${g}</button>`,
           )
           .join("");
-        const fx = filter === "ALL" ? FX : FX.filter((f) => f.g === filter);
+          
+        if (currentView === "matches") {
+          const fx = filter === "ALL" ? FX : FX.filter((f) => f.g === filter);
         const byDate = {};
         fx.forEach((f) => {
           (byDate[f.ld] = byDate[f.ld] || []).push(f);
@@ -4134,6 +4194,32 @@
       .join("")}`,
           )
           .join("");
+        } else {
+          // Squads view
+          const tByG = {};
+          FX.forEach(f => {
+            if (!tByG[f.g]) tByG[f.g] = new Set();
+            tByG[f.g].add(f.home);
+            tByG[f.g].add(f.away);
+          });
+          
+          let grps = Object.keys(tByG).sort();
+          if (filter !== "ALL") grps = grps.filter(g => g === filter);
+          
+          let sqHtml = "";
+          grps.forEach(g => {
+            sqHtml += `<div class="sq-group-label">Group ${g}</div>`;
+            const tms = Array.from(tByG[g]).sort();
+            tms.forEach(t => {
+              sqHtml += `<div class="sq-team${active === t ? " on" : ""}" data-team="${t}">
+                <div class="sq-team-flag">${ff(t)}</div>
+                <div class="sq-team-name">${t}</div>
+                <div class="sq-team-group">GRP ${g}</div>
+              </div>`;
+            });
+          });
+          document.getElementById("ml").innerHTML = sqHtml;
+        }
       }
 
       // ── dashboard ─────────────────────────────────────────────────────────────
@@ -4228,7 +4314,12 @@
         </div>`;
       }
       function renderDashboard() {
-        document.getElementById("detail").innerHTML = buildDashboardHTML();
+        const el = document.getElementById("detail");
+        if (currentView === "matches") {
+          el.innerHTML = buildDashboardHTML();
+        } else {
+          el.innerHTML = `<div class="de"><div style="font-size:34px">👥</div><div style="font-weight:700;color:var(--fg2)">Squad Rosters</div><div style="font-size:11px;color:var(--fg3);line-height:1.9">Select a country from the sidebar to view their full squad.</div></div>`;
+        }
       }
 
       // ── detail ────────────────────────────────────────────────────────────────
@@ -4258,10 +4349,77 @@
     ${rGoals(fix, m)}${rDisc(fix, m)}${rSubs(fix, m)}${rStats(fix, m)}${rLineups(fix, m)}${rNotes(m)}
   </div>`;
       }
+      
+      function buildSquadDetailHTML(team) {
+        const sq = window.SQUADS && window.SQUADS[team] ? window.SQUADS[team] : [];
+        if (!sq.length) {
+          return `<div class="dw">
+            <div class="squad-header">
+              <div class="squad-flag">${ff(team)}</div>
+              <div class="squad-info">
+                <h2>${team}</h2>
+                <div class="squad-meta">Squad roster not yet announced.</div>
+              </div>
+            </div>
+            <div class="nb">The full 26-man squad for ${team} has not been published or added to the database yet.</div>
+          </div>`;
+        }
+        
+        let cap = sq.find(p => p.cap);
+        const gks = sq.filter(p => p.p === 'GK');
+        const dfs = sq.filter(p => p.p === 'DF');
+        const mfs = sq.filter(p => p.p === 'MF');
+        const fws = sq.filter(p => p.p === 'FW');
+        
+        const rPos = (lbl, code, arr) => {
+          if (!arr.length) return "";
+          return `<div class="pos-section">
+            <div class="pos-label"><span class="pos-icon ${code.toLowerCase()}"></span> ${lbl}</div>
+            <div class="player-grid">
+              ${arr.map(p => `
+                <div class="player-card">
+                  <div class="player-num">${p.n || "-"}</div>
+                  <div class="player-details">
+                    <div class="player-name">${p.nm} ${p.cap ? '<span class="captain-badge">C</span>' : ''}</div>
+                    <div class="player-club">${p.c || "Unattached"}</div>
+                  </div>
+                  <div class="player-pos-badge ${code.toLowerCase()}">${code}</div>
+                </div>
+              `).join("")}
+            </div>
+          </div>`;
+        };
+        
+        return `<div class="dw">
+          <div class="squad-header">
+            <div class="squad-flag">${ff(team)}</div>
+            <div class="squad-info">
+              <h2>${team}</h2>
+              <div class="squad-meta">26-Man Roster · FIFA World Cup 2026</div>
+            </div>
+          </div>
+          <div class="squad-stats-bar">
+            <div class="squad-stat-box"><div class="val" style="color:var(--gold)">${sq.length}</div><div class="lbl">PLAYERS</div></div>
+            <div class="squad-stat-box"><div class="val" style="color:var(--fg)">${cap ? cap.nm : "TBD"}</div><div class="lbl">CAPTAIN</div></div>
+            <div class="squad-stat-box"><div class="val" style="color:var(--blue)">${dfs.length}</div><div class="lbl">DEFENDERS</div></div>
+            <div class="squad-stat-box"><div class="val" style="color:var(--g)">${mfs.length}</div><div class="lbl">MIDFIELDERS</div></div>
+          </div>
+          ${rPos('Goalkeepers', 'GK', gks)}
+          ${rPos('Defenders', 'DF', dfs)}
+          ${rPos('Midfielders', 'MF', mfs)}
+          ${rPos('Forwards', 'FW', fws)}
+        </div>`;
+      }
+
       function renderDetail() {
         const el = document.getElementById("detail");
-        if (!active) { el.innerHTML = buildDashboardHTML(); return; }
-        el.innerHTML = buildDetailHTML(active);
+        if (!active) { renderDashboard(); return; }
+        
+        if (currentView === "matches") {
+          el.innerHTML = buildDetailHTML(active);
+        } else {
+          el.innerHTML = buildSquadDetailHTML(active);
+        }
       }
 
       function rGoals(fix, m) {
@@ -4380,6 +4538,17 @@
 
       // ── events ────────────────────────────────────────────────────────────────
       document.addEventListener("click", (e) => {
+        // View tabs
+        const vt = e.target.closest(".vt");
+        if (vt) {
+          currentView = vt.dataset.view;
+          active = null;
+          ovCollapsed = false;
+          renderSidebar();
+          renderDetail();
+          return;
+        }
+
         const gb = e.target.closest("[data-g]");
         if (gb && gb.closest("#gf")) {
           filter = gb.dataset.g;
@@ -4408,15 +4577,22 @@
         if (mc) {
           const id = mc.dataset.id;
           if (window.innerWidth <= 660) {
-            // Mobile accordion: toggle inline panel
             active = active === id ? null : id;
-            ovCollapsed = active !== null; // collapse overview when match opens
+            ovCollapsed = active !== null;
             renderSidebar();
           } else {
             active = id;
             renderSidebar();
             renderDetail();
           }
+          return;
+        }
+        
+        const sp = e.target.closest(".sq-team");
+        if (sp) {
+          active = sp.dataset.team;
+          renderSidebar();
+          renderDetail();
           return;
         }
         if (e.target.id === "btn-theme") {
