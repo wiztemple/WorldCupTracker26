@@ -344,7 +344,8 @@
       }
       .dw {
         padding: 22px 26px;
-        max-width: 820px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .dg {
         font-size: 9px;
@@ -696,6 +697,8 @@
       .player-pos-badge.df { background:rgba(59,130,246,.1); color:#3b82f6; }
       .player-pos-badge.mf { background:rgba(34,197,94,.1); color:#22c55e; }
       .player-pos-badge.fw { background:rgba(239,68,68,.1); color:#ef4444; }
+      .pos-icon.mgr { background:#8b5cf6; }
+      .player-pos-badge.mgr { background:rgba(139,92,246,.1); color:#8b5cf6; }
       .squad-stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:22px; }
       .squad-stat-box { background:var(--bg3); border:1px solid var(--bd2); border-radius:5px; padding:12px 8px; text-align:center; }
       .squad-stat-box .val { font-size:22px; font-weight:700; }
@@ -1853,7 +1856,9 @@
       
       function buildSquadDetailHTML(team) {
         const sq = window.SQUADS && window.SQUADS[team] ? window.SQUADS[team] : [];
-        if (!sq.length) {
+        const coach = window.COACHES && window.COACHES[team];
+        
+        if (!sq.length && !coach) {
           return `<div class="dw">
             <div class="squad-header">
               <div class="squad-flag">${ff(team)}</div>
@@ -1890,21 +1895,42 @@
             </div>
           </div>`;
         };
-        
-        return `<div class="dw">
-          <div class="squad-header">
-            <div class="squad-flag">${ff(team)}</div>
-            <div class="squad-info">
-              <h2>${team}</h2>
-              <div class="squad-meta">26-Man Roster · FIFA World Cup 2026</div>
+
+        const rCoach = coach ? `
+          <div class="pos-section">
+            <div class="pos-label"><span class="pos-icon mgr"></span> Head Coach</div>
+            <div class="player-grid">
+              <div class="player-card">
+                <div class="player-num">👔</div>
+                <div class="player-details">
+                  <div class="player-name">${coach}</div>
+                  <div class="player-club">Manager</div>
+                </div>
+                <div class="player-pos-badge mgr">MGR</div>
+              </div>
             </div>
           </div>
+        ` : "";
+
+        const statsBar = sq.length ? `
           <div class="squad-stats-bar">
             <div class="squad-stat-box"><div class="val" style="color:var(--gold)">${sq.length}</div><div class="lbl">PLAYERS</div></div>
             <div class="squad-stat-box"><div class="val" style="color:var(--fg)">${cap ? cap.nm : "TBD"}</div><div class="lbl">CAPTAIN</div></div>
             <div class="squad-stat-box"><div class="val" style="color:var(--blue)">${dfs.length}</div><div class="lbl">DEFENDERS</div></div>
             <div class="squad-stat-box"><div class="val" style="color:var(--g)">${mfs.length}</div><div class="lbl">MIDFIELDERS</div></div>
           </div>
+        ` : `<div class="nb">The player roster for ${team} has not been announced yet.</div>`;
+        
+        return `<div class="dw">
+          <div class="squad-header">
+            <div class="squad-flag">${ff(team)}</div>
+            <div class="squad-info">
+              <h2>${team}</h2>
+              <div class="squad-meta">${sq.length ? '26-Man Roster' : 'Squad Info'} · FIFA World Cup 2026${coach ? ` · Head Coach: ${coach}` : ''}</div>
+            </div>
+          </div>
+          ${statsBar}
+          ${rCoach}
           ${rPos('Goalkeepers', 'GK', gks)}
           ${rPos('Defenders', 'DF', dfs)}
           ${rPos('Midfielders', 'MF', mfs)}
