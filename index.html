@@ -47,6 +47,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIFA World Cup 2026 · Match Records</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- ═══════════════════════════════════════════════════════════════════
      MATCH DATA — edit anything inside this script tag, then save + refresh
@@ -63,18 +66,18 @@
         padding: 0;
       }
       :root {
-        --bg: #0a0a0a;
-        --bg2: #111;
-        --bg3: #171717;
-        --bg4: #1d1d1d;
-        --fg: #e0e0e0;
-        --fg2: #595959;
-        --fg3: #2a2a2a;
-        --fg4: #161616;
-        --bd: #1e1e1e;
-        --bd2: #2c2c2c;
+        --bg: #0d0f12;
+        --bg2: #14171d;
+        --bg3: #1a1e26;
+        --bg4: #20252f;
+        --fg: #e2e8f0;
+        --fg2: #5e6a7d;
+        --fg3: #2a3040;
+        --fg4: #10131a;
+        --bd: #1e232e;
+        --bd2: #272e3c;
         --gold: #d4a017;
-        --goldf: #0a0a0a;
+        --goldf: #0d0f12;
         --g: #16a34a;
         --y: #ca8a04;
         --r: #dc2626;
@@ -101,18 +104,18 @@
       body {
         background: var(--bg);
         color: var(--fg);
-        font-family: "Courier New", monospace;
+        font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 13px;
         min-height: 100vh;
       }
       button {
         cursor: pointer;
-        font-family: "Courier New", monospace;
+        font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 11px;
         font-weight: 700;
         border: none;
-        border-radius: 3px;
-        transition: all 0.12s;
+        border-radius: 4px;
+        transition: all 0.15s;
       }
       button:hover {
         opacity: 0.8;
@@ -121,16 +124,19 @@
         background: transparent;
         color: var(--fg2);
         border: 1px solid var(--bd2);
-        padding: 4px 9px;
+        padding: 4px 10px;
+        border-radius: 12px;
       }
       .bg:hover {
         border-color: var(--gold);
         color: var(--gold);
+        background: rgba(212,160,23,.06);
         opacity: 1;
       }
       .bg.on {
         border-color: var(--gold);
         color: var(--gold);
+        background: rgba(212,160,23,.12);
       }
       .layout {
         display: grid;
@@ -194,25 +200,37 @@
         flex-direction: column;
       }
       .sh {
-        padding: 15px 15px 11px;
-        border-bottom: 1px solid var(--bd);
+        padding: 16px 15px 13px;
+        border-bottom: 2px solid var(--gold);
         flex-shrink: 0;
+        background: linear-gradient(160deg, var(--bg2) 0%, var(--bg3) 100%);
+        position: relative;
+      }
+      .sh::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--gold), transparent);
       }
       .st {
         font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 2.5px;
+        font-weight: 800;
+        letter-spacing: 3px;
         color: var(--gold);
-        margin-bottom: 3px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
       }
       .sn {
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 2px;
+        font-size: 17px;
+        font-weight: 800;
+        margin-bottom: 3px;
+        letter-spacing: -0.3px;
       }
       .ss {
         font-size: 10px;
         color: var(--fg2);
+        letter-spacing: 0.3px;
       }
       .gf {
         display: flex;
@@ -241,18 +259,20 @@
       .mc {
         padding: 8px 12px;
         border-bottom: 1px solid var(--bd);
+        border-left: 3px solid transparent;
         cursor: pointer;
-        transition: background 0.1s;
+        transition: background 0.12s, border-left-color 0.12s;
         display: flex;
         align-items: center;
         gap: 6px;
       }
       .mc:hover {
         background: var(--bg3);
+        border-left-color: rgba(212, 160, 23, 0.35);
       }
       .mc.on {
         background: var(--bg4);
-        border-left: 3px solid var(--gold);
+        border-left-color: var(--gold);
       }
       .mb {
         font-size: 9px;
@@ -315,7 +335,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 9px 16px;
+        padding: 9px 18px;
         border-bottom: 1px solid var(--bd);
         flex-shrink: 0;
         background: var(--bg2);
@@ -325,6 +345,7 @@
         font-weight: 700;
         letter-spacing: 1.5px;
         color: var(--fg2);
+        opacity: 0.7;
       }
       .tr {
         margin-left: auto;
@@ -371,20 +392,22 @@
       .sco {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
-        background: var(--bg3);
+        background: linear-gradient(135deg, var(--bg3) 0%, var(--bg4) 100%);
         border: 1px solid var(--bd2);
-        border-radius: 7px;
+        border-top: 2px solid var(--gold);
+        border-radius: 8px;
         overflow: hidden;
         margin-bottom: 20px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       }
       .sc-t {
-        padding: 16px 18px;
+        padding: 18px 20px;
         text-align: center;
       }
       .sc-n {
-        font-size: 10px;
+        font-size: 11px;
         color: var(--fg2);
-        margin-bottom: 7px;
+        margin-bottom: 8px;
         font-weight: 700;
         letter-spacing: 0.5px;
         white-space: nowrap;
@@ -392,10 +415,11 @@
         text-overflow: ellipsis;
       }
       .sc-v {
-        font-size: 46px;
-        font-weight: 700;
+        font-size: 52px;
+        font-weight: 800;
         line-height: 1;
         color: var(--gold);
+        letter-spacing: -2px;
       }
       .sc-v.w {
         color: var(--fg);
@@ -635,21 +659,20 @@
         border-radius: 2px;
       }
       /* ── Countdown ── */
-      .cd-wrap { background:linear-gradient(135deg, var(--bg3), var(--bg2)); border:1px solid var(--gold); border-radius:8px; padding:20px; text-align:center; margin-bottom:24px; box-shadow:0 8px 16px rgba(0,0,0,.15); position:relative; overflow:hidden; }
-      .cd-wrap::after { content:""; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle, rgba(212,160,23,0.1) 0%, transparent 60%); z-index:0; pointer-events:none; }
-      .cd-title { font-size:12px; font-weight:700; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:12px; position:relative; z-index:1; }
-      .cd-timer { display:flex; justify-content:center; gap:16px; position:relative; z-index:1; }
-      .cd-box { background:var(--bg); border:1px solid var(--bd); border-radius:6px; padding:12px 16px; min-width:80px; }
-      .cd-val { font-size:32px; font-weight:700; color:var(--fg); line-height:1; font-family:monospace; }
-      .cd-lbl { font-size:10px; color:var(--fg2); letter-spacing:1px; text-transform:uppercase; margin-top:6px; font-weight:700; }
-      @media (max-width:660px) { .cd-box { min-width:60px; padding:10px 8px; } .cd-val { font-size:24px; } }
+      .cd-wrap { background:var(--bg3); border-radius:6px; padding:10px 24px; text-align:center; margin-bottom:16px; position:relative; overflow:hidden; }
+      .cd-title { font-size:9px; font-weight:700; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
+      .cd-timer { display:flex; justify-content:center; gap:6px; }
+      .cd-box { background:var(--bg); border:1px solid var(--bd); border-radius:4px; padding:6px 10px; min-width:52px; }
+      .cd-val { font-size:18px; font-weight:700; color:var(--fg); line-height:1; font-family:"JetBrains Mono", monospace; }
+      .cd-lbl { font-size:8px; color:var(--fg2); letter-spacing:1px; text-transform:uppercase; margin-top:3px; font-weight:700; }
+      @media (max-width:660px) { .cd-box { min-width:44px; padding:5px 7px; } .cd-val { font-size:15px; } }
       
       /* ── Bracket ── */
       .bracket-view { display:flex; overflow-x:auto; padding:30px; background:var(--bg2); gap:40px; min-height:calc(100vh - 120px); }
       .br-col { display:flex; flex-direction:column; height:800px; min-width:160px; }
       .br-label { text-align:center; font-size:10px; font-weight:700; color:var(--fg3); text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; }
-      .br-match { background:var(--bg); border:1px solid var(--bd); border-radius:6px; padding:8px; font-size:11px; cursor:pointer; transition:all .2s; box-shadow:0 4px 6px rgba(0,0,0,.15); position:relative; }
-      .br-match:hover { border-color:var(--gold); transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,.25); }
+      .br-match { background:var(--bg3); border:1px solid var(--bd2); border-radius:6px; padding:8px; font-size:11px; cursor:pointer; transition:all .2s; box-shadow:0 4px 10px rgba(0,0,0,.2); position:relative; }
+      .br-match:hover { border-color:var(--gold); transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.3); background:var(--bg4); }
       .br-meta { font-size:8px; color:var(--fg3); margin-bottom:6px; display:flex; justify-content:space-between; font-weight:700; }
       .br-team { display:flex; justify-content:space-between; align-items:center; padding:4px 0; border-bottom:1px solid var(--bd2); }
       .br-team:last-child { border-bottom:none; }
@@ -659,10 +682,10 @@
       .br-score { font-weight:700; color:var(--fg2); min-width:14px; text-align:right; }
 
       /* ── View tabs ── */
-      .view-tabs { display:flex; gap:3px; margin-top:8px; }
-      .vt { flex:1; padding:5px 0; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; background:var(--bg3); color:var(--fg2); border:1px solid var(--bd); border-radius:3px; transition:all .15s; }
-      .vt:hover { border-color:var(--gold); color:var(--gold); opacity:1; }
-      .vt.on { background:rgba(212,160,23,.12); border-color:var(--gold); color:var(--gold); }
+      .view-tabs { display:flex; gap:4px; margin-top:10px; }
+      .vt { flex:1; padding:6px 0; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; background:var(--bg4); color:var(--fg2); border:1px solid var(--bd2); border-radius:4px; transition:all .15s; }
+      .vt:hover { border-color:var(--gold); color:var(--gold); opacity:1; background:rgba(212,160,23,.06); }
+      .vt.on { background:rgba(212,160,23,.14); border-color:var(--gold); color:var(--gold); box-shadow:0 0 8px rgba(212,160,23,.15); }
       /* ── Squad grid ── */
       .sq-grid { display:grid; grid-template-columns:1fr; gap:0; }
       .sq-group-label { font-size:9px; font-weight:700; letter-spacing:2px; color:var(--fg3); padding:8px 12px 3px; text-transform:uppercase; position:sticky; top:0; background:var(--bg2); z-index:1; }
@@ -686,8 +709,8 @@
       .pos-icon.mf { background:#22c55e; }
       .pos-icon.fw { background:#ef4444; }
       .player-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:6px; }
-      .player-card { display:flex; align-items:center; gap:10px; padding:9px 12px; background:var(--bg3); border:1px solid var(--bd); border-radius:4px; transition:all .15s; }
-      .player-card:hover { border-color:var(--bd2); background:var(--bg4); }
+      .player-card { display:flex; align-items:center; gap:10px; padding:9px 12px; background:var(--bg3); border:1px solid var(--bd); border-left:3px solid transparent; border-radius:4px; transition:all .15s; }
+      .player-card:hover { border-left-color:var(--gold); background:var(--bg4); }
       .player-num { font-size:16px; font-weight:700; color:var(--gold); min-width:24px; text-align:center; }
       .player-details { flex:1; min-width:0; }
       .player-name { font-size:12px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
@@ -708,6 +731,55 @@
         .player-grid { grid-template-columns:1fr; }
         .squad-stats-bar { grid-template-columns:repeat(2,1fr); }
       }
+      /* ── Squad card (poster view) ── */
+      .sq-view-toggle { display:flex; gap:5px; margin-left:auto; align-self:flex-start; margin-top:4px; }
+      .sq-vt-btn { font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:4px 11px; border-radius:3px; border:1px solid var(--bd2); background:var(--bg3); color:var(--fg2); cursor:pointer; transition:all .15s; }
+      .sq-vt-btn.on { border-color:var(--gold); background:rgba(212,160,23,.12); color:var(--gold); }
+      .sq-vt-btn:hover:not(.on) { border-color:var(--fg2); color:var(--fg); }
+      .sq-card-wrap { display:flex; justify-content:center; padding:12px 0 4px; }
+      .sq-card { width:460px; max-width:100%; border-radius:6px; overflow:hidden; display:flex; min-height:600px; box-shadow:0 16px 48px rgba(0,0,0,.6); }
+      .sq-card-left { width:148px; flex-shrink:0; position:relative; overflow:hidden; }
+      .sq-card-stripes { position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent 0px,transparent 12px,rgba(0,0,0,.2) 12px,rgba(0,0,0,.2) 16px); }
+      .sq-card-flag { position:absolute; top:18px; left:50%; transform:translateX(-50%); font-size:26px; z-index:2; }
+      .sq-card-cname { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-90deg); color:#fff; font-size:50px; font-weight:900; letter-spacing:-1px; white-space:nowrap; line-height:1; z-index:2; text-shadow:0 2px 16px rgba(0,0,0,.5); }
+      .sq-card-right { flex:1; background:rgba(0,0,0,.18); padding:18px 16px 16px; display:flex; flex-direction:column; }
+      .sq-c-meta { font-size:7px; letter-spacing:2px; color:rgba(255,255,255,.65); text-transform:uppercase; font-weight:600; margin-bottom:14px; }
+      .sq-rg-row { display:flex; margin-bottom:14px; }
+      .sq-rg-block { display:flex; flex-direction:column; }
+      .sq-rg-block+.sq-rg-block { margin-left:16px; padding-left:16px; border-left:1px solid rgba(255,255,255,.25); }
+      .sq-rg-val { font-size:46px; font-weight:900; color:#fff; line-height:1; letter-spacing:-1px; }
+      .sq-rg-lbl { font-size:7px; letter-spacing:2px; color:rgba(255,255,255,.7); font-weight:700; text-transform:uppercase; margin-top:2px; }
+      .sq-rule { height:1px; background:rgba(255,255,255,.2); margin:8px 0; }
+      .sq-slbl { font-size:7px; letter-spacing:2px; color:rgba(255,255,255,.65); font-weight:700; text-transform:uppercase; margin-bottom:4px; }
+      .sq-mgr { font-size:13px; font-weight:700; color:#fff; letter-spacing:.5px; text-transform:uppercase; }
+      .sq-players { margin-top:10px; flex:1; }
+      .sq-pos-blk { margin-bottom:9px; }
+      .sq-pos-hdr { font-size:7px; letter-spacing:2px; color:rgba(255,255,255,.7); font-weight:700; text-transform:uppercase; border-bottom:1px solid rgba(255,255,255,.18); padding-bottom:2px; margin-bottom:3px; }
+      .sq-plist { font-size:9.5px; color:rgba(255,255,255,.9); line-height:1.75; font-weight:500; }
+      .sq-footer { padding-top:10px; border-top:1px solid rgba(255,255,255,.13); margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; }
+      .sq-watch-lbl { font-size:7px; letter-spacing:2px; color:rgba(255,255,255,.38); font-weight:700; text-transform:uppercase; }
+      .sq-watch-nm { font-size:18px; font-weight:900; color:#fff; letter-spacing:1px; text-transform:uppercase; line-height:1.1; margin-top:2px; }
+      .sq-wc-badge { text-align:right; font-size:7.5px; letter-spacing:1.5px; color:rgba(255,255,255,.22); font-weight:700; text-transform:uppercase; line-height:1.6; }
+      /* ── Card scene (coloured bg + chevrons) ── */
+      .sq-scene { position:relative; overflow:hidden; width:100%; min-height:calc(100vh - 48px); background:#1a3a5c; display:flex; flex-direction:column; align-items:center; padding:18px 16px 28px; gap:16px; transition:background .4s; }
+      .sq-scene-bg { position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent 0px,transparent 14px,rgba(0,0,0,.13) 14px,rgba(0,0,0,.13) 18px); pointer-events:none; }
+      .sq-scene-chevs { position:absolute; right:-50px; top:50%; transform:translateY(-50%); pointer-events:none; display:flex; flex-direction:column; gap:10px; }
+      .sq-scene-chev { width:300px; height:250px; background:repeating-linear-gradient(-45deg,transparent 0px,transparent 12px,rgba(0,0,0,.22) 12px,rgba(0,0,0,.22) 16px); clip-path:polygon(0% 0%,48% 0%,100% 50%,48% 100%,0% 100%,48% 50%); }
+      .sq-scene-chev2 { margin-left:32px; opacity:.65; }
+      .sq-scene-hdr { position:relative; z-index:4; width:100%; max-width:460px; display:flex; align-items:center; justify-content:space-between; }
+      .sq-scene-team { display:flex; align-items:center; gap:10px; }
+      .sq-scene-flag { font-size:28px; }
+      .sq-scene-nm { font-size:16px; font-weight:700; color:#fff; line-height:1.2; }
+      .sq-scene-meta { font-size:9px; color:rgba(255,255,255,.5); letter-spacing:.5px; margin-top:1px; }
+      /* Dark-text variant for light-background countries (e.g. Argentina) */
+      .sq-scene-dark .sq-scene-nm { color:#111; }
+      .sq-scene-dark .sq-scene-meta { color:rgba(0,0,0,.45); }
+      .sq-scene-dark .sq-vt-light { background:rgba(0,0,0,.07)!important; border-color:rgba(0,0,0,.18)!important; color:rgba(0,0,0,.55)!important; }
+      .sq-scene-dark .sq-vt-light.on { background:rgba(0,0,0,.13)!important; border-color:rgba(0,0,0,.4)!important; color:#111!important; }
+      .sq-card-wrap { position:relative; z-index:3; display:flex; justify-content:center; }
+      .sq-scene-bg-deco { position:absolute; inset:0; z-index:1; pointer-events:none; overflow:hidden; }
+      .sq-vt-light { background:rgba(0,0,0,.22)!important; border-color:rgba(255,255,255,.2)!important; color:rgba(255,255,255,.65)!important; }
+      .sq-vt-light.on { background:rgba(255,255,255,.18)!important; border-color:rgba(255,255,255,.55)!important; color:#fff!important; }
     </style>
   </head>
   <body>
@@ -731,10 +803,6 @@
       <!-- MAIN -->
       <div class="mn">
         <div class="tb">
-          <span class="tt"
-            >READ-ONLY · EDIT THE &lt;script id="match-data"&gt; BLOCK TO
-            UPDATE</span
-          >
           <div class="tr">
             <button class="bg" id="btn-theme">☀️</button>
           </div>
@@ -1790,7 +1858,9 @@
           if (topClubs.length) {
             topClubsSection = `<div class="sec"><div class="sl">🏟 Top Clubs Represented</div><div class="el">
               ${topClubs.map((c, i) =>
-                `<div class="ei">
+                `<div class="ei" style="cursor:pointer;transition:background .12s,border-left-color .12s;border-left:3px solid transparent;" onclick='showClubPlayers(${JSON.stringify(c[0])})'
+                  onmouseenter="this.style.background='var(--bg4)';this.style.borderLeftColor='var(--gold)'"
+                  onmouseleave="this.style.background='';this.style.borderLeftColor='transparent'">
                   <span style="font-size:11px;font-weight:700;color:var(--fg2);min-width:18px;text-align:right">${i + 1}</span>
                   <div style="flex:1"><span class="ep">${c[0]}</span></div>
                   <span style="font-weight:700;color:var(--gold);font-size:18px">${c[1]} <span style="font-size:10px;color:var(--fg2);font-weight:400">players</span></span>
@@ -1798,6 +1868,31 @@
             </div></div>`;
           }
         }
+
+        // Build groups grid from fixture list
+        const groupTeams = {};
+        FX.forEach(f => {
+          if (!f.g || f.g.length !== 1) return;
+          if (!groupTeams[f.g]) groupTeams[f.g] = new Set();
+          groupTeams[f.g].add(f.home);
+          groupTeams[f.g].add(f.away);
+        });
+        const groupsGridHTML = `<div class="sec">
+          <div class="sl">🌍 Group Stage</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+            ${Object.entries(groupTeams).sort((a,b)=>a[0].localeCompare(b[0])).map(([grp, teams]) => `
+              <div style="background:var(--bg3);border:1px solid var(--bd);border-radius:6px;overflow:hidden;">
+                <div style="background:var(--gold);padding:6px 10px;font-size:10px;font-weight:800;letter-spacing:2px;color:#0d0f12;text-transform:uppercase">Group ${grp}</div>
+                <div style="padding:4px 0;">
+                  ${[...teams].map(t => `
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 10px;border-bottom:1px solid var(--bd);">
+                      <span style="font-size:16px;line-height:1">${ff(t)}</span>
+                      <span style="font-size:11px;font-weight:700;letter-spacing:0.3px">${t}</span>
+                    </div>`).join('')}
+                </div>
+              </div>`).join('')}
+          </div>
+        </div>`;
 
         return cdHTML + `<div class="dw">
           <div class="dg">FIFA WORLD CUP 2026 · TOURNAMENT OVERVIEW</div>
@@ -1808,6 +1903,7 @@
             ${statBox("YELLOW CARDS", allYellows.length, "var(--y)")}
             ${statBox("RED CARDS", allReds.length, "var(--r)")}
           </div>
+          ${groupsGridHTML}
           ${scorersSection}
           ${topClubsSection}
           ${firstCard("⚽", "First Goal of the Tournament", allGoals[0])}
@@ -1854,6 +1950,112 @@
   </div>`;
       }
       
+      let squadMode = 'roster';
+
+      /* Country-specific scene decorations for the card panel.
+         Uses absolute positioning inside .sq-scene (position:relative, overflow:hidden). */
+      const SCENE_BG = {
+        Brazil: `<div class="sq-scene-bg-deco">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:85%;height:85%;background:#FFCC02;clip-path:polygon(50% 5%,97% 50%,50% 95%,3% 50%);"></div>
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52%;aspect-ratio:1;background:#002776;border-radius:50%;"></div>
+        </div>`,
+        England: `<div class="sq-scene-bg-deco">
+          <div style="position:absolute;width:60%;height:92%;top:4%;left:50%;transform:translateX(-50%);background:#002868;clip-path:polygon(0% 0%,100% 0%,100% 68%,75% 87%,50% 100%,25% 87%,0% 68%);"></div>
+          <div style="position:absolute;width:54%;height:84%;top:7%;left:50%;transform:translateX(-50%);background:#f2f3f5;clip-path:polygon(0% 0%,100% 0%,100% 68%,75% 87%,50% 100%,25% 87%,0% 68%);"></div>
+          <div style="position:absolute;left:0;right:0;top:29%;height:5%;background:#CF091D;"></div>
+          <div style="position:absolute;left:50%;top:1%;transform:translateX(-50%);font-size:36px;color:#c0c4cc;user-select:none;line-height:1;">★</div>
+          <div style="position:absolute;left:24%;top:40%;font-size:60px;color:#bfc3cb;user-select:none;line-height:1;">★</div>
+        </div>`,
+        France: `<div class="sq-scene-bg-deco">
+          <div style="position:absolute;left:37%;top:0;bottom:0;width:7%;background:#fff;"></div>
+          <div style="position:absolute;left:44%;top:0;right:0;height:50%;background:#EF3340;"></div>
+          <div style="position:absolute;left:44%;top:50%;right:0;bottom:0;background:#0D0D2E;"></div>
+          <div style="position:absolute;left:-40px;top:50%;transform:translateY(-50%);font-size:240px;color:rgba(255,255,255,.92);user-select:none;line-height:1;text-shadow:0 4px 28px rgba(0,0,0,.35);">★</div>
+          <div style="position:absolute;left:23%;top:55%;font-size:64px;color:rgba(255,255,255,.75);user-select:none;line-height:1;">★</div>
+        </div>`,
+        Argentina: `<div class="sq-scene-bg-deco">
+          <div style="position:absolute;left:0;top:0;width:26%;height:100%;background:#74ACDF;"></div>
+          <div style="position:absolute;right:0;top:0;width:26%;height:100%;background:#74ACDF;"></div>
+          <div style="position:absolute;right:18%;top:28%;font-size:48px;color:#F6B40E;user-select:none;line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.15));">★</div>
+          <div style="position:absolute;right:6%;top:36%;font-size:68px;color:#F6B40E;user-select:none;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.15));">★</div>
+          <div style="position:absolute;right:29%;top:40%;font-size:36px;color:#F6B40E;user-select:none;opacity:.7;line-height:1;">★</div>
+        </div>`,
+        Germany: `<div class="sq-scene-bg-deco">
+          <div style="position:absolute;left:0;right:0;top:0;height:33.3%;background:#111;opacity:.4;"></div>
+          <div style="position:absolute;left:0;right:0;top:33.3%;height:33.3%;background:#DD0000;opacity:.3;"></div>
+          <div style="position:absolute;left:0;right:0;top:66.6%;height:33.4%;background:#FFCC00;opacity:.3;"></div>
+        </div>`,
+      };
+
+      /* Countries that use a light/white base for the scene instead of the primary color */
+      const SCENE_PAGE_COLORS = { Argentina: '#f0f6fc', England: '#f2f3f5' };
+
+      const DEFAULT_SCENE_BG = `
+        <div class="sq-scene-bg-deco">
+          <div class="sq-scene-chevs">
+            <div class="sq-scene-chev"></div>
+            <div class="sq-scene-chev sq-scene-chev2"></div>
+          </div>
+        </div>`;
+
+      const SQ_GROUPS = {"Mexico":"A","South Africa":"A","South Korea":"A","Czech Republic":"A","Canada":"B","Bosnia-Herzegovina":"B","Switzerland":"B","Qatar":"B","Brazil":"C","Morocco":"C","Haiti":"C","Scotland":"C","USA":"D","Paraguay":"D","Australia":"D","Türkiye":"D","Germany":"E","Curaçao":"E","Ivory Coast":"E","Ecuador":"E","Netherlands":"F","Japan":"F","Sweden":"F","Tunisia":"F","Belgium":"G","Egypt":"G","Iran":"G","New Zealand":"G","Spain":"H","Cape Verde":"H","Saudi Arabia":"H","Uruguay":"H","France":"I","Senegal":"I","Iraq":"I","Norway":"I","Argentina":"J","Algeria":"J","Austria":"J","Jordan":"J","Portugal":"K","Congo DR":"K","Uzbekistan":"K","Colombia":"K","England":"L","Croatia":"L","Ghana":"L","Panama":"L"};
+
+      const SQ_COLORS = {"Mexico":"#006847","South Africa":"#007A4D","South Korea":"#003580","Czech Republic":"#D7141A","Canada":"#CC0000","Bosnia-Herzegovina":"#002395","Switzerland":"#D52B1E","Qatar":"#8D153A","Brazil":"#009639","Morocco":"#C1272D","Haiti":"#003F8A","Scotland":"#005EB8","USA":"#002868","Paraguay":"#D52B1E","Australia":"#00843D","Türkiye":"#E30A17","Germany":"#2a2a2a","Ivory Coast":"#F77F00","Ecuador":"#C8A900","Netherlands":"#EF6C00","Japan":"#BC002D","Sweden":"#006AA7","Tunisia":"#E70013","Belgium":"#C8102E","Egypt":"#C8102E","Iran":"#239F40","New Zealand":"#1a1a1a","Spain":"#AA151B","Cape Verde":"#003893","Saudi Arabia":"#006C35","Uruguay":"#5EB6E4","France":"#002395","Senegal":"#00853F","Iraq":"#007A3D","Norway":"#EF2B2D","Argentina":"#74ACDF","Algeria":"#006233","Austria":"#ED2939","Jordan":"#007A3D","Portugal":"#006600","Congo DR":"#007FFF","Uzbekistan":"#1EB53A","Colombia":"#C8A900","England":"#012169","Croatia":"#CC0000","Ghana":"#006B3F","Panama":"#003F87","Curaçao":"#002B7F"};
+
+      const SQ_RANKINGS = {"Argentina":1,"France":2,"England":3,"Brazil":4,"Portugal":5,"Spain":6,"Netherlands":7,"Belgium":8,"Germany":9,"Colombia":10,"Uruguay":11,"Mexico":12,"Japan":13,"Morocco":14,"USA":15,"South Korea":16,"Ecuador":17,"Switzerland":18,"Croatia":19,"Senegal":21,"Australia":22,"Iran":23,"Tunisia":23,"Sweden":25,"Norway":26,"Austria":27,"Scotland":28,"Algeria":29,"Egypt":30,"Qatar":32,"Panama":34,"Paraguay":35,"South Africa":36,"Ivory Coast":37,"Iraq":39,"Jordan":40,"New Zealand":42,"Uzbekistan":43,"Czech Republic":44,"Bosnia-Herzegovina":45,"Canada":46,"Türkiye":47,"Ghana":48,"Saudi Arabia":59,"Congo DR":54,"Cape Verde":77,"Curaçao":93,"Haiti":71};
+
+      const SQ_WATCHES = {"Mexico":"Giménez","England":"Bellingham","USA":"Pulisic","Brazil":"Vinícius Jr.","France":"Mbappé","Spain":"Pedri","Argentina":"Messi","Portugal":"Bruno Fernandes","Netherlands":"Van Dijk","Belgium":"De Bruyne","South Korea":"Son Heung-min","Japan":"Mitoma","Morocco":"En-Nesyri","Senegal":"Mané","Egypt":"Salah","Norway":"Haaland","Uruguay":"Valverde","Colombia":"Luis Díaz","Uzbekistan":"Shomurodov","Qatar":"Akram Afif","Germany":"Wirtz","Australia":"Leckie","Sweden":"Isak","Switzerland":"Shaqiri","Croatia":"Modrić","Algeria":"Mahrez","Scotland":"Robertson","South Africa":"Mofokeng","Canada":"Davies","Saudi Arabia":"Al-Dawsari","Tunisia":"Msakni","Iraq":"Al-Tamari","Jordan":"Al-Tamari","Paraguay":"Sanabria","Austria":"Sabitzer","Ghana":"Kudus","Panama":"Fajardo","Ecuador":"Caicedo","Türkiye":"Çalhanoğlu"};
+
+      function buildSquadCardHTML(team) {
+        const sq = (window.SQUADS||{})[team]||[];
+        const gks = sq.filter(p=>p.p==='GK');
+        const dfs = sq.filter(p=>p.p==='DF');
+        const mfs = sq.filter(p=>p.p==='MF');
+        const fws = sq.filter(p=>p.p==='FW');
+        const coach = (window.COACHES||{})[team]||'—';
+        const group = SQ_GROUPS[team]||'—';
+        const rank  = SQ_RANKINGS[team]||'—';
+        const color = SQ_COLORS[team]||'#1a3a5c';
+        const flag  = ff(team);
+        const watch = SQ_WATCHES[team]||(fws[0]?.nm.split(' ').slice(-1)[0]||'');
+        const pl = arr => arr.map(p=>p.nm).join(' · ');
+        return `<div class="sq-card-wrap"><div class="sq-card" style="background:${color}">
+          <div class="sq-card-left" style="background:${color}">
+            <div class="sq-card-stripes"></div>
+            <div class="sq-card-flag">${flag}</div>
+            <div class="sq-card-cname">${team}</div>
+          </div>
+          <div class="sq-card-right">
+            <div class="sq-c-meta">FIFA World Cup 2026 · Squad Roster</div>
+            <div class="sq-rg-row">
+              <div class="sq-rg-block"><div class="sq-rg-val">${rank}</div><div class="sq-rg-lbl">FIFA Ranking</div></div>
+              ${group!=='—'?`<div class="sq-rg-block"><div class="sq-rg-val">${group}</div><div class="sq-rg-lbl">Group</div></div>`:''}
+            </div>
+            <div class="sq-rule"></div>
+            <div class="sq-slbl">Manager</div>
+            <div class="sq-mgr">${coach}</div>
+            <div class="sq-rule" style="margin-top:12px"></div>
+            <div class="sq-slbl">Players</div>
+            <div class="sq-players">
+              ${gks.length?`<div class="sq-pos-blk"><div class="sq-pos-hdr">Goal Keepers</div><div class="sq-plist">${pl(gks)}</div></div>`:''}
+              ${dfs.length?`<div class="sq-pos-blk"><div class="sq-pos-hdr">Defenders</div><div class="sq-plist">${pl(dfs)}</div></div>`:''}
+              ${mfs.length?`<div class="sq-pos-blk"><div class="sq-pos-hdr">Midfielders</div><div class="sq-plist">${pl(mfs)}</div></div>`:''}
+              ${fws.length?`<div class="sq-pos-blk"><div class="sq-pos-hdr">Forwards</div><div class="sq-plist">${pl(fws)}</div></div>`:''}
+              ${!sq.length?`<div style="color:rgba(255,255,255,.35);font-size:11px;margin-top:8px">Squad not yet added.</div>`:''}
+            </div>
+            <div class="sq-footer">
+              <div>${watch?`<div class="sq-watch-lbl">Player to watch</div><div class="sq-watch-nm">${watch.toUpperCase()}</div>`:''}</div>
+              <div class="sq-wc-badge">FIFA World Cup<br>2026<br>USA · Canada · Mexico</div>
+            </div>
+          </div>
+        </div></div>`;
+      }
+
+      function toggleSquadMode(mode) {
+        squadMode = mode;
+        renderDetail();
+      }
+
       function buildSquadDetailHTML(team) {
         const sq = window.SQUADS && window.SQUADS[team] ? window.SQUADS[team] : [];
         const coach = window.COACHES && window.COACHES[team];
@@ -1921,6 +2123,36 @@
           </div>
         ` : `<div class="nb">The player roster for ${team} has not been announced yet.</div>`;
         
+        const rosterToggle = `<div class="sq-view-toggle">
+          <button class="sq-vt-btn${squadMode==='roster'?' on':''}" onclick="toggleSquadMode('roster')">Roster</button>
+          <button class="sq-vt-btn${squadMode==='card'?' on':''}" onclick="toggleSquadMode('card')">Card</button>
+        </div>`;
+
+        if (squadMode === 'card') {
+          const color = SQ_COLORS[team]||'#1a3a5c';
+          const sceneColor = SCENE_PAGE_COLORS[team] || color;
+          const lightBgTeams = new Set(['Argentina', 'England']);
+          const noStripeTeams = new Set(['Argentina', 'England', 'France']);
+          return `<div class="sq-scene${lightBgTeams.has(team)?' sq-scene-dark':''}" style="background:${sceneColor}">
+            ${noStripeTeams.has(team) ? '' : '<div class="sq-scene-bg"></div>'}
+            ${SCENE_BG[team] || DEFAULT_SCENE_BG}
+            <div class="sq-scene-hdr">
+              <div class="sq-scene-team">
+                <span class="sq-scene-flag">${ff(team)}</span>
+                <div>
+                  <div class="sq-scene-nm">${team}</div>
+                  <div class="sq-scene-meta">${sq.length?'26-Man Roster':'Squad Info'} · FIFA World Cup 2026${coach?` · ${coach}`:''}</div>
+                </div>
+              </div>
+              <div class="sq-view-toggle">
+                <button class="sq-vt-btn sq-vt-light${squadMode==='roster'?' on':''}" onclick="toggleSquadMode('roster')">Roster</button>
+                <button class="sq-vt-btn sq-vt-light${squadMode==='card'?' on':''}" onclick="toggleSquadMode('card')">Card</button>
+              </div>
+            </div>
+            ${buildSquadCardHTML(team)}
+          </div>`;
+        }
+
         return `<div class="dw">
           <div class="squad-header">
             <div class="squad-flag">${ff(team)}</div>
@@ -1928,6 +2160,7 @@
               <h2>${team}</h2>
               <div class="squad-meta">${sq.length ? '26-Man Roster' : 'Squad Info'} · FIFA World Cup 2026${coach ? ` · Head Coach: ${coach}` : ''}</div>
             </div>
+            ${rosterToggle}
           </div>
           ${statsBar}
           ${rCoach}
@@ -2119,6 +2352,7 @@
         const sp = e.target.closest(".sq-team");
         if (sp) {
           active = sp.dataset.team;
+          squadMode = 'roster';
           renderSidebar();
           renderDetail();
           return;
@@ -2151,6 +2385,55 @@
         document.getElementById("cd-m").textContent = m.toString().padStart(2, '0');
         document.getElementById("cd-s").textContent = s.toString().padStart(2, '0');
       }, 1000);
+
+      const POS_ORDER = { GK: 0, DF: 1, MF: 2, FW: 3 };
+      const POS_COLORS = { GK: '#e6a817', DF: '#3b82f6', MF: '#22c55e', FW: '#ef4444' };
+
+      function showClubPlayers(club) {
+        const players = [];
+        Object.entries(window.SQUADS || {}).forEach(([country, squad]) => {
+          squad.forEach(p => {
+            if (p.c === club) players.push({ ...p, country });
+          });
+        });
+        players.sort((a, b) => (POS_ORDER[a.p] ?? 9) - (POS_ORDER[b.p] ?? 9) || a.n - b.n);
+
+        document.getElementById('club-modal-title').textContent = club;
+        document.getElementById('club-modal-body').innerHTML = players.map(p => {
+          const col = POS_COLORS[p.p] || 'var(--fg2)';
+          const flag = ff(p.country);
+          return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bg3);border:1px solid var(--bd);border-left:3px solid ${col};border-radius:4px;">
+            <span style="font-size:16px;font-weight:800;color:var(--gold);min-width:24px;text-align:center">${p.n}</span>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.nm}</div>
+              <div style="font-size:10px;color:var(--fg2);margin-top:1px">${flag} ${p.country}</div>
+            </div>
+            <span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;background:${col}1a;color:${col}">${p.p}</span>
+          </div>`;
+        }).join('');
+
+        document.getElementById('club-modal').style.display = 'flex';
+      }
+
+      function closeClubModal() {
+        document.getElementById('club-modal').style.display = 'none';
+      }
+
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeClubModal(); });
     </script>
+
+    <!-- Club players modal -->
+    <div id="club-modal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.6);backdrop-filter:blur(3px);align-items:center;justify-content:center;" onclick="if(event.target===this)closeClubModal()">
+      <div style="background:var(--bg2);border:1px solid var(--bd2);border-radius:8px;width:520px;max-width:calc(100vw - 32px);max-height:80vh;display:flex;flex-direction:column;box-shadow:0 24px 48px rgba(0,0,0,.5);">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--bd);">
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:2px">Club Squad</div>
+            <div id="club-modal-title" style="font-size:16px;font-weight:800;"></div>
+          </div>
+          <button onclick="closeClubModal()" style="background:var(--bg3);border:1px solid var(--bd2);color:var(--fg2);padding:5px 10px;font-size:12px;border-radius:4px;">✕</button>
+        </div>
+        <div id="club-modal-body" style="overflow-y:auto;padding:14px 18px;display:flex;flex-direction:column;gap:5px;"></div>
+      </div>
+    </div>
   </body>
 </html>

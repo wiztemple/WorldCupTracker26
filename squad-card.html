@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA World Cup 2026 · Squad Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Page ───────────────────────────────────────────── */
+    body {
+      font-family: 'Barlow', sans-serif;
+      background-color: #006847;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px 48px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color .45s ease;
+    }
+
+    /* Full-page diagonal stripe texture */
+    .bg-stripes {
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent 0px, transparent 14px,
+        rgba(0,0,0,.13) 14px, rgba(0,0,0,.13) 18px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Chevron decorations ── right side */
+    .bg-chevrons {
+      position: fixed;
+      right: -70px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-chev {
+      width: 420px;
+      height: 300px;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent 0px, transparent 12px,
+        rgba(0,0,0,.22) 12px, rgba(0,0,0,.22) 16px
+      );
+      clip-path: polygon(0% 0%, 48% 0%, 100% 50%, 48% 100%, 0% 100%, 48% 50%);
+    }
+
+    .bg-chev-2 {
+      margin-top: 12px;
+      margin-left: 36px;
+      opacity: .7;
+    }
+
+    /* ── Controls bar ───────────────────────────────────── */
+    .controls {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 20;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 24px;
+      background: rgba(0,0,0,.28);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .ctrl-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.5);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    select {
+      background: rgba(0,0,0,.35);
+      color: rgba(255,255,255,.9);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 5px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-family: 'Barlow', sans-serif;
+      cursor: pointer;
+      outline: none;
+      min-width: 180px;
+      transition: border-color .15s;
+    }
+    select:hover { border-color: rgba(255,255,255,.68); }
+    select option { background: #1a1a1a; color: #eee; }
+
+    .btn {
+      background: rgba(0,0,0,.35);
+      color: rgba(255,255,255,.8);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 5px;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      letter-spacing: .5px;
+      cursor: pointer;
+      transition: background .15s, border-color .15s;
+    }
+    .btn:hover { background: rgba(0,0,0,.5); border-color: rgba(255,255,255,.68); color: #fff; }
+
+    /* ── Card shell ─────────────────────────────────────── */
+    .card-wrap {
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 28px 60px rgba(0,0,0,.55));
+    }
+
+    .squad-card {
+      width: 540px;
+      display: flex;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    /* ── Left panel ─────────────────────────────────────── */
+    .card-left {
+      width: 168px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 680px;
+    }
+
+    .stripe-overlay {
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent 0px, transparent 12px,
+        rgba(0,0,0,.22) 12px, rgba(0,0,0,.22) 16px
+      );
+    }
+
+    .card-flag {
+      position: absolute;
+      top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 28px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,.5));
+      z-index: 2;
+    }
+
+    .country-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 56px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      white-space: nowrap;
+      line-height: 1;
+      z-index: 2;
+      text-shadow: 0 2px 16px rgba(0,0,0,.5);
+    }
+
+    /* ── Right panel ────────────────────────────────────── */
+    .card-right {
+      flex: 1;
+      background: rgba(0,0,0,.18);
+      padding: 20px 20px 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-top-meta {
+      font-size: 7.5px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.68);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .rank-group-row {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .meta-block { display: flex; flex-direction: column; }
+    .meta-block + .meta-block {
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid rgba(255,255,255,.18);
+    }
+
+    .meta-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: white;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .meta-lbl {
+      font-size: 7.5px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.72);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .rule { height: 1px; background: rgba(255,255,255,.14); margin: 10px 0; }
+
+    .section-label {
+      font-size: 7.5px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.68);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .manager-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    .players-wrap { margin-top: 12px; flex: 1; }
+
+    .pos-block { margin-bottom: 10px; }
+
+    .pos-header {
+      font-size: 7px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.68);
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding-bottom: 3px;
+      margin-bottom: 4px;
+    }
+
+    .player-list {
+      font-size: 10px;
+      color: rgba(255,255,255,.78);
+      line-height: 1.75;
+      font-weight: 500;
+    }
+
+    .card-footer {
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.13);
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .watch-lbl {
+      font-size: 7px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.68);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .watch-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-top: 2px;
+    }
+
+    .wc-badge {
+      text-align: right;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 8.5px;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,.25);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+
+    /* ── Print ──────────────────────────────────────────── */
+    /* ── Country-specific bg decorations ───────────────── */
+    .bg-deco { position:fixed; inset:0; pointer-events:none; z-index:0; }
+    .bg-diamond {
+      position: absolute; top:50%; left:50%;
+      transform: translate(-50%,-50%);
+      width: 85vmin; height: 85vmin;
+    }
+    .bg-circle {
+      position: absolute; top:50%; left:50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+    }
+
+    @media print {
+      body { padding: 0; justify-content: flex-start; align-items: flex-start; transition: none; }
+      .controls, .bg-stripes, .bg-deco { display: none; }
+      .card-wrap { filter: none; }
+      .squad-card { width: 100vw; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background layers (behind everything) -->
+  <div class="bg-stripes"></div>
+  <div id="bg-deco" class="bg-deco"></div>
+
+  <!-- Floating controls bar -->
+  <div class="controls">
+    <span class="ctrl-label">Country</span>
+    <select id="sel" onchange="render()"></select>
+    <button class="btn" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <!-- Card -->
+  <div class="card-wrap">
+    <div class="squad-card" id="card"></div>
+  </div>
+
+  <script src="squads.js"></script>
+  <script>
+    const GROUPS = {"Mexico":"A","South Africa":"A","South Korea":"A","Czech Republic":"A","Canada":"B","Bosnia-Herzegovina":"B","Switzerland":"B","Qatar":"B","Brazil":"C","Morocco":"C","Haiti":"C","Scotland":"C","USA":"D","Paraguay":"D","Australia":"D","Türkiye":"D","Germany":"E","Curaçao":"E","Ivory Coast":"E","Ecuador":"E","Netherlands":"F","Japan":"F","Sweden":"F","Tunisia":"F","Belgium":"G","Egypt":"G","Iran":"G","New Zealand":"G","Spain":"H","Cape Verde":"H","Saudi Arabia":"H","Uruguay":"H","France":"I","Senegal":"I","Iraq":"I","Norway":"I","Argentina":"J","Algeria":"J","Austria":"J","Jordan":"J","Portugal":"K","Congo DR":"K","Uzbekistan":"K","Colombia":"K","England":"L","Croatia":"L","Ghana":"L","Panama":"L"};
+
+    const COLORS = {
+      Mexico:'#006847', 'South Africa':'#007A4D', 'South Korea':'#003580',
+      'Czech Republic':'#C60C30', Canada:'#CC0000', 'Bosnia-Herzegovina':'#002395',
+      Switzerland:'#D52B1E', Qatar:'#8D153A', Brazil:'#009639', Morocco:'#C1272D',
+      Haiti:'#003F8A', Scotland:'#005EB8', USA:'#002868', Paraguay:'#D52B1E',
+      Australia:'#00843D', Türkiye:'#E30A17', Germany:'#1a1a1a',
+      'Ivory Coast':'#D06A00', Ecuador:'#B38F00', Netherlands:'#D25A00',
+      Japan:'#BC002D', Sweden:'#006AA7', Tunisia:'#E70013', Belgium:'#B5091D',
+      Egypt:'#B5091D', Iran:'#239F40', 'New Zealand':'#111111', Spain:'#AA151B',
+      'Cape Verde':'#003893', 'Saudi Arabia':'#006C35', Uruguay:'#4A9FD1',
+      France:'#002395', Senegal:'#00853F', Iraq:'#007A3D', Norway:'#C8102E',
+      Argentina:'#5B9FD4', Algeria:'#006233', Austria:'#ED2939', Jordan:'#007A3D',
+      Portugal:'#006600', 'Congo DR':'#0055A4', Uzbekistan:'#1EB53A',
+      Colombia:'#B5900A', England:'#012169', Croatia:'#CC0000',
+      Ghana:'#006B3F', Panama:'#003F87', 'Curaçao':'#002B7F',
+    };
+
+    const RANKINGS = {
+      Argentina:1, France:2, England:3, Brazil:4, Portugal:5, Spain:6,
+      Netherlands:7, Belgium:8, Germany:9, Colombia:10, Uruguay:11, Mexico:12,
+      Japan:13, Morocco:14, USA:15, 'South Korea':16, Ecuador:17,
+      Switzerland:18, Croatia:19, Senegal:21, Australia:22, Iran:23,
+      Tunisia:23, Sweden:25, Norway:26, Austria:27, Scotland:28,
+      Algeria:29, Egypt:30, Qatar:32, Panama:34, Paraguay:35,
+      'South Africa':36, 'Ivory Coast':37, Iraq:39, Jordan:40,
+      'New Zealand':42, Uzbekistan:43, 'Czech Republic':44,
+      'Bosnia-Herzegovina':45, Canada:46, Türkiye:47, Ghana:48,
+      'Saudi Arabia':59, 'Congo DR':54, 'Cape Verde':77, 'Curaçao':93, Haiti:71,
+    };
+
+    const WATCHES = {
+      Mexico:'Giménez', England:'Bellingham', USA:'Pulisic',
+      Brazil:'Vinícius Jr.', France:'Mbappé', Spain:'Pedri',
+      Argentina:'Messi', Portugal:'Bruno Fernandes',
+      Netherlands:'Van Dijk', Belgium:'De Bruyne',
+      'South Korea':'Son Heung-min', Japan:'Mitoma',
+      Morocco:'En-Nesyri', Senegal:'Mané', Egypt:'Salah',
+      Norway:'Haaland', Uruguay:'Valverde', Colombia:'Luis Díaz',
+      Uzbekistan:'Shomurodov', Qatar:'Akram Afif',
+      Germany:'Wirtz', Australia:'Leckie', Sweden:'Isak',
+      Switzerland:'Shaqiri', Croatia:'Modrić', Algeria:'Mahrez',
+      Scotland:'Robertson', 'South Africa':'Mofokeng',
+      Canada:'Davies', 'Saudi Arabia':'Al-Dawsari',
+      Tunisia:'Msakni', Iraq:'Al-Tamari', Jordan:'Al-Tamari',
+      Paraguay:'Sanabria', Austria:'Sabitzer', Ghana:'Kudus',
+      Panama:'Fajardo', Ecuador:'Caicedo', Türkiye:'Çalhanoğlu',
+    };
+
+    const FLAGS = {
+      Mexico:'🇲🇽','South Africa':'🇿🇦','South Korea':'🇰🇷','Czech Republic':'🇨🇿',
+      Canada:'🇨🇦','Bosnia-Herzegovina':'🇧🇦',Switzerland:'🇨🇭',Qatar:'🇶🇦',
+      Brazil:'🇧🇷',Morocco:'🇲🇦',Haiti:'🇭🇹',Scotland:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',
+      USA:'🇺🇸',Paraguay:'🇵🇾',Australia:'🇦🇺',Türkiye:'🇹🇷',
+      Germany:'🇩🇪','Ivory Coast':'🇨🇮',Ecuador:'🇪🇨',
+      Netherlands:'🇳🇱',Japan:'🇯🇵',Sweden:'🇸🇪',Tunisia:'🇹🇳',
+      Belgium:'🇧🇪',Egypt:'🇪🇬',Iran:'🇮🇷','New Zealand':'🇳🇿',
+      Spain:'🇪🇸','Cape Verde':'🇨🇻','Saudi Arabia':'🇸🇦',Uruguay:'🇺🇾',
+      France:'🇫🇷',Senegal:'🇸🇳',Iraq:'🇮🇶',Norway:'🇳🇴',
+      Argentina:'🇦🇷',Algeria:'🇩🇿',Austria:'🇦🇹',Jordan:'🇯🇴',
+      Portugal:'🇵🇹','Congo DR':'🇨🇩',Uzbekistan:'🇺🇿',Colombia:'🇨🇴',
+      England:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',Croatia:'🇭🇷',Ghana:'🇬🇭',Panama:'🇵🇦','Curaçao':'🇨🇼',
+    };
+
+    /* Per-country page background colour overrides (when white/light base is needed) */
+    const PAGE_COLORS = {
+      Argentina: '#f0f6fc',
+      England:   '#f2f3f5',
+    };
+
+    /* Country-specific background decorations.
+       Each entry is a function() → HTML string rendered inside .bg-deco (position:fixed,inset:0).
+       Default (no entry) = stripes + chevrons. */
+    const COUNTRY_BG = {
+      Brazil: () => `
+        <div class="bg-diamond" style="background:#FFCC02;clip-path:polygon(50% 5%,97% 50%,50% 95%,3% 50%);"></div>
+        <div class="bg-circle" style="width:52vmin;height:52vmin;background:#002776;"></div>`,
+
+      England: () => `
+        <div style="position:absolute;width:68vmin;height:80vmin;top:7%;left:50%;transform:translateX(-50%);background:#002868;clip-path:polygon(0% 0%,100% 0%,100% 68%,75% 87%,50% 100%,25% 87%,0% 68%);pointer-events:none;"></div>
+        <div style="position:absolute;width:62vmin;height:73vmin;top:9.5%;left:50%;transform:translateX(-50%);background:#f2f3f5;clip-path:polygon(0% 0%,100% 0%,100% 68%,75% 87%,50% 100%,25% 87%,0% 68%);pointer-events:none;"></div>
+        <div style="position:absolute;left:0;right:0;top:29%;height:5%;background:#CF091D;pointer-events:none;"></div>
+        <div style="position:absolute;left:50%;top:2%;transform:translateX(-50%);font-size:5.5vmin;color:#c0c4cc;pointer-events:none;user-select:none;line-height:1;">★</div>
+        <div style="position:absolute;left:26%;top:40%;font-size:9vmin;color:#bfc3cb;pointer-events:none;user-select:none;line-height:1;">★</div>`,
+
+      France: () => `
+        <div style="position:absolute;left:37%;top:0;bottom:0;width:7%;background:#fff;pointer-events:none;"></div>
+        <div style="position:absolute;left:44%;top:0;right:0;height:50%;background:#EF3340;pointer-events:none;"></div>
+        <div style="position:absolute;left:44%;top:50%;right:0;bottom:0;background:#0D0D2E;pointer-events:none;"></div>
+        <div style="position:absolute;left:-6vmin;top:50%;transform:translateY(-50%);font-size:40vmin;color:rgba(255,255,255,.92);pointer-events:none;user-select:none;line-height:1;text-shadow:0 4px 28px rgba(0,0,0,.35);">★</div>
+        <div style="position:absolute;left:24%;top:55%;font-size:9vmin;color:rgba(255,255,255,.75);pointer-events:none;user-select:none;line-height:1;">★</div>`,
+
+      Argentina: () => `
+        <div style="position:absolute;left:0;top:0;width:29%;height:100%;background:#74ACDF;pointer-events:none;"></div>
+        <div style="position:absolute;right:0;top:0;width:29%;height:100%;background:#74ACDF;pointer-events:none;"></div>
+        <div style="position:absolute;right:18vmin;top:28%;font-size:7.5vmin;color:#F6B40E;pointer-events:none;user-select:none;line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.2));">★</div>
+        <div style="position:absolute;right:7vmin;top:35%;font-size:11vmin;color:#F6B40E;pointer-events:none;user-select:none;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.2));">★</div>
+        <div style="position:absolute;right:28vmin;top:38%;font-size:6vmin;color:#F6B40E;pointer-events:none;user-select:none;line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.15));opacity:.75;">★</div>`,
+
+      Germany: () => `
+        <div style="position:absolute;left:0;right:0;top:0;height:33.3%;background:#111;opacity:.4;pointer-events:none;"></div>
+        <div style="position:absolute;left:0;right:0;top:33.3%;height:33.3%;background:#DD0000;opacity:.3;pointer-events:none;"></div>
+        <div style="position:absolute;left:0;right:0;top:66.6%;height:33.4%;background:#FFCC00;opacity:.3;pointer-events:none;"></div>`,
+    };
+
+    const DEFAULT_BG = `
+      <div style="position:absolute;right:-70px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;pointer-events:none;">
+        <div style="width:420px;height:300px;background:repeating-linear-gradient(-45deg,transparent 0px,transparent 12px,rgba(0,0,0,.22) 12px,rgba(0,0,0,.22) 16px);clip-path:polygon(0% 0%,48% 0%,100% 50%,48% 100%,0% 100%,48% 50%);"></div>
+        <div style="width:420px;height:300px;margin-left:36px;opacity:.65;background:repeating-linear-gradient(-45deg,transparent 0px,transparent 12px,rgba(0,0,0,.22) 12px,rgba(0,0,0,.22) 16px);clip-path:polygon(0% 0%,48% 0%,100% 50%,48% 100%,0% 100%,48% 50%);"></div>
+      </div>`;
+
+    /* Countries whose flag bg replaces the stripe overlay */
+    const NO_STRIPES = new Set(['Argentina', 'England', 'France']);
+
+    function updateBg(team, color) {
+      const deco = document.getElementById('bg-deco');
+      deco.innerHTML = COUNTRY_BG[team] ? COUNTRY_BG[team]() : DEFAULT_BG;
+      const stripes = document.querySelector('.bg-stripes');
+      if (stripes) stripes.style.display = NO_STRIPES.has(team) ? 'none' : '';
+    }
+
+    function populateSelect() {
+      const sel = document.getElementById('sel');
+      const teams = Object.keys(window.SQUADS || {}).sort();
+      if (!teams.length) { sel.innerHTML = '<option>No squad data</option>'; return; }
+      sel.innerHTML = teams.map(t => `<option value="${t}">${FLAGS[t]||''} ${t}</option>`).join('');
+      sel.value = 'Mexico';
+    }
+
+    function render() {
+      const team = document.getElementById('sel').value;
+      const sq   = (window.SQUADS||{})[team]||[];
+      const gks  = sq.filter(p=>p.p==='GK');
+      const dfs  = sq.filter(p=>p.p==='DF');
+      const mfs  = sq.filter(p=>p.p==='MF');
+      const fws  = sq.filter(p=>p.p==='FW');
+      const coach = (window.COACHES||{})[team]||'—';
+      const group = GROUPS[team]||'—';
+      const rank  = RANKINGS[team]||'—';
+      const color = COLORS[team]||'#1a3a5c';
+      const flag  = FLAGS[team]||'🏳️';
+      const watch = WATCHES[team]||(fws[0]?.nm.split(' ').slice(-1)[0]||'');
+
+      // Update page background (some countries override to a lighter base)
+      document.body.style.backgroundColor = PAGE_COLORS[team] || color;
+      updateBg(team, color);
+
+      const card = document.getElementById('card');
+      card.style.background = color;
+
+      const pl = arr => arr.map(p=>p.nm).join(' · ');
+
+      card.innerHTML = `
+        <div class="card-left" style="background:${color}">
+          <div class="stripe-overlay"></div>
+          <div class="card-flag">${flag}</div>
+          <div class="country-name">${team}</div>
+        </div>
+
+        <div class="card-right">
+          <div class="card-top-meta">FIFA World Cup 2026 · Squad Roster</div>
+
+          <div class="rank-group-row">
+            <div class="meta-block">
+              <div class="meta-val">${rank}</div>
+              <div class="meta-lbl">FIFA Ranking</div>
+            </div>
+            ${group!=='—'?`
+            <div class="meta-block">
+              <div class="meta-val">${group}</div>
+              <div class="meta-lbl">Group</div>
+            </div>`:''}
+          </div>
+
+          <div class="rule"></div>
+          <div class="section-label">Manager</div>
+          <div class="manager-name">${coach}</div>
+
+          <div class="rule" style="margin-top:12px"></div>
+          <div class="section-label">Players</div>
+
+          <div class="players-wrap">
+            ${gks.length?`<div class="pos-block"><div class="pos-header">Goal Keepers</div><div class="player-list">${pl(gks)}</div></div>`:''}
+            ${dfs.length?`<div class="pos-block"><div class="pos-header">Defenders</div><div class="player-list">${pl(dfs)}</div></div>`:''}
+            ${mfs.length?`<div class="pos-block"><div class="pos-header">Midfielders</div><div class="player-list">${pl(mfs)}</div></div>`:''}
+            ${fws.length?`<div class="pos-block"><div class="pos-header">Forwards</div><div class="player-list">${pl(fws)}</div></div>`:''}
+            ${!sq.length?`<div style="color:rgba(255,255,255,.35);font-size:11px;margin-top:8px">Squad not yet added.</div>`:''}
+          </div>
+
+          <div class="card-footer">
+            <div>
+              ${watch?`<div class="watch-lbl">Player to watch</div><div class="watch-name">${watch.toUpperCase()}</div>`:''}
+            </div>
+            <div class="wc-badge">FIFA World Cup<br>2026<br>USA · Canada · Mexico</div>
+          </div>
+        </div>
+      `;
+    }
+
+    window.addEventListener('load', () => {
+      populateSelect();
+      render();
+    });
+  </script>
+</body>
+</html>
