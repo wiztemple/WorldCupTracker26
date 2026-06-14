@@ -1388,7 +1388,7 @@ window.COACHES = {
   Scotland: "Steve Clarke",
   Senegal: "Pape Thiaw",
   "South Africa": "Hugo Broos",
-  "South Korea": "Hong Myung-bo",
+  "South Korea": "Myung Bo Hong",
   Spain: "Luis de la Fuente",
   Sweden: "Graham Potter",
   Switzerland: "Murat Yakin",
