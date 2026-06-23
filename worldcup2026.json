@@ -3587,27 +3587,100 @@
           "reason": ""
         }
       ],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Türkiye",
+          "player_out": "Kerem Aktürkoğlu",
+          "player_in": "Barış Alper Yılmaz"
+        },
+        {
+          "minute": 45,
+          "team": "Paraguay",
+          "player_out": "Isidro Pitta",
+          "player_in": "Damián Bobadilla"
+        },
+        {
+          "minute": 60,
+          "team": "Türkiye",
+          "player_out": "İsmail Yüksek",
+          "player_in": "Can Uzun"
+        },
+        {
+          "minute": 60,
+          "team": "Türkiye",
+          "player_out": "Yunus Akgün",
+          "player_in": "Deniz Gül"
+        },
+        {
+          "minute": 67,
+          "team": "Paraguay",
+          "player_out": "Diego Gómez",
+          "player_in": "Gustavo Velázquez"
+        },
+        {
+          "minute": 70,
+          "team": "Türkiye",
+          "player_out": "Ferdi Kadıoğlu",
+          "player_in": "Eren Elmalı"
+        },
+        {
+          "minute": 81,
+          "team": "Paraguay",
+          "player_out": "Juan José Cáceres",
+          "player_in": "Alexandro Maidana"
+        },
+        {
+          "minute": 86,
+          "team": "Türkiye",
+          "player_out": "Abdülkerim Bardakcı",
+          "player_in": "Orkun Kökçü"
+        },
+        {
+          "minute": 90,
+          "team": "Paraguay",
+          "player_out": "Julio Enciso",
+          "player_in": "Gabriel Ávalos"
+        },
+        {
+          "minute": 90,
+          "team": "Paraguay",
+          "player_out": "Matías Galarza",
+          "player_in": "José Canale"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 21,
+        "possession_away": 79,
+        "shots_home": 7,
+        "shots_away": 32,
+        "shots_on_target_home": 2,
+        "shots_on_target_away": 5,
+        "corners_home": 0,
+        "corners_away": 12,
+        "fouls_home": 15,
+        "fouls_away": 14,
+        "offsides_home": 3,
+        "offsides_away": 2,
+        "saves_home": 5,
+        "saves_away": 1,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 3,
+        "shots_off_target_away": 15,
+        "blocked_shots_home": 2,
+        "blocked_shots_away": 12,
+        "throw_ins_home": 18,
+        "throw_ins_away": 34,
+        "crosses_home": 2,
+        "crosses_away": 8,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 13,
+        "goal_kicks_away": 3
       },
-      "notes": "Coaches: Gustavo Alfaro (Paraguay), Vincenzo Montella (Türkiye). Line-ups confirmed.",
-      "status": "live"
+      "notes": "Coaches: Gustavo Alfaro (Paraguay), Vincenzo Montella (Türkiye). Line-ups confirmed. Matías Galarza (2', assist Julio Enciso). Miguel Almirón red card (45+3'). Full time: Paraguay 1-0 Türkiye.",
+      "status": "finished"
     },
     "D5": {
       "id": "D5",
@@ -4112,47 +4185,199 @@
     "E3": {
       "id": "E3",
       "group": "E",
-      "date": "2026-06-21",
-      "label": "Sun 21 Jun",
+      "date": "2026-06-20",
+      "label": "Sat 20 Jun",
       "home": "Germany",
       "away": "Ivory Coast",
-      "venue": "",
-      "city": "",
+      "venue": "BMO Field",
+      "city": "Toronto, Canada",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
-      "referee": "",
+      "referee": "Juan Gabriel Benítez (Paraguay)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-4-2",
+      "home_lineup": [
+        "1. GK - Manuel Neuer",
+        "6. RB - Joshua Kimmich",
+        "4. CB - Jonathan Tah",
+        "15. CB - Nico Schlotterbeck",
+        "18. LB - Nathaniel Brown",
+        "23. CDM - Felix Nmecha",
+        "5. CDM - Aleksandar Pavlović",
+        "19. RW - Leroy Sané",
+        "10. CAM - Jamal Musiala",
+        "17. LW - Florian Wirtz",
+        "7. ST - Kai Havertz"
+      ],
+      "away_lineup": [
+        "1. GK - Yahia Fofana",
+        "5. RB - Wilfried Singo",
+        "20. CB - Emmanuel Agbadou",
+        "7. CB - Odilon Kossounou",
+        "3. LB - Ghislain Konan",
+        "15. RM - Amad Diallo",
+        "8. CM - Franck Kessié",
+        "18. CM - Ibrahim Sangaré",
+        "11. LM - Yan Diomandé",
+        "26. ST - Christ Ravynel Inao Oulaï",
+        "9. ST - Ange-Yoan Bonny"
+      ],
+      "home_subs": [
+        "12. Oliver Baumann",
+        "21. Alexander Nübel",
+        "2. Antonio Rüdiger",
+        "3. Waldemar Anton",
+        "22. David Raum",
+        "24. Malick Thiaw",
+        "8. Leon Goretzka",
+        "13. Pascal Groß",
+        "16. Angelo Stiller",
+        "20. Nadiem Amiri",
+        "9. Jamie Leweling",
+        "11. Nick Woltemade",
+        "14. Maximilian Beier",
+        "26. Deniz Undav",
+        "25. Assan Ouédraogo"
+      ],
+      "away_subs": [
+        "16. Mohamed Koné",
+        "23. Alban-Marc Lafont",
+        "6. Ousmane Diomandé",
+        "17. Guéla Doué",
+        "8. Seko Fofana",
+        "14. Parfait Guiagon",
+        "11. Jean-Mickaël Seri",
+        "19. Simon Adingra",
+        "15. Oumar Diakité",
+        "21. Evann Guessand",
+        "9. Nicolas Pépé",
+        "25. Bazoumana Touré",
+        "26. Elye Wahi",
+        "13. Evan Ndicka",
+        "22. Christopher Operi"
+      ],
+      "goals": [
+        {
+          "minute": 30,
+          "team": "Ivory Coast",
+          "player": "Franck Kessié",
+          "assist": "",
+          "type": "Open Play"
+        },
+        {
+          "minute": 68,
+          "team": "Germany",
+          "player": "Deniz Undav",
+          "assist": "Nadiem Amiri",
+          "type": "Open Play"
+        },
+        {
+          "minute": 94,
+          "team": "Germany",
+          "player": "Deniz Undav",
+          "assist": "Felix Nmecha",
+          "type": "Open Play"
+        }
+      ],
       "yellow_cards": [],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Germany",
+          "player_out": "Nico Schlotterbeck",
+          "player_in": "Antonio Rüdiger"
+        },
+        {
+          "minute": 60,
+          "team": "Germany",
+          "player_out": "Leroy Sané",
+          "player_in": "Jamie Leweling"
+        },
+        {
+          "minute": 60,
+          "team": "Germany",
+          "player_out": "Jamal Musiala",
+          "player_in": "Deniz Undav"
+        },
+        {
+          "minute": 60,
+          "team": "Germany",
+          "player_out": "Aleksandar Pavlović",
+          "player_in": "Nadiem Amiri"
+        },
+        {
+          "minute": 75,
+          "team": "Ivory Coast",
+          "player_out": "Ange-Yoan Bonny",
+          "player_in": "Evann Guessand"
+        },
+        {
+          "minute": 75,
+          "team": "Ivory Coast",
+          "player_out": "Ibrahim Sangaré",
+          "player_in": "Seko Fofana"
+        },
+        {
+          "minute": 75,
+          "team": "Ivory Coast",
+          "player_out": "Amad Diallo",
+          "player_in": "Simon Adingra"
+        },
+        {
+          "minute": 82,
+          "team": "Ivory Coast",
+          "player_out": "Wilfried Singo",
+          "player_in": "Guéla Doué"
+        },
+        {
+          "minute": 85,
+          "team": "Germany",
+          "player_out": "Kai Havertz",
+          "player_in": "Leon Goretzka"
+        },
+        {
+          "minute": 85,
+          "team": "Ivory Coast",
+          "player_out": "Yan Diomandé",
+          "player_in": "Nicolas Pépé"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 59,
+        "possession_away": 41,
+        "shots_home": 16,
+        "shots_away": 9,
+        "shots_on_target_home": 7,
+        "shots_on_target_away": 2,
+        "corners_home": 8,
+        "corners_away": 3,
+        "fouls_home": 5,
+        "fouls_away": 7,
+        "offsides_home": 0,
+        "offsides_away": 1,
+        "saves_home": 1,
+        "saves_away": 5,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 5,
+        "shots_off_target_away": 2,
+        "blocked_shots_home": 4,
+        "blocked_shots_away": 5,
+        "throw_ins_home": 18,
+        "throw_ins_away": 24,
+        "crosses_home": 5,
+        "crosses_away": 5,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 4,
+        "goal_kicks_away": 7
       },
-      "notes": ""
+      "notes": "Coaches: Julian Nagelsmann (Germany), Emerse Faé (Ivory Coast). Line-ups confirmed. Franck Kessié (30'). Deniz Undav brace (68', 90+4', assist Felix Nmecha). Full time: Germany 2-1 Ivory Coast.",
+      "status": "finished"
     },
     "E4": {
       "id": "E4",
@@ -4161,43 +4386,204 @@
       "label": "Sun 21 Jun",
       "home": "Curaçao",
       "away": "Ecuador",
-      "venue": "GEHA Field at Arrowhead",
+      "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Ning Ma (China)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
+      "home_formation": "5-4-1",
+      "away_formation": "3-1-4-2",
+      "home_lineup": [
+        "1. GK - Eloy Room",
+        "5. RWB - Sherel Floranus",
+        "18. CB - Armando Obispo",
+        "3. CB - Juriën Gaari",
+        "20. CB - Joshua Brenet",
+        "24. LWB - Deveron Fonville",
+        "7. CM - Juninho Bacuna",
+        "10. CM - Leandro Bacuna",
+        "8. CM - Livano Comenencia",
+        "21. CM - Tahith Chong",
+        "9. ST - Jürgen Locadia"
+      ],
+      "away_lineup": [
+        "1. GK - Hernán Galíndez",
+        "6. CB - Willian Pacho",
+        "3. CB - Piero Hincapié",
+        "21. CB - Alan Franco",
+        "5. CDM - Jordy Alcívar",
+        "9. RM - John Yeboah",
+        "23. CM - Moisés Caicedo",
+        "15. CM - Pedro Vite",
+        "7. LM - Pervis Estupiñán",
+        "19. ST - Gonzalo Plata",
+        "13. ST - Enner Valencia"
+      ],
+      "home_subs": [
+        "25. Tyrick Bodak",
+        "26. Trevor Doornbusch",
+        "2. Shurandy Sambo",
+        "4. Roshon Van Eijma",
+        "23. Riechedly Bazoer",
+        "6. Godfried Roemeratoe",
+        "13. Tyrese Noslin",
+        "15. Ar'Jany Martha",
+        "22. Kevin Felida",
+        "11. Jeremy Antonisse",
+        "14. Kenji Gorré",
+        "16. Jearl Margaritha",
+        "17. Brandley Kuwas",
+        "12. Sontje Hansen",
+        "19. Gervane Kastaneer"
+      ],
+      "away_subs": [
+        "22. Moisés Ramírez",
+        "12. Gonzalo Valle",
+        "2. Félix Torres",
+        "4. Joel Ordóñez",
+        "17. Ángelo Preciado",
+        "24. Jackson Porozo",
+        "18. Denil Castillo",
+        "10. Kendry Páez",
+        "26. Alan Minda",
+        "9. Kevin Rodríguez",
+        "19. Jordy Caicedo",
+        "5. Nilson Angulo",
+        "16. Jeremy Arévalo",
+        "14. Yaimar Medina",
+        "20. Anthony Valencia"
+      ],
       "goals": [],
-      "yellow_cards": [],
+      "yellow_cards": [
+        {
+          "minute": 38,
+          "team": "Ecuador",
+          "player": "Jordy Alcívar",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 39,
+          "team": "Curaçao",
+          "player": "Leandro Bacuna",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 53,
+          "team": "Curaçao",
+          "player": "Juninho Bacuna",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 56,
+          "team": "Curaçao",
+          "player": "Livano Comenencia",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 75,
+          "team": "Curaçao",
+          "player": "Juriën Gaari",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 91,
+          "team": "Curaçao",
+          "player": "Gervane Kastaneer",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Ecuador",
+          "player_out": "Jordy Alcívar",
+          "player_in": "Kevin Rodríguez"
+        },
+        {
+          "minute": 70,
+          "team": "Ecuador",
+          "player_out": "Pervis Estupiñán",
+          "player_in": "Nilson Angulo"
+        },
+        {
+          "minute": 75,
+          "team": "Curaçao",
+          "player_out": "Juninho Bacuna",
+          "player_in": "Kenji Gorré"
+        },
+        {
+          "minute": 76,
+          "team": "Curaçao",
+          "player_out": "Deveron Fonville",
+          "player_in": "Roshon Van Eijma"
+        },
+        {
+          "minute": 76,
+          "team": "Curaçao",
+          "player_out": "Tahith Chong",
+          "player_in": "Jearl Margaritha"
+        },
+        {
+          "minute": 83,
+          "team": "Ecuador",
+          "player_out": "Alan Franco",
+          "player_in": "Ángelo Preciado"
+        },
+        {
+          "minute": 83,
+          "team": "Curaçao",
+          "player_out": "Jürgen Locadia",
+          "player_in": "Gervane Kastaneer"
+        },
+        {
+          "minute": 84,
+          "team": "Curaçao",
+          "player_out": "Livano Comenencia",
+          "player_in": "Godfried Roemeratoe"
+        },
+        {
+          "minute": 89,
+          "team": "Ecuador",
+          "player_out": "John Yeboah",
+          "player_in": "Jordy Caicedo"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 25,
+        "possession_away": 75,
+        "shots_home": 10,
+        "shots_away": 27,
+        "shots_on_target_home": 3,
+        "shots_on_target_away": 15,
+        "corners_home": 0,
+        "corners_away": 9,
+        "fouls_home": 10,
+        "fouls_away": 7,
+        "offsides_home": 2,
+        "offsides_away": 1,
+        "saves_home": 15,
+        "saves_away": 3,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 4,
+        "shots_off_target_away": 10,
+        "blocked_shots_home": 3,
+        "blocked_shots_away": 2,
+        "throw_ins_home": 15,
+        "throw_ins_away": 18,
+        "crosses_home": 1,
+        "crosses_away": 11,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 14,
+        "goal_kicks_away": 5
       },
-      "notes": ""
+      "notes": "Coaches: Dick Advocaat (Curaçao), Sebastián Beccacece (Ecuador). Line-ups confirmed. Full time: Curaçao 0-0 Ecuador.",
+      "status": "finished"
     },
     "E5": {
       "id": "E5",
@@ -4732,88 +5118,439 @@
       "label": "Sat 20 Jun",
       "home": "Netherlands",
       "away": "Sweden",
-      "venue": "",
-      "city": "",
+      "venue": "NRG Stadium",
+      "city": "Houston, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 1
       },
-      "referee": "",
+      "referee": "Michael Oliver (England)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-3-3",
+      "away_formation": "3-1-4-2",
+      "home_lineup": [
+        "1. GK - Bart Verbruggen",
+        "22. RB - Denzel Dumfries",
+        "6. CB - Jan Paul van Hecke",
+        "4. CB - Virgil van Dijk",
+        "15. LB - Micky van de Ven",
+        "8. CM - Ryan Gravenberch",
+        "21. CM - Frenkie de Jong",
+        "14. CM - Tijjani Reijnders",
+        "18. RW - Donyell Malen",
+        "19. ST - Brian Brobbey",
+        "11. LW - Cody Gakpo"
+      ],
+      "away_lineup": [
+        "23. GK - Kristoffer Nordfeldt",
+        "2. CB - Gustaf Lagerbielke",
+        "4. CB - Isak Hien",
+        "3. CB - Victor Lindelöf",
+        "16. CDM - Jesper Karlström",
+        "21. RM - Alexander Bernhardsson",
+        "10. CM - Benjamin Nygren",
+        "18. CM - Yasin Ayari",
+        "5. LM - Gabriel Gudmundsson",
+        "17. ST - Viktor Gyökeres",
+        "9. ST - Alexander Isak"
+      ],
+      "home_subs": [
+        "13. Robin Roefs",
+        "23. Mark Flekken",
+        "5. Nathan Aké",
+        "25. Jorrel Hato",
+        "2. Lutsharel Geertruida",
+        "3. Marten de Roon",
+        "12. Mats Wieffer",
+        "20. Teun Koopmeiners",
+        "16. Guus Til",
+        "7. Justin Kluivert",
+        "9. Wout Weghorst",
+        "10. Memphis Depay",
+        "17. Noa Lang",
+        "24. Crysencio Summerville",
+        "19. Brian Brobbey"
+      ],
+      "away_subs": [
+        "1. Jacob Widell Zetterström",
+        "12. Viktor Johansson",
+        "6. Emil Holm",
+        "7. Lucas Bergvall",
+        "8. Daniel Svensson",
+        "11. Anthony Elanga",
+        "13. Ken Sema",
+        "14. Hjalmar Ekdal",
+        "15. Carl Starfelt",
+        "19. Mattias Svanberg",
+        "20. Eric Smith",
+        "22. Besfort Zeneli",
+        "24. Elliot Stroud",
+        "25. Gustaf Nilsson",
+        "26. Taha Abdi Ali"
+      ],
+      "goals": [
+        {
+          "minute": 5,
+          "team": "Netherlands",
+          "player": "Brian Brobbey",
+          "assist": "Cody Gakpo",
+          "type": "Open Play"
+        },
+        {
+          "minute": 17,
+          "team": "Netherlands",
+          "player": "Brian Brobbey",
+          "assist": "Denzel Dumfries",
+          "type": "Open Play"
+        },
+        {
+          "minute": 47,
+          "team": "Netherlands",
+          "player": "Cody Gakpo",
+          "assist": "Denzel Dumfries",
+          "type": "Open Play"
+        },
+        {
+          "minute": 54,
+          "team": "Netherlands",
+          "player": "Cody Gakpo",
+          "assist": "Crysencio Summerville",
+          "type": "Open Play"
+        },
+        {
+          "minute": 59,
+          "team": "Sweden",
+          "player": "Anthony Elanga",
+          "assist": "Alexander Isak",
+          "type": "Open Play"
+        },
+        {
+          "minute": 89,
+          "team": "Netherlands",
+          "player": "Crysencio Summerville",
+          "assist": "Memphis Depay",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 53,
+          "team": "Sweden",
+          "player": "Gabriel Gudmundsson",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 75,
+          "team": "Sweden",
+          "player": "Yasin Ayari",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 80,
+          "team": "Sweden",
+          "player": "Lucas Bergvall",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Netherlands",
+          "player_out": "Donyell Malen",
+          "player_in": "Crysencio Summerville"
+        },
+        {
+          "minute": 55,
+          "team": "Sweden",
+          "player_out": "Alexander Bernhardsson",
+          "player_in": "Anthony Elanga"
+        },
+        {
+          "minute": 56,
+          "team": "Sweden",
+          "player_out": "Jesper Karlström",
+          "player_in": "Besfort Zeneli"
+        },
+        {
+          "minute": 56,
+          "team": "Sweden",
+          "player_out": "Benjamin Nygren",
+          "player_in": "Lucas Bergvall"
+        },
+        {
+          "minute": 59,
+          "team": "Netherlands",
+          "player_out": "Frenkie de Jong",
+          "player_in": "Teun Koopmeiners"
+        },
+        {
+          "minute": 59,
+          "team": "Netherlands",
+          "player_out": "Tijjani Reijnders",
+          "player_in": "Guus Til"
+        },
+        {
+          "minute": 72,
+          "team": "Netherlands",
+          "player_out": "Brian Brobbey",
+          "player_in": "Memphis Depay"
+        },
+        {
+          "minute": 79,
+          "team": "Sweden",
+          "player_out": "Yasin Ayari",
+          "player_in": "Taha Abdi Ali"
+        },
+        {
+          "minute": 90,
+          "team": "Netherlands",
+          "player_out": "Cody Gakpo",
+          "player_in": "Noa Lang"
+        },
+        {
+          "minute": 90,
+          "team": "Sweden",
+          "player_out": "Gabriel Gudmundsson",
+          "player_in": "Elliot Stroud"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 51,
+        "possession_away": 49,
+        "shots_home": 10,
+        "shots_away": 16,
+        "shots_on_target_home": 7,
+        "shots_on_target_away": 8,
+        "corners_home": 2,
+        "corners_away": 5,
+        "fouls_home": 9,
+        "fouls_away": 12,
+        "offsides_home": 3,
+        "offsides_away": 3,
+        "saves_home": 7,
+        "saves_away": 2,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 2,
+        "shots_off_target_away": 5,
+        "blocked_shots_home": 1,
+        "blocked_shots_away": 3,
+        "throw_ins_home": 13,
+        "throw_ins_away": 22,
+        "crosses_home": 3,
+        "crosses_away": 3,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 11,
+        "goal_kicks_away": 11
       },
-      "notes": ""
+      "notes": "Coaches: Ronald Koeman (Netherlands), Graham Potter (Sweden). Line-ups confirmed. Brian Brobbey brace (5', 17'); Cody Gakpo brace (47', 54'); Crysencio Summerville (89'). Anthony Elanga (59'). Full time: Netherlands 5-1 Sweden.",
+      "status": "finished"
     },
     "F4": {
       "id": "F4",
       "group": "F",
-      "date": "2026-06-20",
-      "label": "Sat 20 Jun",
+      "date": "2026-06-21",
+      "label": "Sun 21 Jun",
       "home": "Tunisia",
       "away": "Japan",
-      "venue": "",
-      "city": "",
+      "venue": "Estadio BBVA",
+      "city": "Monterrey, Mexico",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 4
       },
-      "referee": "",
+      "referee": "István Kovács (Romania)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
+      "home_formation": "3-4-2-1",
+      "away_formation": "3-4-2-1",
+      "home_lineup": [
+        "16. GK - Aymen Dahmen",
+        "6. CB - Dylan Bronn",
+        "3. CB - Montassar Talbi",
+        "4. CB - Omar Rekik",
+        "20. RWB - Yan Valéry",
+        "17. CM - Ellyes Skhiri",
+        "25. CM - Anis Ben Slimane",
+        "2. LWB - Ali Abdi",
+        "10. CAM - Hannibal Mejbri",
+        "8. CAM - Elias Saad",
+        "26. ST - Sebastian Tounekti"
+      ],
+      "away_lineup": [
+        "1. GK - Zion Suzuki",
+        "22. CB - Takehiro Tomiyasu",
+        "4. CB - Ko Itakura",
+        "21. CB - Hiroki Ito",
+        "10. RWB - Ritsu Doan",
+        "24. CM - Kaishu Sano",
+        "7. CM - Ao Tanaka",
+        "13. LWB - Keito Nakamura",
+        "14. CAM - Junya Ito",
+        "15. CAM - Daichi Kamada",
+        "18. ST - Ayase Ueda"
+      ],
+      "home_subs": [
+        "23. Abdelmouhib Chamakh",
+        "16. Sabri Ben Hassen",
+        "22. Raed Chikhaoui",
+        "3. Moutaz Neffati",
+        "21. Mohamed Amine Ben Hamida",
+        "13. Rani Khedira",
+        "11. Elias Achouri",
+        "15. Adem Arous",
+        "10. Khalil Ayari",
+        "12. Rayan Elloumi",
+        "17. Mortadha Ben Ouanes",
+        "18. Mohamed Hadj-Mahmoud",
+        "20. Ismaël Gharbi",
+        "26. Firas Chaouat",
+        "25. Hazem Mastouri"
+      ],
+      "away_subs": [
+        "12. Keisuke Osako",
+        "23. Tomoki Hayakawa",
+        "2. Yukinari Sugawara",
+        "3. Shogo Taniguchi",
+        "13. Yuto Nagatomo",
+        "16. Ayumu Seko",
+        "24. Junnosuke Suzuki",
+        "11. Daizen Maeda",
+        "21. Koki Ogawa",
+        "25. Keisuke Goto",
+        "26. Kento Shiogai",
+        "18. Yuito Suzuki",
+        "4. Tsuyoshi Watanabe",
+        "6. Wataru Endo",
+        "9. Takefusa Kubo"
+      ],
+      "goals": [
+        {
+          "minute": 4,
+          "team": "Japan",
+          "player": "Daichi Kamada",
+          "assist": "Keito Nakamura",
+          "type": "Open Play"
+        },
+        {
+          "minute": 31,
+          "team": "Japan",
+          "player": "Ayase Ueda",
+          "assist": "Ko Itakura",
+          "type": "Open Play"
+        },
+        {
+          "minute": 69,
+          "team": "Japan",
+          "player": "Junya Ito",
+          "assist": "Ayase Ueda",
+          "type": "Open Play"
+        },
+        {
+          "minute": 83,
+          "team": "Japan",
+          "player": "Ayase Ueda",
+          "assist": "Kaishu Sano",
+          "type": "Header"
+        }
+      ],
       "yellow_cards": [],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Tunisia",
+          "player_out": "Elias Saad",
+          "player_in": "Ismaël Gharbi"
+        },
+        {
+          "minute": 45,
+          "team": "Tunisia",
+          "player_out": "Dylan Bronn",
+          "player_in": "Mohamed Amine Ben Hamida"
+        },
+        {
+          "minute": 64,
+          "team": "Tunisia",
+          "player_out": "Sebastian Tounekti",
+          "player_in": "Firas Chaouat"
+        },
+        {
+          "minute": 73,
+          "team": "Japan",
+          "player_out": "Daichi Kamada",
+          "player_in": "Junnosuke Suzuki"
+        },
+        {
+          "minute": 74,
+          "team": "Japan",
+          "player_out": "Ritsu Doan",
+          "player_in": "Yukinari Sugawara"
+        },
+        {
+          "minute": 79,
+          "team": "Japan",
+          "player_out": "Keito Nakamura",
+          "player_in": "Yuito Suzuki"
+        },
+        {
+          "minute": 79,
+          "team": "Japan",
+          "player_out": "Takehiro Tomiyasu",
+          "player_in": "Ayumu Seko"
+        },
+        {
+          "minute": 84,
+          "team": "Japan",
+          "player_out": "Ayase Ueda",
+          "player_in": "Keisuke Goto"
+        },
+        {
+          "minute": 90,
+          "team": "Tunisia",
+          "player_out": "Ellyes Skhiri",
+          "player_in": "Rani Khedira"
+        },
+        {
+          "minute": 90,
+          "team": "Tunisia",
+          "player_out": "Ali Abdi",
+          "player_in": "Elias Achouri"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 38,
+        "possession_away": 62,
+        "shots_home": 2,
+        "shots_away": 11,
+        "shots_on_target_home": 0,
+        "shots_on_target_away": 5,
+        "corners_home": 3,
+        "corners_away": 5,
+        "fouls_home": 8,
+        "fouls_away": 15,
+        "offsides_home": 1,
+        "offsides_away": 1,
+        "saves_home": 1,
+        "saves_away": 0,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 1,
+        "shots_off_target_away": 3,
+        "blocked_shots_home": 1,
+        "blocked_shots_away": 3,
+        "throw_ins_home": 29,
+        "throw_ins_away": 23,
+        "crosses_home": 2,
+        "crosses_away": 2,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 4,
+        "goal_kicks_away": 5
       },
-      "notes": ""
+      "notes": "Coaches: Hervé Renard (Tunisia), Hajime Moriyasu (Japan). Line-ups confirmed. Daichi Kamada (4'); Ayase Ueda (31', 83'); Junya Ito (69'). Full time: Tunisia 0-4 Japan.",
+      "status": "finished"
     },
     "F5": {
       "id": "F5",
@@ -5335,40 +6072,187 @@
       "venue": "SoFi Stadium",
       "city": "Inglewood, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Darío Herrera (Paraguay)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "5-4-1",
+      "home_lineup": [
+        "1. GK - Thibaut Courtois",
+        "15. RB - Thomas Meunier",
+        "25. CB - Nathan Ngoy",
+        "4. CB - Brandon Mechele",
+        "5. LB - Maxime De Cuyper",
+        "23. DM - Nicolas Raskin",
+        "8. DM - Youri Tielemans",
+        "22. RAM - Alexis Saelemaekers",
+        "7. CAM - Kevin De Bruyne",
+        "10. LAM - Leandro Trossard",
+        "9. ST - Romelu Lukaku"
+      ],
+      "away_lineup": [
+        "1. GK - Alireza Beiranvand",
+        "2. RWB - Saleh Hardani",
+        "4. CB - Shoja Khalilzadeh",
+        "19. CB - Ali Nemati",
+        "13. CB - Hossein Kanani",
+        "3. LWB - Ehsan Hajsafi",
+        "14. LM - Saman Ghoddos",
+        "6. CM - Saeed Ezatolahi",
+        "8. CM - Mohammad Mohebbi",
+        "23. RM - Ramin Rezaeian",
+        "9. ST - Mehdi Taremi"
+      ],
+      "home_subs": [
+        "1. Mike Penders",
+        "3. Senne Lammens",
+        "4. Arthur Theate",
+        "7. Koni De Winter",
+        "10. Joaquin Seys",
+        "12. Timothy Castagne",
+        "14. Axel Witsel",
+        "15. Hans Vanaken",
+        "18. Amadou Onana",
+        "21. Matias Fernandez-Pardo",
+        "22. Diego Moreira",
+        "25. Charles De Ketelaere",
+        "26. Dodi Lukebakio"
+      ],
+      "away_subs": [
+        "2. Danial Iri",
+        "5. Milad Mohammadi",
+        "10. Mehdi Ghayedi",
+        "11. Amirhossein Hosseinzadeh",
+        "12. Payam Niazmand",
+        "14. Roozbeh Cheshmi",
+        "15. Mohammad Ghorbani",
+        "16. Amirmohammad Razzaghinia",
+        "17. Dennis Eckert Ayensa",
+        "18. Alireza Jahanbakhsh",
+        "20. Ali Alipour",
+        "22. Hossein Hosseini",
+        "25. Shahriar Shahriar",
+        "26. Mehdi Torabi"
+      ],
       "goals": [],
-      "yellow_cards": [],
-      "red_cards": [],
-      "substitutions": [],
+      "yellow_cards": [
+        {
+          "minute": 3,
+          "team": "Belgium",
+          "player": "Romelu Lukaku",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 33,
+          "team": "Iran",
+          "player": "Saeed Ezatolahi",
+          "reason": "Bad foul"
+        }
+      ],
+      "red_cards": [
+        {
+          "minute": 66,
+          "team": "Belgium",
+          "player": "Nathan Ngoy",
+          "reason": ""
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Iran",
+          "player_out": "Saleh Hardani",
+          "player_in": "Alireza Jahanbakhsh"
+        },
+        {
+          "minute": 58,
+          "team": "Belgium",
+          "player_out": "Thomas Meunier",
+          "player_in": "Timothy Castagne"
+        },
+        {
+          "minute": 58,
+          "team": "Belgium",
+          "player_out": "Nicolas Raskin",
+          "player_in": "Hans Vanaken"
+        },
+        {
+          "minute": 58,
+          "team": "Belgium",
+          "player_out": "Alexis Saelemaekers",
+          "player_in": "Dodi Lukebakio"
+        },
+        {
+          "minute": 66,
+          "team": "Iran",
+          "player_out": "Mohammad Mohebbi",
+          "player_in": "Mehdi Torabi"
+        },
+        {
+          "minute": 66,
+          "team": "Iran",
+          "player_out": "Ehsan Hajsafi",
+          "player_in": "Milad Mohammadi"
+        },
+        {
+          "minute": 73,
+          "team": "Belgium",
+          "player_out": "Romelu Lukaku",
+          "player_in": "Arthur Theate"
+        },
+        {
+          "minute": 79,
+          "team": "Iran",
+          "player_out": "Saman Ghoddos",
+          "player_in": "Shahriar Shahriar"
+        },
+        {
+          "minute": 85,
+          "team": "Iran",
+          "player_out": "Saeed Ezatolahi",
+          "player_in": "Amirhossein Hosseinzadeh"
+        },
+        {
+          "minute": 87,
+          "team": "Belgium",
+          "player_out": "Kevin De Bruyne",
+          "player_in": "Matias Fernandez-Pardo"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 70,
+        "possession_away": 30,
+        "shots_home": 23,
+        "shots_away": 7,
+        "shots_on_target_home": 7,
+        "shots_on_target_away": 3,
+        "corners_home": 4,
+        "corners_away": 2,
+        "fouls_home": 7,
+        "fouls_away": 9,
+        "offsides_home": 3,
+        "offsides_away": 4,
+        "saves_home": 3,
+        "saves_away": 7,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 10,
+        "shots_off_target_away": 3,
+        "blocked_shots_home": 6,
+        "blocked_shots_away": 1,
+        "throw_ins_home": 26,
+        "throw_ins_away": 8,
+        "crosses_home": 6,
+        "crosses_away": 2,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 4,
+        "goal_kicks_away": 12
       },
-      "notes": ""
+      "notes": "Coaches: Rudi Garcia (Belgium), Amir Ghalenoei (Iran). Line-ups confirmed. Romelu Lukaku (3'); Saeed Ezatolahi (33'). Nathan Ngoy red (66'). Full time: Belgium 0-0 Iran.",
+      "status": "finished"
     },
     "G4": {
       "id": "G4",
@@ -5742,40 +6626,211 @@
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Raphael Claus (Brazil)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-3-3",
+      "away_formation": "5-4-1",
+      "home_lineup": [
+        "23. GK - Unai Simón",
+        "12. RB - Pedro Porro",
+        "22. CB - Pau Cubarsí",
+        "14. CB - Aymeric Laporte",
+        "24. LB - Marc Cucurella",
+        "10. CM - Dani Olmo",
+        "16. CM - Rodri",
+        "20. CM - Pedri",
+        "19. RW - Lamine Yamal",
+        "21. ST - Mikel Oyarzabal",
+        "15. LW - Álex Baena"
+      ],
+      "away_lineup": [
+        "21. GK - Mohammed Al-Owais",
+        "12. RWB - Saud Abdulhamid",
+        "4. CB - Abdulelah Al-Amri",
+        "3. CB - Ali Lajami",
+        "5. CB - Hassan Al-Tombakti",
+        "24. LWB - Moteb Al-Harbi",
+        "10. LM - Salem Al-Dawsari",
+        "6. CM - Nasser Al Dawsari",
+        "15. CM - Abdullah Al Khaibari",
+        "7. RM - Musab Al Juwayr",
+        "9. ST - Feras Albrikan"
+      ],
+      "home_subs": [
+        "1. David Raya",
+        "3. Eric García",
+        "5. Marcos Llorente",
+        "6. Mikel Merino",
+        "7. Nico Williams",
+        "8. Fabián Ruiz",
+        "9. Borja Iglesias",
+        "12. Álex Grimaldo",
+        "13. Joan Garcia",
+        "14. Víctor Muñoz",
+        "15. Martín Zubimendi",
+        "18. Marc Pubill",
+        "25. Gavi",
+        "26. Yéremy Pino"
+      ],
+      "away_subs": [
+        "1. Ahmed Al-Kassar",
+        "2. Nawaf bin Meshari bin Mohammed Bu Washl",
+        "3. Ali Majrashi",
+        "7. Alaa Alhaji",
+        "8. Mohamed Kanno",
+        "11. Abdullah Al-Hamddan",
+        "13. Saleh Al-Shehri",
+        "18. Ziyad Al-Johani",
+        "19. Khalid Al-Ghannam",
+        "20. Ayman Yahya",
+        "22. Nawaf Al Aqidi",
+        "23. Saleh Abu Al-Shamat",
+        "24. Jehad Thakri",
+        "25. Sultan Ahmed Mandash",
+        "26. Hassan bin Kadish bin Yahya Mahbub"
+      ],
+      "goals": [
+        {
+          "minute": 10,
+          "team": "Spain",
+          "player": "Lamine Yamal",
+          "assist": "Mikel Oyarzabal",
+          "type": "Open Play"
+        },
+        {
+          "minute": 21,
+          "team": "Spain",
+          "player": "Mikel Oyarzabal",
+          "assist": "Aymeric Laporte",
+          "type": "Open Play"
+        },
+        {
+          "minute": 24,
+          "team": "Spain",
+          "player": "Mikel Oyarzabal",
+          "assist": "Dani Olmo",
+          "type": "Open Play"
+        },
+        {
+          "minute": 49,
+          "team": "Spain",
+          "player": "Hassan Al-Tombakti",
+          "assist": "",
+          "type": "Own Goal"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 30,
+          "team": "Saudi Arabia",
+          "player": "Salem Al-Dawsari",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 60,
+          "team": "Saudi Arabia",
+          "player": "Mohamed Kanno",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Spain",
+          "player_out": "Lamine Yamal",
+          "player_in": "Yéremy Pino"
+        },
+        {
+          "minute": 45,
+          "team": "Saudi Arabia",
+          "player_out": "Abdullah Al Khaibari",
+          "player_in": "Mohamed Kanno"
+        },
+        {
+          "minute": 45,
+          "team": "Spain",
+          "player_out": "Mikel Oyarzabal",
+          "player_in": "Ferran Torres"
+        },
+        {
+          "minute": 45,
+          "team": "Saudi Arabia",
+          "player_out": "Musab Al Juwayr",
+          "player_in": "Abdullah Al-Hamddan"
+        },
+        {
+          "minute": 60,
+          "team": "Saudi Arabia",
+          "player_out": "Abdulelah Al-Amri",
+          "player_in": "Alaa Alhaji"
+        },
+        {
+          "minute": 60,
+          "team": "Saudi Arabia",
+          "player_out": "Feras Albrikan",
+          "player_in": "Saleh Abu Al-Shamat"
+        },
+        {
+          "minute": 61,
+          "team": "Spain",
+          "player_out": "Dani Olmo",
+          "player_in": "Mikel Merino"
+        },
+        {
+          "minute": 61,
+          "team": "Spain",
+          "player_out": "Álex Baena",
+          "player_in": "Nico Williams"
+        },
+        {
+          "minute": 70,
+          "team": "Spain",
+          "player_out": "Pedri",
+          "player_in": "Fabián Ruiz"
+        },
+        {
+          "minute": 90,
+          "team": "Saudi Arabia",
+          "player_out": "Nasser Al Dawsari",
+          "player_in": "Khalid Al-Ghannam"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 67,
+        "possession_away": 33,
+        "shots_home": 22,
+        "shots_away": 3,
+        "shots_on_target_home": 8,
+        "shots_on_target_away": 1,
+        "corners_home": 6,
+        "corners_away": 1,
+        "fouls_home": 10,
+        "fouls_away": 2,
+        "offsides_home": 2,
+        "offsides_away": 3,
+        "saves_home": 1,
+        "saves_away": 5,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "shots_off_target_home": 12,
+        "shots_off_target_away": 1,
+        "blocked_shots_home": 2,
+        "blocked_shots_away": 1,
+        "throw_ins_home": 16,
+        "throw_ins_away": 15,
+        "crosses_home": 7,
+        "crosses_away": 0,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "goal_kicks_home": 1,
+        "goal_kicks_away": 16
       },
-      "notes": ""
+      "notes": "Coaches: Luis de la Fuente (Spain), Georgios Donis (Saudi Arabia). Line-ups confirmed. Lamine Yamal (10', assist Mikel Oyarzabal); Mikel Oyarzabal (21', 24'). Hassan Al-Tombakti own goal (49'). Salem Al-Dawsari (30'); Mohamed Kanno (60'). Full time: Spain 4-0 Saudi Arabia.",
+      "status": "finished"
     },
     "H4": {
       "id": "H4",
@@ -5790,14 +6845,67 @@
         "home": null,
         "away": null
       },
-      "referee": "",
+      "referee": "Espen Eskås (Norway)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-1-4-1",
+      "home_lineup": [
+        "23. GK - Fernando Muslera",
+        "13. RB - Guillermo Varela",
+        "3. CB - Sebastián Cáceres",
+        "25. CB - Juan Manuel Sanabria",
+        "16. LB - Mathías Olivera",
+        "5. CDM - Manuel Ugarte",
+        "6. CDM - Rodrigo Bentancur",
+        "14. RW - Agustín Canobbio",
+        "8. CAM - Federico Valverde",
+        "20. LW - Maximiliano Araújo",
+        "21. ST - Federico Vinas"
+      ],
+      "away_lineup": [
+        "1. GK - Josimar Diaz Vozinha",
+        "22. RB - Steven Moreira",
+        "4. CB - Roberto Lopes",
+        "3. CB - Diney Borges",
+        "13. LB - Sidny Lopes Cabral",
+        "6. CDM - Kevin Pina",
+        "10. RM - Jamiro Monteiro",
+        "18. CM - Telmo Arcanjo",
+        "20. LM - Ryan Mendes",
+        "11. LW - Garry Rodrigues",
+        "9. ST - Gilson Tavares"
+      ],
+      "home_subs": [
+        "1. Sergio Rochet",
+        "2. José María Giménez",
+        "7. Nicolás de la Cruz",
+        "9. Rodrigo Aguirre",
+        "11. Facundo Pellistri",
+        "17. Matías Viña",
+        "18. Brian Rodriguez",
+        "19. Darwin Núñez",
+        "21. Emiliano Martínez",
+        "22. Santiago Bueno",
+        "23. Santiago Mele",
+        "24. Joaquín Piquerez",
+        "26. Rodrigo Zalazar"
+      ],
+      "away_subs": [
+        "3. Kelvin Pires",
+        "4. Logan Costa",
+        "9. Dailon Livramento",
+        "10. Nuno Da Costa",
+        "12. C. J. Dos Santos",
+        "14. Deroy Duarte",
+        "15. Wagner Pina",
+        "18. Laros Duarte",
+        "20. Yannick Semedo",
+        "23. Márcio Rosa",
+        "24. João Paulo",
+        "25. Willy Semedo",
+        "26. Hélio Varela",
+        "7. Jovane Cabral"
+      ],
       "goals": [],
       "yellow_cards": [],
       "red_cards": [],
@@ -5820,7 +6928,7 @@
         "passes_home": null,
         "passes_away": null
       },
-      "notes": ""
+      "notes": "Coaches: Marcelo Bielsa (Uruguay), Pedro Leitão Brito (Cape Verde). Line-ups confirmed."
     },
     "H5": {
       "id": "H5",
@@ -6326,40 +7434,196 @@
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Drew Fischer (Canada)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-1-4-1",
+      "home_lineup": [
+        "16. GK - Mike Maignan",
+        "5. RB - Jules Koundé",
+        "4. CB - Dayot Upamecano",
+        "17. CB - William Saliba",
+        "3. LB - Lucas Digne",
+        "6. CDM - Manu Koné",
+        "14. CDM - Adrien Rabiot",
+        "7. RW - Ousmane Dembélé",
+        "11. CAM - Michael Olise",
+        "12. LW - Bradley Barcola",
+        "10. ST - Kylian Mbappé"
+      ],
+      "away_lineup": [
+        "22. GK - Ahmed Basil",
+        "5. RB - Akam Hashem",
+        "4. CB - Zaid Tahseen",
+        "3. CB - Hussein Ali",
+        "23. LB - Merchas Doski",
+        "16. CDM - Amir Al-Ammari",
+        "11. RM - Ahmed Qasem",
+        "24. CM - Zaid Ismael",
+        "14. CM - Zidane Iqbal",
+        "8. LM - Ibrahim Bayesh",
+        "18. ST - Aymen Hussein"
+      ],
+      "home_subs": [
+        "1. Brice Samba",
+        "2. Malo Gusto",
+        "8. Aurélien Tchouaméni",
+        "9. Marcus Thuram",
+        "13. N'Golo Kanté",
+        "15. Ibrahima Konaté",
+        "18. Warren Zaïre-Emery",
+        "19. Théo Hernandez",
+        "20. Désiré Doué",
+        "21. Lucas Hernandez",
+        "22. Jean-Philippe Mateta",
+        "23. Robin Risser",
+        "24. Rayan Cherki",
+        "25. Maghnes Akliouche",
+        "26. Maxence Lacroix"
+      ],
+      "away_subs": [
+        "1. Jalal Hassan",
+        "5. Rebin Sulaka",
+        "7. Youssef Amyn",
+        "9. Ali Al-Hamadi",
+        "12. Fahad Talib",
+        "13. Ahmed Yahya",
+        "17. Aimar Sher",
+        "19. Ali Youssef",
+        "20. Marko Farji",
+        "23. Frans Putros",
+        "24. Mustafa Saadoon",
+        "26. Mohanad Ali"
+      ],
+      "goals": [
+        {
+          "minute": 14,
+          "team": "France",
+          "player": "Kylian Mbappé",
+          "assist": "Michael Olise",
+          "type": "Open Play"
+        },
+        {
+          "minute": 54,
+          "team": "France",
+          "player": "Kylian Mbappé",
+          "assist": "Ousmane Dembélé",
+          "type": "Open Play"
+        },
+        {
+          "minute": 66,
+          "team": "France",
+          "player": "Ousmane Dembélé",
+          "assist": "Michael Olise",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 6,
+          "team": "Iraq",
+          "player": "Amir Al-Ammari",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 26,
+          "team": "Iraq",
+          "player_out": "Aymen Hussein",
+          "player_in": "Ali Al-Hamadi"
+        },
+        {
+          "minute": 60,
+          "team": "Iraq",
+          "player_out": "Zaid Tahseen",
+          "player_in": "Rebin Sulaka"
+        },
+        {
+          "minute": 60,
+          "team": "Iraq",
+          "player_out": "Zaid Ismael",
+          "player_in": "Youssef Amyn"
+        },
+        {
+          "minute": 68,
+          "team": "France",
+          "player_out": "Ousmane Dembélé",
+          "player_in": "Désiré Doué"
+        },
+        {
+          "minute": 68,
+          "team": "France",
+          "player_out": "Michael Olise",
+          "player_in": "Rayan Cherki"
+        },
+        {
+          "minute": 68,
+          "team": "Iraq",
+          "player_out": "Amir Al-Ammari",
+          "player_in": "Aimar Sher"
+        },
+        {
+          "minute": 69,
+          "team": "Iraq",
+          "player_out": "Ibrahim Bayesh",
+          "player_in": "Marko Farji"
+        },
+        {
+          "minute": 83,
+          "team": "France",
+          "player_out": "Bradley Barcola",
+          "player_in": "Maghnes Akliouche"
+        },
+        {
+          "minute": 83,
+          "team": "France",
+          "player_out": "Jules Koundé",
+          "player_in": "Malo Gusto"
+        },
+        {
+          "minute": 90,
+          "team": "France",
+          "player_out": "Kylian Mbappé",
+          "player_in": "Marcus Thuram"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 56,
+        "possession_away": 44,
+        "shots_home": 19,
+        "shots_away": 4,
+        "shots_on_target_home": 5,
+        "shots_on_target_away": 0,
+        "shots_off_target_home": 10,
+        "shots_off_target_away": 3,
+        "blocked_shots_home": 4,
+        "blocked_shots_away": 1,
+        "corners_home": 4,
+        "corners_away": 2,
+        "offsides_home": 1,
+        "offsides_away": 0,
+        "fouls_home": 8,
+        "fouls_away": 4,
+        "throw_ins_home": 17,
+        "throw_ins_away": 15,
+        "crosses_home": 2,
+        "crosses_away": 4,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "saves_home": 0,
+        "saves_away": 2,
+        "goal_kicks_home": 4,
+        "goal_kicks_away": 14,
         "passes_home": null,
         "passes_away": null
       },
-      "notes": ""
+      "notes": "Coaches: Didier Deschamps (France), Graham Arnold (Iraq). Line-ups confirmed. Amir Al-Ammari (6'). Kylian Mbappé brace (14', 54', assists Michael Olise and Ousmane Dembélé); Ousmane Dembélé (66', assist Michael Olise). Full time: France 3-0 Iraq.",
+      "status": "finished"
     },
     "I4": {
       "id": "I4",
@@ -6371,40 +7635,206 @@
       "venue": "MetLife Stadium",
       "city": "East Rutherford, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 2
       },
-      "referee": "",
+      "referee": "Wilton Sampaio (Brazil)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
+      "home_formation": "4-3-3",
+      "away_formation": "4-2-3-1",
+      "home_lineup": [
+        "1. GK - Ørjan Nyland",
+        "26. RB - Julian Ryerson",
+        "3. CB - Kristoffer Ajer",
+        "17. CB - Torbjørn Heggem",
+        "5. LB - David Møller Wolfe",
+        "10. CM - Martin Ødegaard",
+        "8. CM - Sander Berge",
+        "14. CM - Fredrik Aursnes",
+        "7. RW - Alexander Sørloth",
+        "29. ST - Erling Haaland",
+        "20. LW - Antonio Nusa"
+      ],
+      "away_lineup": [
+        "16. GK - Édouard Mendy",
+        "15. RB - Krépin Diatta",
+        "3. CB - Kalidou Koulibaly",
+        "19. CB - Moussa Niakhaté",
+        "25. LB - Malick Diouf",
+        "5. CDM - Idrissa Gana Gueye",
+        "26. CDM - Pape Gueye",
+        "10. RW - Sadio Mané",
+        "8. CAM - Lamine Camara",
+        "18. LW - Ismaila Sarr",
+        "11. ST - Nicolas Jackson"
+      ],
+      "home_subs": [
+        "3. Leo Østigård",
+        "6. Fredrik André Bjørkan",
+        "8. Morten Thorsby",
+        "10. Jørgen Strand Larsen",
+        "12. Sander Tangvik",
+        "13. Henrik Falchener",
+        "14. Sondre Langås",
+        "16. Marcus Pedersen",
+        "17. Patrick Berg",
+        "19. Jens Petter Hauge",
+        "20. Kristian Thorstvedt",
+        "21. Andreas Schjelderup",
+        "23. Egil Selvik",
+        "24. Thelo Aasgaard",
+        "26. Oscar Bobb"
+      ],
+      "away_subs": [
+        "3. Antoine Mendy",
+        "4. Abdoulaye Seck",
+        "5. Ismail Jakobs",
+        "8. Habib Diarra",
+        "12. Yehvann Diouf",
+        "15. Mamadou Sarr",
+        "17. Pape Matar Sarr",
+        "20. Pathé Ciss",
+        "21. Bara Ndiaye",
+        "23. Mory Diaw",
+        "25. Assane Diao",
+        "26. Ibrahim Mbaye",
+        "11. Iliman Ndiaye",
+        "27. Chérif Ndiaye",
+        "28. Bamba Dieng"
+      ],
+      "goals": [
+        {
+          "minute": 43,
+          "team": "Norway",
+          "player": "Marcus Pedersen",
+          "assist": "",
+          "type": "Open Play"
+        },
+        {
+          "minute": 48,
+          "team": "Norway",
+          "player": "Erling Haaland",
+          "assist": "Martin Ødegaard",
+          "type": "Open Play"
+        },
+        {
+          "minute": 53,
+          "team": "Senegal",
+          "player": "Ismaila Sarr",
+          "assist": "Sadio Mané",
+          "type": "Open Play"
+        },
+        {
+          "minute": 58,
+          "team": "Norway",
+          "player": "Erling Haaland",
+          "assist": "Patrick Berg",
+          "type": "Open Play"
+        },
+        {
+          "minute": 93,
+          "team": "Senegal",
+          "player": "Ismaila Sarr",
+          "assist": "Nicolas Jackson",
+          "type": "Open Play"
+        }
+      ],
       "yellow_cards": [],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 13,
+          "team": "Norway",
+          "player_out": "Julian Ryerson",
+          "player_in": "Marcus Pedersen"
+        },
+        {
+          "minute": 45,
+          "team": "Norway",
+          "player_out": "Fredrik Aursnes",
+          "player_in": "Patrick Berg"
+        },
+        {
+          "minute": 54,
+          "team": "Senegal",
+          "player_out": "Malick Diouf",
+          "player_in": "Ismail Jakobs"
+        },
+        {
+          "minute": 54,
+          "team": "Senegal",
+          "player_out": "Pape Gueye",
+          "player_in": "Ibrahim Mbaye"
+        },
+        {
+          "minute": 63,
+          "team": "Senegal",
+          "player_out": "Édouard Mendy",
+          "player_in": "Mory Diaw"
+        },
+        {
+          "minute": 63,
+          "team": "Senegal",
+          "player_out": "Lamine Camara",
+          "player_in": "Pathé Ciss"
+        },
+        {
+          "minute": 71,
+          "team": "Norway",
+          "player_out": "Antonio Nusa",
+          "player_in": "Andreas Schjelderup"
+        },
+        {
+          "minute": 72,
+          "team": "Senegal",
+          "player_out": "Kalidou Koulibaly",
+          "player_in": "Pape Matar Sarr"
+        },
+        {
+          "minute": 84,
+          "team": "Norway",
+          "player_out": "Torbjørn Heggem",
+          "player_in": "Leo Østigård"
+        },
+        {
+          "minute": 84,
+          "team": "Norway",
+          "player_out": "Alexander Sørloth",
+          "player_in": "Oscar Bobb"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 42,
+        "possession_away": 58,
+        "shots_home": 13,
+        "shots_away": 16,
+        "shots_on_target_home": 7,
+        "shots_on_target_away": 4,
+        "shots_off_target_home": 3,
+        "shots_off_target_away": 7,
+        "blocked_shots_home": 3,
+        "blocked_shots_away": 5,
+        "corners_home": 5,
+        "corners_away": 4,
+        "offsides_home": 0,
+        "offsides_away": 4,
+        "fouls_home": 13,
+        "fouls_away": 5,
+        "throw_ins_home": 16,
+        "throw_ins_away": 20,
+        "crosses_home": 3,
+        "crosses_away": 8,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "saves_home": 2,
+        "saves_away": 3,
+        "goal_kicks_home": 10,
+        "goal_kicks_away": 4,
         "passes_home": null,
         "passes_away": null
       },
-      "notes": ""
+      "notes": "Coaches: Ståle Solbakken (Norway), Pape Thiaw (Senegal). Line-ups confirmed. Marcus Pedersen (43'); Erling Haaland brace (48', 58', assists Martin Ødegaard and Patrick Berg); Ismaïla Sarr brace (53', 93', assists Sadio Mané and Nicolas Jackson). Full time: Norway 3-2 Senegal.",
+      "status": "finished"
     },
     "I5": {
       "id": "I5",
@@ -6914,40 +8344,209 @@
       "venue": "AT&T Stadium",
       "city": "Arlington, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Amin Mohamed Omar (UAE)",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-4-2",
+      "away_formation": "4-2-3-1",
+      "home_lineup": [
+        "23. GK - Emiliano Martínez",
+        "26. RB - Nahuel Molina",
+        "13. CB - Cristian Romero",
+        "6. CB - Lisandro Martínez",
+        "25. LB - Facundo Medina",
+        "7. RM - Rodrigo De Paul",
+        "20. CM - Alexis Mac Allister",
+        "24. CM - Enzo Fernández",
+        "16. LM - Thiago Almada",
+        "10. ST - Lionel Messi",
+        "22. ST - Lautaro Martínez"
+      ],
+      "away_lineup": [
+        "1. GK - Alexander Schlager",
+        "5. RB - Stefan Posch",
+        "3. CB - Kevin Danso",
+        "8. CB - David Alaba",
+        "20. LB - Konrad Laimer",
+        "4. CDM - Xaver Schlager",
+        "6. CDM - Nicolas Seiwald",
+        "24. RW - Paul Wanner",
+        "18. CAM - Romano Schmid",
+        "9. LW - Marcel Sabitzer",
+        "11. ST - Michael Gregoritsch"
+      ],
+      "home_subs": [
+        "1. Juan Musso",
+        "2. Leonardo Balerdi",
+        "3. Nicolás Tagliafico",
+        "4. Gonzalo Montiel",
+        "5. Leandro Paredes",
+        "9. Julián Álvarez",
+        "11. Nicolás González",
+        "12. Gerónimo Rulli",
+        "14. Exequiel Palacios",
+        "15. Valentín Barco",
+        "16. Giovani Lo Celso",
+        "18. Nicolás Paz",
+        "19. Nicolás Otamendi",
+        "21. José Manuel López",
+        "8. Giuliano Simeone"
+      ],
+      "away_subs": [
+        "2. David Affengruber",
+        "3. Marco Friedl",
+        "6. Michael Svoboda",
+        "7. Patrick Wimmer",
+        "8. Florian Grillitsch",
+        "9. Marko Arnautović",
+        "12. Florian Wiegele",
+        "15. Philipp Lienhart",
+        "19. Carney Chukwuemeka",
+        "21. Saša Kalajdžić",
+        "22. Phillipp Mwene",
+        "23. Patrick Pentz",
+        "24. Alexander Prass",
+        "25. Alessandro Schöpf"
+      ],
+      "goals": [
+        {
+          "minute": 38,
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "assist": "Facundo Medina",
+          "type": "Open Play"
+        },
+        {
+          "minute": 95,
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "assist": "",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 40,
+          "team": "Austria",
+          "player": "Stefan Posch",
+          "reason": ""
+        },
+        {
+          "minute": 76,
+          "team": "Austria",
+          "player": "Konrad Laimer",
+          "reason": ""
+        },
+        {
+          "minute": 76,
+          "team": "Argentina",
+          "player": "Facundo Medina",
+          "reason": ""
+        },
+        {
+          "minute": 92,
+          "team": "Argentina",
+          "player": "Leandro Paredes",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 57,
+          "team": "Argentina",
+          "player_out": "Cristian Romero",
+          "player_in": "Nicolás Otamendi"
+        },
+        {
+          "minute": 64,
+          "team": "Argentina",
+          "player_out": "Thiago Almada",
+          "player_in": "Julián Álvarez"
+        },
+        {
+          "minute": 65,
+          "team": "Argentina",
+          "player_out": "Lautaro Martínez",
+          "player_in": "Nicolás González"
+        },
+        {
+          "minute": 67,
+          "team": "Austria",
+          "player_out": "David Alaba",
+          "player_in": "Marco Friedl"
+        },
+        {
+          "minute": 68,
+          "team": "Austria",
+          "player_out": "Stefan Posch",
+          "player_in": "Alexander Prass"
+        },
+        {
+          "minute": 68,
+          "team": "Austria",
+          "player_out": "Paul Wanner",
+          "player_in": "Marko Arnautović"
+        },
+        {
+          "minute": 78,
+          "team": "Austria",
+          "player_out": "Romano Schmid",
+          "player_in": "Patrick Wimmer"
+        },
+        {
+          "minute": 82,
+          "team": "Argentina",
+          "player_out": "Rodrigo De Paul",
+          "player_in": "Leandro Paredes"
+        },
+        {
+          "minute": 82,
+          "team": "Argentina",
+          "player_out": "Facundo Medina",
+          "player_in": "Nicolás Tagliafico"
+        },
+        {
+          "minute": 85,
+          "team": "Austria",
+          "player_out": "Michael Gregoritsch",
+          "player_in": "Carney Chukwuemeka"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 54,
+        "possession_away": 46,
+        "shots_home": 12,
+        "shots_away": 6,
+        "shots_on_target_home": 5,
+        "shots_on_target_away": 1,
+        "shots_off_target_home": 4,
+        "shots_off_target_away": 5,
+        "blocked_shots_home": 3,
+        "blocked_shots_away": 0,
+        "corners_home": 1,
+        "corners_away": 3,
+        "offsides_home": 2,
+        "offsides_away": 0,
+        "fouls_home": 13,
+        "fouls_away": 13,
+        "throw_ins_home": 12,
+        "throw_ins_away": 20,
+        "crosses_home": 1,
+        "crosses_away": 3,
+        "counter_attacks_home": null,
+        "counter_attacks_away": null,
+        "saves_home": 1,
+        "saves_away": 2,
+        "goal_kicks_home": 6,
+        "goal_kicks_away": 4,
         "passes_home": null,
         "passes_away": null
       },
-      "notes": ""
+      "notes": "Coaches: Lionel Scaloni (Argentina), Ralf Rangnick (Austria). Line-ups confirmed. Lionel Messi missed penalty (9'). Lionel Messi brace (38', 90+5', assist Facundo Medina). Stefan Posch (40'); Konrad Laimer (76'); Facundo Medina (76'); Leandro Paredes (90+2'). Full time: Argentina 2-0 Austria.",
+      "status": "finished"
     },
     "J4": {
       "id": "J4",
