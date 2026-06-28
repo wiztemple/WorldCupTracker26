@@ -12798,90 +12798,407 @@
     "K5": {
       "id": "K5",
       "group": "K",
-      "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "date": "2026-06-28",
+      "label": "Sun Jun 28",
       "home": "Colombia",
       "away": "Portugal",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "referee": "",
+      "referee": "Alireza Faghani",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
+      "home_formation": "4-3-3",
+      "away_formation": "4-2-3-1",
+      "home_lineup": [
+        "12. GK - Camilo Vargas",
+        "4. RB - Santiago Arias",
+        "23. CB - Davinson Sánchez",
+        "3. CB - Jhon Lucumí",
+        "22. LB - Deiver Machado",
+        "11. CM - Jhon Arias",
+        "16. CM - Jefferson Lerma",
+        "14. CM - Gustavo Puerta",
+        "10. CAM - James Rodríguez",
+        "9. ST - Jhon Córdoba",
+        "7. LW - Luis Díaz"
+      ],
+      "away_lineup": [
+        "1. GK - Diogo Costa",
+        "20. RB - João Cancelo",
+        "3. CB - Rúben Dias",
+        "13. CB - Renato Veiga",
+        "25. LB - Nuno Mendes",
+        "21. CDM - Rúben Neves",
+        "23. CDM - Vitinha",
+        "18. RW - Pedro Neto",
+        "8. CAM - Bruno Fernandes",
+        "11. LW - João Félix",
+        "7. ST - Cristiano Ronaldo"
+      ],
+      "home_subs": [
+        "Jaminton Campaz",
+        "Jorge Carrascal",
+        "Kevin Castaño",
+        "Willer Ditta",
+        "Andres Gomez",
+        "Juan Camilo Hernandez",
+        "Yerry Mina",
+        "Johan Mojica",
+        "Álvaro Montero",
+        "Daniel Muñoz",
+        "David Ospina",
+        "Juan Portilla",
+        "Juan Fernando Quintero",
+        "Richard Ríos",
+        "Luis Suárez"
+      ],
+      "away_subs": [
+        "Nélson Semedo",
+        "Diogo Dalot",
+        "Rui Silva",
+        "Francisco Conceição",
+        "Gonçalo Guedes",
+        "João Neves",
+        "Gonçalo Inácio",
+        "Tomas Araujo",
+        "Francisco Trincao",
+        "José Sá",
+        "Gonçalo Ramos",
+        "Bernardo Silva",
+        "Matheus Nunes",
+        "Rafael Leão",
+        "Samú Costa"
+      ],
       "goals": [],
-      "yellow_cards": [],
+      "yellow_cards": [
+        {
+          "minute": 86,
+          "team": "Colombia",
+          "player": "Gustavo Puerta",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Portugal",
+          "player_in": "Diogo Dalot",
+          "player_out": "João Cancelo"
+        },
+        {
+          "minute": 45,
+          "team": "Portugal",
+          "player_in": "João Neves",
+          "player_out": "Rúben Neves"
+        },
+        {
+          "minute": 60,
+          "team": "Colombia",
+          "player_in": "Richard Ríos",
+          "player_out": "Jefferson Lerma"
+        },
+        {
+          "minute": 60,
+          "team": "Colombia",
+          "player_in": "Luis Suárez",
+          "player_out": "Jhon Córdoba"
+        },
+        {
+          "minute": 70,
+          "team": "Portugal",
+          "player_in": "Rafael Leão",
+          "player_out": "João Félix"
+        },
+        {
+          "minute": 70,
+          "team": "Portugal",
+          "player_in": "Samú Costa",
+          "player_out": "Vitinha"
+        },
+        {
+          "minute": 76,
+          "team": "Colombia",
+          "player_in": "Kevin Castaño",
+          "player_out": "Jhon Arias"
+        },
+        {
+          "minute": 76,
+          "team": "Colombia",
+          "player_in": "Juan Fernando Quintero",
+          "player_out": "James Rodríguez"
+        },
+        {
+          "minute": 87,
+          "team": "Colombia",
+          "player_in": "Daniel Muñoz",
+          "player_out": "Santiago Arias"
+        },
+        {
+          "minute": 90,
+          "team": "Portugal",
+          "player_in": "Matheus Nunes",
+          "player_out": "Nuno Mendes"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 55,
+        "possession_away": 45,
+        "shots_home": 24,
+        "shots_away": 13,
+        "shots_on_target_home": 6,
+        "shots_on_target_away": 2,
+        "corners_home": 5,
+        "corners_away": 2,
+        "fouls_home": 12,
+        "fouls_away": 6,
+        "offsides_home": 3,
+        "offsides_away": 2,
+        "saves_home": 2,
+        "saves_away": 6,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 2,
+        "throw_ins_home": 10,
+        "throw_ins_away": 9,
+        "goal_kicks_home": 14,
+        "goal_kicks_away": 9,
+        "blocked_shots_home": 7,
+        "blocked_shots_away": 4
       },
       "notes": ""
     },
     "K6": {
       "id": "K6",
       "group": "K",
-      "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "date": "2026-06-28",
+      "label": "Sun Jun 28",
       "home": "Congo DR",
       "away": "Uzbekistan",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
-      "referee": "",
+      "referee": "Felix Zwayer",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-4-2",
+      "away_formation": "3-4-2-1",
+      "home_lineup": [
+        "1. GK - Lionel Nzau Mpasi",
+        "2. RB - Aaron Wan-Bissaka",
+        "22. CB - Chancel Mbemba",
+        "4. CB - Axel Tuanzebe",
+        "26. LB - Arthur Masuaku",
+        "7. RM - Nathanaël Mbuku",
+        "8. CM - Samuel Moutoussamy",
+        "14. CM - Noah Sadiki",
+        "9. LM - Brian Kibambe Cipenga",
+        "17. ST - Cédric Bakambu",
+        "220. ST - Yoane Wissa"
+      ],
+      "away_lineup": [
+        "12. GK - Abduvakhid Nematov",
+        "2. CB - Abdukodir Khusanov",
+        "5. CB - Rustamjon Ashurmatov",
+        "26. CB - Jakhongir Urozov",
+        "7. RWB - Otabek Shukurov",
+        "6. CM - Akmal Mozgovoy",
+        "13. CM - Sherzod Nasrullaev",
+        "3. LWB - Khojiakbar Alijonov",
+        "22. SS - Abbosbek Fayzullaev",
+        "17. SS - Dostonbek Khamdamov",
+        "14. ST - Eldor Shomurodov"
+      ],
+      "home_subs": [
+        "Simon Banza",
+        "Dylan Batubinsika",
+        "Theo Bongonda",
+        "Meschack Elia",
+        "Matthieu Epolo",
+        "Timothy Fayulu",
+        "Gaël Kakuta",
+        "Fiston Mayele",
+        "Gédéon Kalulu",
+        "Steve Kapuadi",
+        "Joris Kayembe",
+        "Edo Kayembe",
+        "Charles Pickel",
+        "Ngal'ayel Mukau",
+        "Aaron Tshibola"
+      ],
+      "away_subs": [
+        "Abdulla Abdullaev",
+        "Azizbek Amanov",
+        "Botirali Ergashev",
+        "Sherzod Esanov",
+        "Umarbek Eshmuradov",
+        "Azizjon Ganiev",
+        "Jamshid Iskanderov",
+        "Ruslanbek Jiyanov",
+        "Behruzjon Karimov",
+        "Odiljon Khamrobekov",
+        "Avazbek Ulmasaliyev",
+        "Farrukh Sayfiev",
+        "Igor Sergeev",
+        "Oston Urunov",
+        "Utkir Yusupov"
+      ],
+      "goals": [
+        {
+          "minute": 10,
+          "team": "Uzbekistan",
+          "player": "Eldor Shomurodov",
+          "assist": "Akmal Mozgovoy",
+          "type": "Open Play"
+        },
+        {
+          "minute": 68,
+          "team": "Congo DR",
+          "player": "Yoane Wissa",
+          "assist": "",
+          "type": "Penalty"
+        },
+        {
+          "minute": 78,
+          "team": "Congo DR",
+          "player": "Fiston Mayele",
+          "assist": "",
+          "type": "Open Play"
+        },
+        {
+          "minute": 91,
+          "team": "Congo DR",
+          "player": "Yoane Wissa",
+          "assist": "Meschack Elia",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 21,
+          "team": "Congo DR",
+          "player": "Noah Sadiki",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 43,
+          "team": "Uzbekistan",
+          "player": "Abdukodir Khusanov",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 50,
+          "team": "Congo DR",
+          "player": "Nathanaël Mbuku",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 48,
+          "team": "Uzbekistan",
+          "player": "Sherzod Nasrullaev",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 62,
+          "team": "Congo DR",
+          "player": "Samuel Moutoussamy",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 51,
+          "team": "Congo DR",
+          "player_in": "Fiston Mayele",
+          "player_out": "Cédric Bakambu"
+        },
+        {
+          "minute": 59,
+          "team": "Uzbekistan",
+          "player_in": "Odiljon Khamrobekov",
+          "player_out": "Otabek Shukurov"
+        },
+        {
+          "minute": 59,
+          "team": "Uzbekistan",
+          "player_in": "Azizjon Ganiev",
+          "player_out": "Dostonbek Khamdamov"
+        },
+        {
+          "minute": 72,
+          "team": "Congo DR",
+          "player_in": "Theo Bongonda",
+          "player_out": "Brian Kibambe Cipenga"
+        },
+        {
+          "minute": 72,
+          "team": "Congo DR",
+          "player_in": "Ngal'ayel Mukau",
+          "player_out": "Samuel Moutoussamy"
+        },
+        {
+          "minute": 72,
+          "team": "Congo DR",
+          "player_in": "Meschack Elia",
+          "player_out": "Nathanaël Mbuku"
+        },
+        {
+          "minute": 73,
+          "team": "Uzbekistan",
+          "player_in": "Oston Urunov",
+          "player_out": "Abbosbek Fayzullaev"
+        },
+        {
+          "minute": 82,
+          "team": "Uzbekistan",
+          "player_in": "Igor Sergeev",
+          "player_out": "Jakhongir Urozov"
+        },
+        {
+          "minute": 82,
+          "team": "Uzbekistan",
+          "player_in": "Jamshid Iskanderov",
+          "player_out": "Akmal Mozgovoy"
+        },
+        {
+          "minute": 83,
+          "team": "Congo DR",
+          "player_in": "Joris Kayembe",
+          "player_out": "Arthur Masuaku"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 58,
+        "possession_away": 42,
+        "shots_home": 19,
+        "shots_away": 3,
+        "shots_on_target_home": 4,
+        "shots_on_target_away": 1,
+        "corners_home": 2,
+        "corners_away": 4,
+        "fouls_home": 6,
+        "fouls_away": 16,
+        "offsides_home": 3,
+        "offsides_away": 1,
+        "saves_home": 1,
+        "saves_away": 1,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 5,
+        "crosses_away": 2,
+        "throw_ins_home": 26,
+        "throw_ins_away": 23,
+        "goal_kicks_home": 7,
+        "goal_kicks_away": 15,
+        "blocked_shots_home": 1,
+        "blocked_shots_away": 0
       },
       "notes": ""
     },
@@ -13657,44 +13974,202 @@
       "id": "L5",
       "group": "L",
       "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "label": "Sat Jun 27",
       "home": "Panama",
       "away": "England",
       "venue": "MetLife Stadium",
       "city": "East Rutherford, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
-      "referee": "",
+      "referee": "Abdulrahman Ibrahim Al Jassim",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "5-4-1",
+      "away_formation": "4-1-4-1",
+      "home_lineup": [
+        "22. GK - Orlando Mosquera",
+        "23. RWB - Amir Murillo",
+        "4. CB - Fidel Escobar",
+        "3. CB - José Córdoba",
+        "16. CB - Andrés Andrade",
+        "26. LWB - Jorge Gutierrez",
+        "6. RM - Cristian Martínez",
+        "14. CM - Carlos Harvey",
+        "11. LM - Édgar Bárcenas",
+        "7. LW - José Luis Rodríguez",
+        "9. ST - Tomas Rodriguez"
+      ],
+      "away_lineup": [
+        "1. GK - Jordan Pickford",
+        "26. RB - Jarell Quansah",
+        "2. CB - Ezri Konsa",
+        "6. CB - Marc Guéhi",
+        "3. LB - Nico O'Reilly",
+        "8. CDM - Elliot Anderson",
+        "7. RM - Bukayo Saka",
+        "17. CM - Morgan Rogers",
+        "10. CAM - Jude Bellingham",
+        "11. LM - Marcus Rashford",
+        "9. ST - Harry Kane"
+      ],
+      "home_subs": [
+        "César Blackman",
+        "Adalberto Carrasquilla",
+        "Éric Davis",
+        "Ismael Diaz",
+        "José Fajardo",
+        "Edgardo Fariña",
+        "Anibal Godoy",
+        "Azarias Londono",
+        "Luis Mejía",
+        "Roderick Miller",
+        "Alberto Quintero",
+        "Jiovany Ramos",
+        "César Samudio",
+        "Cecilio Waterman",
+        "César Yanis"
+      ],
+      "away_subs": [
+        "Dan Burn",
+        "Trevoh Chalobah",
+        "Eberechi Eze",
+        "Anthony Gordon",
+        "Dean Henderson",
+        "Jordan Henderson",
+        "Noni Madueke",
+        "Kobbie Mainoo",
+        "Declan Rice",
+        "Djed Spence",
+        "John Stones",
+        "Ivan Toney",
+        "James Trafford",
+        "Ollie Watkins"
+      ],
+      "goals": [
+        {
+          "minute": 62,
+          "team": "England",
+          "player": "Jude Bellingham",
+          "assist": "Bukayo Saka",
+          "type": "Open Play"
+        },
+        {
+          "minute": 67,
+          "team": "England",
+          "player": "Harry Kane",
+          "assist": "Jude Bellingham",
+          "type": "Header"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 53,
+          "team": "Panama",
+          "player": "José Fajardo",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 60,
+          "team": "England",
+          "player": "Jarell Quansah",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 84,
+          "team": "Panama",
+          "player": "Andrés Andrade",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Panama",
+          "player_in": "José Fajardo",
+          "player_out": "Tomas Rodriguez"
+        },
+        {
+          "minute": 63,
+          "team": "England",
+          "player_in": "Djed Spence",
+          "player_out": "Jarell Quansah"
+        },
+        {
+          "minute": 63,
+          "team": "England",
+          "player_in": "Noni Madueke",
+          "player_out": "Bukayo Saka"
+        },
+        {
+          "minute": 71,
+          "team": "Panama",
+          "player_in": "Ismael Diaz",
+          "player_out": "Édgar Bárcenas"
+        },
+        {
+          "minute": 71,
+          "team": "Panama",
+          "player_in": "Azarias Londono",
+          "player_out": "José Luis Rodríguez"
+        },
+        {
+          "minute": 71,
+          "team": "England",
+          "player_in": "Eberechi Eze",
+          "player_out": "Jude Bellingham"
+        },
+        {
+          "minute": 84,
+          "team": "England",
+          "player_in": "Jordan Henderson",
+          "player_out": "Elliot Anderson"
+        },
+        {
+          "minute": 84,
+          "team": "England",
+          "player_in": "Ollie Watkins",
+          "player_out": "Harry Kane"
+        },
+        {
+          "minute": 88,
+          "team": "Panama",
+          "player_in": "Alberto Quintero",
+          "player_out": "Carlos Harvey"
+        },
+        {
+          "minute": 88,
+          "team": "Panama",
+          "player_in": "Éric Davis",
+          "player_out": "Jorge Gutierrez"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 33,
+        "possession_away": 67,
+        "shots_home": 13,
+        "shots_away": 17,
+        "shots_on_target_home": 2,
+        "shots_on_target_away": 6,
+        "corners_home": 3,
+        "corners_away": 7,
+        "fouls_home": 16,
+        "fouls_away": 13,
+        "offsides_home": 4,
+        "offsides_away": 4,
+        "saves_home": 4,
+        "saves_away": 2,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 4,
+        "throw_ins_home": 24,
+        "throw_ins_away": 14,
+        "goal_kicks_home": 12,
+        "goal_kicks_away": 8,
+        "blocked_shots_home": 3,
+        "blocked_shots_away": 3
       },
       "notes": ""
     },
@@ -13702,44 +14177,198 @@
       "id": "L6",
       "group": "L",
       "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "label": "Sat Jun 27",
       "home": "Croatia",
       "away": "Ghana",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
-      "referee": "",
+      "referee": "Drew Fischer",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-1-4-1",
+      "home_lineup": [
+        "1. GK - Dominik Livaković",
+        "2. RB - Josip Stanišić",
+        "6. CB - Josip Šutalo",
+        "3. CB - Marin Pongračić",
+        "14. LB - Ivan Perišić",
+        "10. CDM - Luka Modrić",
+        "8. CDM - Mateo Kovačić",
+        "13. RW - Nikola Vlašić",
+        "17. CAM - Petar Sučić",
+        "16. LW - Martin Baturina",
+        "11. ST - Ante Budimir"
+      ],
+      "away_lineup": [
+        "16. GK - Benjamin Asare",
+        "26. RB - Marvin Senaya",
+        "4. CB - Jonas Adjei Adjetey",
+        "23. CB - Derrick Luckassen",
+        "14. LB - Gideon Mensah",
+        "5. CDM - Thomas Partey",
+        "11. RM - Antoine Semenyo",
+        "15. CM - Elisha Owusu",
+        "8. CM - Kwasi Sibo",
+        "22. LM - Kamaldeen Sulemana",
+        "9. ST - Jordan Ayew"
+      ],
+      "home_subs": [
+        "Martin Erlić",
+        "Toni Fruk",
+        "Joško Gvardiol",
+        "Kristijan Jakic",
+        "Dominik Kotarski",
+        "Andrej Kramarić",
+        "Igor Matanović",
+        "Nikola Moro",
+        "Petar Musa",
+        "Ivor Pandur",
+        "Marco Pašalić",
+        "Mario Pašalić",
+        "Luka Sučić",
+        "Luka Vuskovic",
+        "Duje Caleta-Car"
+      ],
+      "away_subs": [
+        "Prince Kwabena Adu",
+        "Joseph Anang",
+        "Rahman Baba",
+        "Augustine Boakye",
+        "Christopher Bonsu Baah",
+        "Abdul Fatawu",
+        "Abdul Mumin",
+        "Ernest Nuamah",
+        "Jerome Opoku",
+        "Kojo Peprah Oppong",
+        "Alidu Seidu",
+        "Brandon Thomas-Asante",
+        "Iñaki Williams",
+        "Caleb Yirenkyi",
+        "Lawrence Ati Zigi"
+      ],
+      "goals": [
+        {
+          "minute": 31,
+          "team": "Croatia",
+          "player": "Petar Sučić",
+          "assist": "Mateo Kovačić",
+          "type": "Open Play"
+        },
+        {
+          "minute": 73,
+          "team": "Ghana",
+          "player": "Derrick Luckassen",
+          "assist": "Ernest Nuamah",
+          "type": "Open Play"
+        },
+        {
+          "minute": 83,
+          "team": "Croatia",
+          "player": "Nikola Vlašić",
+          "assist": "Luka Modrić",
+          "type": "Header"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 68,
+          "team": "Croatia",
+          "player": "Ivan Perišić",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 94,
+          "team": "Ghana",
+          "player": "Kojo Peprah Oppong",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Ghana",
+          "player_in": "Kojo Peprah Oppong",
+          "player_out": "Jonas Adjei Adjetey"
+        },
+        {
+          "minute": 45,
+          "team": "Ghana",
+          "player_in": "Abdul Fatawu",
+          "player_out": "Elisha Owusu"
+        },
+        {
+          "minute": 66,
+          "team": "Croatia",
+          "player_in": "Igor Matanović",
+          "player_out": "Ante Budimir"
+        },
+        {
+          "minute": 71,
+          "team": "Ghana",
+          "player_in": "Brandon Thomas-Asante",
+          "player_out": "Jordan Ayew"
+        },
+        {
+          "minute": 71,
+          "team": "Ghana",
+          "player_in": "Ernest Nuamah",
+          "player_out": "Kamaldeen Sulemana"
+        },
+        {
+          "minute": 78,
+          "team": "Croatia",
+          "player_in": "Mario Pašalić",
+          "player_out": "Mateo Kovačić"
+        },
+        {
+          "minute": 85,
+          "team": "Ghana",
+          "player_in": "Caleb Yirenkyi",
+          "player_out": "Kwasi Sibo"
+        },
+        {
+          "minute": 88,
+          "team": "Croatia",
+          "player_in": "Marco Pašalić",
+          "player_out": "Martin Baturina"
+        },
+        {
+          "minute": 88,
+          "team": "Croatia",
+          "player_in": "Joško Gvardiol",
+          "player_out": "Nikola Vlašić"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 53,
+        "possession_away": 47,
+        "shots_home": 8,
+        "shots_away": 6,
+        "shots_on_target_home": 4,
+        "shots_on_target_away": 1,
+        "corners_home": 3,
+        "corners_away": 2,
+        "fouls_home": 9,
+        "fouls_away": 13,
+        "offsides_home": 1,
+        "offsides_away": 2,
+        "saves_home": 0,
+        "saves_away": 2,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 3,
+        "throw_ins_home": 16,
+        "throw_ins_away": 10,
+        "goal_kicks_home": 7,
+        "goal_kicks_away": 5,
+        "blocked_shots_home": 2,
+        "blocked_shots_away": 2
       },
       "notes": ""
     },
