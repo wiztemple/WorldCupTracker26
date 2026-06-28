@@ -8941,44 +8941,189 @@
       "id": "H2",
       "group": "H",
       "date": "2026-06-15",
-      "label": "Mon 15 Jun",
+      "label": "Mon Jun 15",
       "home": "Saudi Arabia",
       "away": "Uruguay",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "referee": "",
+      "referee": "Maurizio Mariani",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-4-2",
+      "away_formation": "4-2-3-1",
+      "home_lineup": [
+        "21. GK - Mohammed Al-Owais",
+        "12. RB - Saud Abdulhamid",
+        "4. CB - Abdulelah Al-Amri",
+        "5. CB - Hassan Al-Tombakti",
+        "24. LB - Moteb Al-Harbi",
+        "26. RM - Saleh Abu Al-Shamat",
+        "23. CM - Mohamed Kanno",
+        "15. CM - Abdullah Al Khaibari",
+        "10. LM - Salem Al-Dawsari",
+        "9. ST - Feras Albrikan",
+        "7. ST - Musab Al Juwayr"
+      ],
+      "away_lineup": [
+        "23. GK - Fernando Muslera",
+        "13. RB - Guillermo Varela",
+        "3. CB - Sebastián Cáceres",
+        "16. CB - Mathías Olivera",
+        "17. LB - Matias Vina",
+        "5. CDM - Manuel Ugarte",
+        "6. CDM - Rodrigo Bentancur",
+        "8. RW - Federico Valverde",
+        "21. CAM - Federico Vinas",
+        "20. LW - Maximiliano Araújo",
+        "9. ST - Darwin Núñez"
+      ],
+      "home_subs": [
+        "Nawaf Al Aqidi",
+        "Nasser Al Dawsari",
+        "Khalid Al-Ghannam",
+        "Abdullah Al-Hamddan",
+        "Alaa Alhaji",
+        "Ziyad Al-Johani",
+        "Ahmed Al-Kassar",
+        "Saleh Al-Shehri",
+        "Nawaf bin Meshari bin Mohammed Bu Washl",
+        "Ali Lajami",
+        "Hassan bin Kadish bin Yahya Mahbub",
+        "Ali Majrashi",
+        "Sultan Ahmed Mandash",
+        "Ayman Yahya",
+        "Jehad Thakri"
+      ],
+      "away_subs": [
+        "Rodrigo Aguirre",
+        "Santiago Bueno",
+        "Agustín Canobbio",
+        "José María Giménez",
+        "Emiliano Martínez",
+        "Santiago Mele",
+        "Facundo Pellistri",
+        "Joaquin Piquerez",
+        "Sergio Rochet",
+        "Brian Rodriguez",
+        "Juan Sanabria",
+        "Rodrigo Zalazar",
+        "Nicolás de la Cruz"
+      ],
+      "goals": [
+        {
+          "minute": 41,
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Al-Amri",
+          "assist": "",
+          "type": "Open Play"
+        },
+        {
+          "minute": 80,
+          "team": "Uruguay",
+          "player": "Maximiliano Araújo",
+          "assist": "",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 44,
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Al-Amri",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Uruguay",
+          "player_in": "Juan Sanabria",
+          "player_out": "Matias Vina"
+        },
+        {
+          "minute": 45,
+          "team": "Uruguay",
+          "player_in": "Agustín Canobbio",
+          "player_out": "Darwin Núñez"
+        },
+        {
+          "minute": 63,
+          "team": "Saudi Arabia",
+          "player_in": "Nasser Al Dawsari",
+          "player_out": "Musab Al Juwayr"
+        },
+        {
+          "minute": 72,
+          "team": "Uruguay",
+          "player_in": "Nicolás de la Cruz",
+          "player_out": "Manuel Ugarte"
+        },
+        {
+          "minute": 81,
+          "team": "Saudi Arabia",
+          "player_in": "Nawaf Bu Washl",
+          "player_out": "Saleh Abu Al-Shamat"
+        },
+        {
+          "minute": 81,
+          "team": "Uruguay",
+          "player_in": "Brian Rodriguez",
+          "player_out": "Maximiliano Araújo"
+        },
+        {
+          "minute": 90,
+          "team": "Saudi Arabia",
+          "player_in": "Ali Lajami",
+          "player_out": "Saud Abdulhamid"
+        },
+        {
+          "minute": 90,
+          "team": "Saudi Arabia",
+          "player_in": "Abdullah Al-Hamddan",
+          "player_out": "Moteb Al-Harbi"
+        },
+        {
+          "minute": 90,
+          "team": "Saudi Arabia",
+          "player_in": "Alaa Alhaji",
+          "player_out": "Feras Albrikan"
+        },
+        {
+          "minute": 90,
+          "team": "Uruguay",
+          "player_in": "Rodrigo Aguirre",
+          "player_out": "Federico Vinas"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 33,
+        "possession_away": 67,
+        "shots_home": 7,
+        "shots_away": 27,
+        "shots_on_target_home": 3,
+        "shots_on_target_away": 10,
+        "corners_home": 4,
+        "corners_away": 14,
+        "fouls_home": 11,
+        "fouls_away": 6,
+        "offsides_home": 0,
+        "offsides_away": 6,
+        "saves_home": 9,
+        "saves_away": 2,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 16,
+        "throw_ins_home": 18,
+        "throw_ins_away": 20,
+        "goal_kicks_home": 10,
+        "goal_kicks_away": 3,
+        "blocked_shots_home": 1,
+        "blocked_shots_away": 7
       },
       "notes": ""
     },
@@ -11885,90 +12030,425 @@
     "J5": {
       "id": "J5",
       "group": "J",
-      "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "date": "2026-06-28",
+      "label": "Sun Jun 28",
       "home": "Argentina",
       "away": "Jordan",
       "venue": "AT&T Stadium",
       "city": "Arlington, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
-      "referee": "",
+      "referee": "István Kovács",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-4-2",
+      "away_formation": "3-4-2-1",
+      "home_lineup": [
+        "23. GK - Emiliano Martínez",
+        "14. RB - Exequiel Palacios",
+        "19. CB - Nicolás Otamendi",
+        "2. CB - Marcos Senesi",
+        "3. LB - Nicolás Tagliafico",
+        "17. RM - Giuliano Simeone",
+        "5. CM - Leandro Paredes",
+        "18. CM - Nico Paz",
+        "11. LM - Giovani Lo Celso",
+        "9. ST - Julián Álvarez",
+        "22. ST - Lautaro Martínez"
+      ],
+      "away_lineup": [
+        "1. GK - Yazeed Abu Laila",
+        "3. CB - Abdallah Nasib",
+        "5. CB - Yazan Al-Arab",
+        "4. CB - Husam Ali Mohammad Abudahab",
+        "23. RWB - Ehsan Haddad",
+        "21. CM - Nizar Al-Rashdan",
+        "8. CM - Noor Al-Deen Mahmoud Ali Al Rawabdeh",
+        "20. LWB - Mohannad Abu Taha",
+        "24. SS - Ali Ahmad Azaizeh",
+        "9. SS - Ali Iyad Olwan",
+        "11. ST - Awdat Al Fakhouri"
+      ],
+      "home_subs": [
+        "Thiago Almada",
+        "Valentín Barco",
+        "Rodrigo De Paul",
+        "Enzo Fernández",
+        "Nico González",
+        "Flaco Lopez",
+        "Alexis Mac Allister",
+        "Lisandro Martínez",
+        "Facundo Medina",
+        "Lionel Messi",
+        "Nahuel Molina",
+        "Gonzalo Montiel",
+        "Juan Musso",
+        "Cristian Romero",
+        "Gerónimo Rulli"
+      ],
+      "away_subs": [
+        "Mohammad Abualnadi",
+        "Mohammad Abu Hasheesh",
+        "Sharara",
+        "Mohammad Al-Daoud",
+        "Abdallah Al Fakhouri",
+        "Mahmoud Al Mardi",
+        "Saed Al-Rosan",
+        "Anas Said Ghazi Badawi",
+        "Khalil Bani Ateyah",
+        "Rajaei Ayed Fadel Rajaei Ayed",
+        "Amer Jamous",
+        "Saleem Obaid",
+        "Ibrahim Sadeh",
+        "Mousa Tamari",
+        "Mohammad Ahmed Mohammad Taha"
+      ],
+      "goals": [
+        {
+          "minute": 19,
+          "team": "Argentina",
+          "player": "Giovani Lo Celso",
+          "assist": "",
+          "type": "Free Kick"
+        },
+        {
+          "minute": 31,
+          "team": "Argentina",
+          "player": "Lautaro Martínez",
+          "assist": "",
+          "type": "Penalty"
+        },
+        {
+          "minute": 55,
+          "team": "Jordan",
+          "player": "Mousa Tamari",
+          "assist": "Ehsan Haddad",
+          "type": "Open Play"
+        },
+        {
+          "minute": 80,
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "assist": "",
+          "type": "Free Kick"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 17,
+          "team": "Jordan",
+          "player": "Mohannad Abu Taha",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 64,
+          "team": "Jordan",
+          "player": "Yazan Al-Arab",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Jordan",
+          "player_in": "Mahmoud Al Mardi",
+          "player_out": "Awdat Al Fakhouri"
+        },
+        {
+          "minute": 45,
+          "team": "Jordan",
+          "player_in": "Mousa Tamari",
+          "player_out": "Ali Ahmad Azaizeh"
+        },
+        {
+          "minute": 60,
+          "team": "Argentina",
+          "player_in": "Thiago Almada",
+          "player_out": "Giovani Lo Celso"
+        },
+        {
+          "minute": 60,
+          "team": "Argentina",
+          "player_in": "Lionel Messi",
+          "player_out": "Lautaro Martínez"
+        },
+        {
+          "minute": 61,
+          "team": "Argentina",
+          "player_in": "Alexis Mac Allister",
+          "player_out": "Nico Paz"
+        },
+        {
+          "minute": 71,
+          "team": "Argentina",
+          "player_in": "Valentín Barco",
+          "player_out": "Giuliano Simeone"
+        },
+        {
+          "minute": 76,
+          "team": "Jordan",
+          "player_in": "Amer Jamous",
+          "player_out": "Nizar Al-Rashdan"
+        },
+        {
+          "minute": 82,
+          "team": "Argentina",
+          "player_in": "Flaco Lopez",
+          "player_out": "Julián Álvarez"
+        },
+        {
+          "minute": 90,
+          "team": "Jordan",
+          "player_in": "Mohammad Abu Zraiq",
+          "player_out": "Ali Iyad Olwan"
+        },
+        {
+          "minute": 90,
+          "team": "Jordan",
+          "player_in": "Saleem Obaid",
+          "player_out": "Husam Ali Mohammad Abudahab"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 73,
+        "possession_away": 27,
+        "shots_home": 12,
+        "shots_away": 5,
+        "shots_on_target_home": 4,
+        "shots_on_target_away": 1,
+        "corners_home": 6,
+        "corners_away": 2,
+        "fouls_home": 7,
+        "fouls_away": 13,
+        "offsides_home": 3,
+        "offsides_away": 1,
+        "saves_home": 1,
+        "saves_away": 0,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 2,
+        "throw_ins_home": 19,
+        "throw_ins_away": 11,
+        "goal_kicks_home": 4,
+        "goal_kicks_away": 9,
+        "blocked_shots_home": 1,
+        "blocked_shots_away": 2
       },
       "notes": ""
     },
     "J6": {
       "id": "J6",
       "group": "J",
-      "date": "2026-06-27",
-      "label": "Sat 27 Jun",
+      "date": "2026-06-28",
+      "label": "Sun Jun 28",
       "home": "Algeria",
       "away": "Austria",
-      "venue": "GEHA Field at Arrowhead",
+      "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, USA",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 3
       },
-      "referee": "",
+      "referee": "Ilgiz Tantashev",
       "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-2-3-1",
+      "home_lineup": [
+        "16. GK - Oussama Benbot",
+        "17. RB - Rafik Belghali",
+        "2. CB - Aïssa Mandi",
+        "21. CB - Ramy Bensebaini",
+        "13. LB - Jaouen Hadjam",
+        "10. CDM - Fares Chaibi",
+        "19. CDM - Nabil Bentaleb",
+        "27. RW - Riyad Mahrez",
+        "22. CAM - Ibrahim Maza",
+        "8. LW - Houssem Aouar",
+        "9. ST - Amine Gouiri"
+      ],
+      "away_lineup": [
+        "1. GK - Alexander Schlager",
+        "5. RB - Stefan Posch",
+        "15. CB - Philipp Lienhart",
+        "8. CB - David Alaba",
+        "16. LB - Phillipp Mwene",
+        "4. CDM - Xaver Schlager",
+        "6. CDM - Nicolas Seiwald",
+        "20. RW - Konrad Laimer",
+        "18. CAM - Romano Schmid",
+        "9. LW - Marcel Sabitzer",
+        "7. ST - Marko Arnautović"
+      ],
+      "home_subs": [
+        "Achref Abada",
+        "Rayan Aït-Nouri",
+        "Zineddine Belaid",
+        "Nadhir Benbouali",
+        "Hichem Boudaoui",
+        "Adil Boulbina",
+        "Samir Chergui",
+        "Fares Ghedjemis",
+        "Anis Hadj Moussa",
+        "Melvin Feycal Mastil",
+        "Yassine Titraoui",
+        "Mohamed Tougai",
+        "Ramiz Zerrouki",
+        "Luca Zidane"
+      ],
+      "away_subs": [
+        "David Affengruber",
+        "Carney Chukwuemeka",
+        "Kevin Danso",
+        "Marco Friedl",
+        "Michael Gregoritsch",
+        "Florian Grillitsch",
+        "Saša Kalajdžić",
+        "Dejan Ljubicic",
+        "Patrick Pentz",
+        "Alexander Prass",
+        "Alessandro Schopf",
+        "Michael Svoboda",
+        "Paul Wanner",
+        "Florian Wiegele",
+        "Patrick Wimmer"
+      ],
+      "goals": [
+        {
+          "minute": 28,
+          "team": "Austria",
+          "player": "Marko Arnautović",
+          "assist": "David Alaba",
+          "type": "Open Play"
+        },
+        {
+          "minute": 45,
+          "team": "Algeria",
+          "player": "Rafik Belghali",
+          "assist": "",
+          "type": "Open Play"
+        },
+        {
+          "minute": 55,
+          "team": "Austria",
+          "player": "Marcel Sabitzer",
+          "assist": "Konrad Laimer",
+          "type": "Open Play"
+        },
+        {
+          "minute": 60,
+          "team": "Algeria",
+          "player": "Riyad Mahrez",
+          "assist": "Houssem Aouar",
+          "type": "Open Play"
+        },
+        {
+          "minute": 93,
+          "team": "Algeria",
+          "player": "Riyad Mahrez",
+          "assist": "Houssem Aouar",
+          "type": "Open Play"
+        },
+        {
+          "minute": 96,
+          "team": "Austria",
+          "player": "Saša Kalajdžić",
+          "assist": "Michael Gregoritsch",
+          "type": "Header"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 11,
+          "team": "Austria",
+          "player": "Marko Arnautović",
+          "reason": "Bad foul"
+        }
+      ],
       "red_cards": [],
-      "substitutions": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "Austria",
+          "player_in": "Michael Gregoritsch",
+          "player_out": "Marko Arnautović"
+        },
+        {
+          "minute": 45,
+          "team": "Austria",
+          "player_in": "Florian Grillitsch",
+          "player_out": "Xaver Schlager"
+        },
+        {
+          "minute": 45,
+          "team": "Austria",
+          "player_in": "Paul Wanner",
+          "player_out": "Romano Schmid"
+        },
+        {
+          "minute": 62,
+          "team": "Austria",
+          "player_in": "Kevin Danso",
+          "player_out": "David Alaba"
+        },
+        {
+          "minute": 71,
+          "team": "Algeria",
+          "player_in": "Rayan Aït-Nouri",
+          "player_out": "Jaouen Hadjam"
+        },
+        {
+          "minute": 71,
+          "team": "Algeria",
+          "player_in": "Zineddine Belaid",
+          "player_out": "Amine Gouiri"
+        },
+        {
+          "minute": 71,
+          "team": "Algeria",
+          "player_in": "Samir Chergui",
+          "player_out": "Rafik Belghali"
+        },
+        {
+          "minute": 90,
+          "team": "Algeria",
+          "player_in": "Fares Ghedjemis",
+          "player_out": "Houssem Aouar"
+        },
+        {
+          "minute": 90,
+          "team": "Austria",
+          "player_in": "Saša Kalajdžić",
+          "player_out": "Phillipp Mwene"
+        }
+      ],
       "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
+        "possession_home": 65,
+        "possession_away": 35,
+        "shots_home": 12,
+        "shots_away": 10,
+        "shots_on_target_home": 5,
+        "shots_on_target_away": 3,
+        "corners_home": 0,
+        "corners_away": 3,
+        "fouls_home": 3,
+        "fouls_away": 7,
+        "offsides_home": 1,
+        "offsides_away": 3,
+        "saves_home": 0,
+        "saves_away": 2,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 0,
+        "crosses_away": 3,
+        "throw_ins_home": 16,
+        "throw_ins_away": 10,
+        "goal_kicks_home": 9,
+        "goal_kicks_away": 6,
+        "blocked_shots_home": 2,
+        "blocked_shots_away": 1
       },
       "notes": ""
     },
@@ -12185,7 +12665,7 @@
       "id": "K2",
       "group": "K",
       "date": "2026-06-18",
-      "label": "Thu 18 Jun",
+      "label": "Thu Jun 18",
       "home": "Uzbekistan",
       "away": "Colombia",
       "venue": "Estadio Azteca",
@@ -12194,7 +12674,7 @@
         "home": 1,
         "away": 3
       },
-      "referee": "",
+      "referee": "Anthony Taylor",
       "attendance": null,
       "home_formation": "3-4-2-1",
       "away_formation": "4-3-3",
@@ -12202,61 +12682,61 @@
         "1. GK - Utkir Yusupov",
         "2. CB - Abdukodir Khusanov",
         "18. CB - Abdulla Abdullaev",
-        "5. CB - Rustam Ashurmatov",
-        "24. RM - Bekhruz Karimov",
+        "5. CB - Rustamjon Ashurmatov",
+        "24. RWB - Behruzjon Karimov",
         "6. CM - Akmal Mozgovoy",
         "7. CM - Otabek Shukurov",
-        "13. LM - Sherzod Nasrullaev",
-        "22. AM - Abbosbek Fayzullaev",
-        "11. AM - Oston Urunov",
+        "13. LWB - Sherzod Nasrullaev",
+        "22. SS - Abbosbek Fayzullaev",
+        "11. SS - Oston Urunov",
         "14. ST - Eldor Shomurodov"
       ],
       "away_lineup": [
         "12. GK - Camilo Vargas",
         "2. RB - Daniel Muñoz",
-        "23. CB - Dávinson Sánchez",
+        "23. CB - Davinson Sánchez",
         "3. CB - Jhon Lucumí",
         "17. LB - Johan Mojica",
+        "11. CM - Jhon Arias",
         "16. CM - Jefferson Lerma",
         "14. CM - Gustavo Puerta",
-        "10. CM - James Rodríguez",
-        "11. RW - Jhon Arias",
-        "7. LW - Luis Díaz",
-        "25. ST - Luis Suárez"
+        "10. CAM - James Rodríguez",
+        "25. ST - Luis Suárez",
+        "7. LW - Luis Díaz"
       ],
       "home_subs": [
-        "3. Farrukh Sayfiev",
-        "4. Khojiakbar Alijonov",
-        "6. Umar Eshmurodov",
-        "8. Jaloliddin Masharipov",
-        "10. Odiljon Hamrobekov",
-        "12. Abduvohid Nematov",
-        "14. Jamshid Iskanderov",
-        "17. Jakhongir Urozov",
-        "18. Avazbek Ulmasaliev",
-        "19. Dostonbek Khamdamov",
-        "22. Azizjon Ganiev",
-        "23. Botirali Ergashev",
-        "24. Sherzod Esanov",
-        "25. Igor Sergeev",
-        "26. Azizbek Amonov"
+        "Khojiakbar Alijonov",
+        "Azizbek Amanov",
+        "Botirali Ergashev",
+        "Sherzod Esanov",
+        "Umarbek Eshmuradov",
+        "Azizjon Ganiev",
+        "Jamshid Iskanderov",
+        "Ruslanbek Jiyanov",
+        "Dostonbek Khamdamov",
+        "Odiljon Khamrobekov",
+        "Abduvakhid Nematov",
+        "Avazbek Ulmasaliyev",
+        "Farrukh Sayfiev",
+        "Igor Sergeev",
+        "Jakhongir Urozov"
       ],
       "away_subs": [
-        "1. Álvaro Montero",
-        "2. Santiago Arias",
-        "4. Yerry Mina",
-        "5. Willer Ditta",
-        "6. Richard Ríos",
-        "7. Juan Camilo Hernández",
-        "8. Jorge Carrascal",
-        "9. Jhon Córdoba",
-        "13. Jaminton Campaz",
-        "15. Kevin Castaño",
-        "18. Juan Camilo Portilla",
-        "22. David Ospina",
-        "24. Carlos Andrés Gómez",
-        "25. Juan Fernando Quintero",
-        "26. Deiver Machado"
+        "Santiago Arias",
+        "Jaminton Campaz",
+        "Jorge Carrascal",
+        "Kevin Castaño",
+        "Jhon Córdoba",
+        "Willer Ditta",
+        "Andres Gomez",
+        "Juan Camilo Hernandez",
+        "Deiver Machado",
+        "Yerry Mina",
+        "Álvaro Montero",
+        "David Ospina",
+        "Juan Portilla",
+        "Juan Fernando Quintero",
+        "Richard Ríos"
       ],
       "goals": [
         {
@@ -12284,7 +12764,7 @@
           "minute": 99,
           "team": "Colombia",
           "player": "Jaminton Campaz",
-          "assist": "Juan Camilo Hernández",
+          "assist": "Juan Camilo Hernandez",
           "type": "Header"
         }
       ],
@@ -12293,13 +12773,13 @@
           "minute": 7,
           "team": "Colombia",
           "player": "Johan Mojica",
-          "reason": ""
+          "reason": "Bad foul"
         },
         {
           "minute": 34,
           "team": "Uzbekistan",
           "player": "Abdukodir Khusanov",
-          "reason": ""
+          "reason": "Bad foul"
         }
       ],
       "red_cards": [],
@@ -12307,62 +12787,62 @@
         {
           "minute": 45,
           "team": "Uzbekistan",
-          "player_out": "Oston Urunov",
-          "player_in": "Dostonbek Khamdamov"
+          "player_in": "Dostonbek Khamdamov",
+          "player_out": "Oston Urunov"
         },
         {
           "minute": 45,
           "team": "Uzbekistan",
-          "player_out": "Sherzod Nasrullaev",
-          "player_in": "Farrukh Sayfiev"
+          "player_in": "Farrukh Sayfiev",
+          "player_out": "Sherzod Nasrullaev"
         },
         {
           "minute": 72,
           "team": "Colombia",
-          "player_out": "James Rodríguez",
-          "player_in": "Jaminton Campaz"
+          "player_in": "Jaminton Campaz",
+          "player_out": "James Rodríguez"
         },
         {
           "minute": 77,
           "team": "Uzbekistan",
-          "player_out": "Rustam Ashurmatov",
-          "player_in": "Jakhongir Urozov"
+          "player_in": "Jakhongir Urozov",
+          "player_out": "Rustamjon Ashurmatov"
         },
         {
           "minute": 77,
           "team": "Uzbekistan",
-          "player_out": "Abbosbek Fayzullaev",
-          "player_in": "Azizbek Amonov"
+          "player_in": "Azizbek Amanov",
+          "player_out": "Abbosbek Fayzullaev"
         },
         {
           "minute": 80,
           "team": "Colombia",
-          "player_out": "Gustavo Puerta",
-          "player_in": "Richard Ríos"
+          "player_in": "Richard Ríos",
+          "player_out": "Gustavo Puerta"
         },
         {
           "minute": 80,
           "team": "Colombia",
-          "player_out": "Luis Suárez",
-          "player_in": "Juan Camilo Hernández"
-        },
-        {
-          "minute": 90,
-          "team": "Colombia",
-          "player_out": "Luis Díaz",
-          "player_in": "Carlos Andrés Gómez"
+          "player_in": "Juan Camilo Hernandez",
+          "player_out": "Luis Suárez"
         },
         {
           "minute": 90,
           "team": "Uzbekistan",
-          "player_out": "Eldor Shomurodov",
-          "player_in": "Igor Sergeev"
+          "player_in": "Igor Sergeev",
+          "player_out": "Eldor Shomurodov"
         },
         {
           "minute": 90,
           "team": "Colombia",
-          "player_out": "Jhon Arias",
-          "player_in": "Kevin Castaño"
+          "player_in": "Andres Gomez",
+          "player_out": "Luis Díaz"
+        },
+        {
+          "minute": 90,
+          "team": "Colombia",
+          "player_in": "Kevin Castaño",
+          "player_out": "Jhon Arias"
         }
       ],
       "stats": {
@@ -12372,31 +12852,27 @@
         "shots_away": 15,
         "shots_on_target_home": 2,
         "shots_on_target_away": 4,
-        "shots_off_target_home": 4,
-        "shots_off_target_away": 7,
-        "blocked_shots_home": 2,
-        "blocked_shots_away": 4,
         "corners_home": 3,
         "corners_away": 4,
         "fouls_home": 14,
         "fouls_away": 11,
-        "throw_ins_home": 24,
-        "throw_ins_away": 26,
-        "crosses_home": 3,
-        "crosses_away": 6,
-        "counter_attacks_home": null,
-        "counter_attacks_away": null,
-        "saves_home": 1,
-        "saves_away": 1,
-        "goal_kicks_home": 10,
-        "goal_kicks_away": 8,
         "offsides_home": 0,
         "offsides_away": 3,
+        "saves_home": 1,
+        "saves_away": 1,
         "passes_home": null,
-        "passes_away": null
+        "passes_away": null,
+        "crosses_home": 3,
+        "crosses_away": 6,
+        "throw_ins_home": 24,
+        "throw_ins_away": 26,
+        "goal_kicks_home": 10,
+        "goal_kicks_away": 8,
+        "blocked_shots_home": 2,
+        "blocked_shots_away": 4
       },
       "notes": "Coaches: Fabio Cannavaro (Uzbekistan), Néstor Lorenzo (Colombia). Daniel Muñoz (40'). Abbosbek Fayzullaev (60') — Uzbekistan's first ever World Cup goal. Line-ups confirmed.",
-      "status": "live"
+      "status": "finished"
     },
     "K3": {
       "id": "K3",
@@ -14453,8 +14929,8 @@
       "id": "M74",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "USA",
+      "away": "Bosnia-Herzegovina"
     },
     "M75": {
       "score": {
@@ -14663,8 +15139,8 @@
       "id": "M79",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "Mexico",
+      "away": "Ecuador"
     },
     "M80": {
       "score": {
@@ -14705,8 +15181,8 @@
       "id": "M80",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "England",
+      "away": "Congo DR"
     },
     "M81": {
       "score": {
@@ -14789,8 +15265,8 @@
       "id": "M82",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "Belgium",
+      "away": "Senegal"
     },
     "M83": {
       "score": {
@@ -14831,8 +15307,8 @@
       "id": "M83",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "Colombia",
+      "away": "Ghana"
     },
     "M84": {
       "score": {
@@ -14873,8 +15349,8 @@
       "id": "M84",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "Spain",
+      "away": "Austria"
     },
     "M85": {
       "score": {
@@ -14915,8 +15391,8 @@
       "id": "M85",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "Bosnia-Herzegovina",
-      "away": "USA"
+      "home": "Switzerland",
+      "away": "Algeria"
     },
     "M86": {
       "score": {
@@ -14999,8 +15475,8 @@
       "id": "M87",
       "group": "KO",
       "stage": "Round of 32",
-      "home": "",
-      "away": ""
+      "home": "Portugal",
+      "away": "Croatia"
     },
     "M88": {
       "score": {
