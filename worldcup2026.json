@@ -14849,46 +14849,174 @@
       "notes": ""
     },
     "M73": {
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "referee": "",
-      "attendance": null,
-      "home_formation": "",
-      "away_formation": "",
-      "home_lineup": [],
-      "away_lineup": [],
-      "home_subs": [],
-      "away_subs": [],
-      "goals": [],
-      "yellow_cards": [],
-      "red_cards": [],
-      "substitutions": [],
-      "stats": {
-        "possession_home": null,
-        "possession_away": null,
-        "shots_home": null,
-        "shots_away": null,
-        "shots_on_target_home": null,
-        "shots_on_target_away": null,
-        "corners_home": null,
-        "corners_away": null,
-        "fouls_home": null,
-        "fouls_away": null,
-        "offsides_home": null,
-        "offsides_away": null,
-        "saves_home": null,
-        "saves_away": null,
-        "passes_home": null,
-        "passes_away": null
-      },
-      "notes": "",
       "id": "M73",
       "group": "KO",
       "stage": "Round of 32",
+      "date": "2026-06-28",
+      "label": "Sun 28 Jun",
       "home": "South Africa",
-      "away": "Canada"
+      "away": "Canada",
+      "venue": "SoFi Stadium",
+      "city": "Inglewood, USA",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "referee": "João Pedro Silva Pinheiro (Portugal)",
+      "attendance": null,
+      "home_formation": "4-2-3-1",
+      "away_formation": "4-4-2",
+      "home_lineup": [
+        "1. GK - Ronwen Williams",
+        "20. RB - Khuliso Mudau",
+        "21. CB - Ime Okon",
+        "14. CB - Mbekezeli Mbokazi",
+        "6. LB - Aubrey Modiba",
+        "4. CDM - Teboho Mokoena",
+        "13. CDM - Sphephelo Sithole",
+        "12. RAM - Thapelo Maseko",
+        "10. CAM - Relebohile Mofokeng",
+        "7. LAM - Oswin Appollis",
+        "17. ST - Evidence Makgopa"
+      ],
+      "away_lineup": [
+        "16. GK - Maxime Crépeau",
+        "2. RB - Alistair Johnston",
+        "15. CB - Moïse Bombito",
+        "13. CB - Derek Cornelius",
+        "22. LB - Richie Laryea",
+        "17. RM - Tajon Buchanan",
+        "25. CM - Nathan-Dylan Saliba",
+        "7. CM - Stephen Eustáquio",
+        "11. LM - Liam Millar",
+        "10. ST - Jonathan David",
+        "12. ST - Tani Oluwaseyi"
+      ],
+      "home_subs": [
+        "Jayden Adams",
+        "Sipho Chaine",
+        "Bradley Cross",
+        "Lyle Foster",
+        "Ricardo Goss",
+        "Samukelo Kabini",
+        "Olwethu Makhanya",
+        "Tholo Thabang Matuludi",
+        "Thalente Mbatha",
+        "Tshepang Moremi",
+        "Khulumani Ndamane",
+        "Iqraam Rayners",
+        "Kamogelo Sebelebele",
+        "Nkosinathi Sibisi"
+      ],
+      "away_subs": [
+        "Ali Ahmed",
+        "Mathieu Choinière",
+        "Promise David",
+        "Alphonso Davies",
+        "Owen Goodman",
+        "Alfie Jones",
+        "Cyle Larin",
+        "Jayden Nelson",
+        "Jonathan Osorio",
+        "Luc De Fougerolles",
+        "Jacob Shaffelburg",
+        "Niko Sigur",
+        "Dayne St. Clair",
+        "Joel Waterman"
+      ],
+      "goals": [
+        {
+          "minute": 92,
+          "team": "Canada",
+          "player": "Stephen Eustáquio",
+          "assist": "",
+          "type": "Open Play"
+        }
+      ],
+      "yellow_cards": [
+        {
+          "minute": 54,
+          "team": "Canada",
+          "player": "Nathan-Dylan Saliba",
+          "reason": "Bad foul"
+        },
+        {
+          "minute": 67,
+          "team": "Canada",
+          "player": "Niko Sigur",
+          "reason": "Bad foul"
+        }
+      ],
+      "red_cards": [],
+      "substitutions": [
+        {
+          "minute": 45,
+          "team": "South Africa",
+          "player_in": "Thalente Mbatha",
+          "player_out": "Relebohile Mofokeng"
+        },
+        {
+          "minute": 59,
+          "team": "Canada",
+          "player_in": "Niko Sigur",
+          "player_out": "Nathan-Dylan Saliba"
+        },
+        {
+          "minute": 59,
+          "team": "Canada",
+          "player_in": "Luc De Fougerolles",
+          "player_out": "Moïse Bombito"
+        },
+        {
+          "minute": 70,
+          "team": "Canada",
+          "player_in": "Promise David",
+          "player_out": "Tani Oluwaseyi"
+        },
+        {
+          "minute": 70,
+          "team": "Canada",
+          "player_in": "Jacob Shaffelburg",
+          "player_out": "Liam Millar"
+        },
+        {
+          "minute": 75,
+          "team": "Canada",
+          "player_in": "Alphonso Davies",
+          "player_out": "Tajon Buchanan"
+        },
+        {
+          "minute": 86,
+          "team": "South Africa",
+          "player_in": "Iqraam Rayners",
+          "player_out": "Evidence Makgopa"
+        },
+        {
+          "minute": 86,
+          "team": "South Africa",
+          "player_in": "Tshepang Moremi",
+          "player_out": "Thapelo Maseko"
+        }
+      ],
+      "stats": {
+        "possession_home": 58,
+        "possession_away": 42,
+        "shots_home": 6,
+        "shots_away": 12,
+        "shots_on_target_home": 1,
+        "shots_on_target_away": 7,
+        "corners_home": 1,
+        "corners_away": 4,
+        "fouls_home": 10,
+        "fouls_away": 16,
+        "offsides_home": 1,
+        "offsides_away": 0,
+        "saves_home": 5,
+        "saves_away": 1,
+        "passes_home": null,
+        "passes_away": null
+      },
+      "notes": "Coaches: Hugo Broos (South Africa), Jesse Marsch (Canada). Late winner in 90+2'. Full time: South Africa 0-1 Canada."
     },
     "M74": {
       "score": {
